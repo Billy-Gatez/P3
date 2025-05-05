@@ -1724,6 +1724,26 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 995613301574020825, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 995613301574020825, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
+      propertyPath: gravity
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 995613301574020825, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
+      propertyPath: jumpMax
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995613301574020825, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
+      propertyPath: jumpSpeed
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 995613301574020825, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
+      propertyPath: sprintMod
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 995613301574020825, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
       propertyPath: crouchSpeed
       value: 4
       objectReference: {fileID: 0}
