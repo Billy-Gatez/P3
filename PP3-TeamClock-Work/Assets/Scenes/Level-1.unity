@@ -228,11 +228,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
---- !u!4 &1652267823 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2815372957338543585, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
-  m_PrefabInstance: {fileID: 6094958522655144190}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1700048236 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5665309020488275277, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
@@ -271,7 +266,7 @@ PrefabInstance:
     - target: {fileID: 995613301574020825, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
       propertyPath: 'teleportDestinations.Array.data[0]'
       value: 
-      objectReference: {fileID: 1652267823}
+      objectReference: {fileID: 1750462082}
     - target: {fileID: 995613301574020825, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
       propertyPath: 'teleportDestinations.Array.data[1]'
       value: 
