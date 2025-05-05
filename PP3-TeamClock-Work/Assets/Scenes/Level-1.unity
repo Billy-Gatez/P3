@@ -605,6 +605,10 @@ PrefabInstance:
       propertyPath: playerSpawnPos
       value: 
       objectReference: {fileID: 1750462081}
+    - target: {fileID: 1079673937026585330, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3332005593489528221, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -684,6 +688,13 @@ PrefabInstance:
     - target: {fileID: 3332005593489528221, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5560873472053650383, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
+      propertyPath: m_text
+      value: 'Controls:                           Sprint: LEFT SHIFT              
+        ROLL: C                        Crouch: TAB/MOUSE 2                  Move:
+        WASD                          Jump: SPACE                      Shoot: MOUSE
+        1                        Reload: R'
       objectReference: {fileID: 0}
     - target: {fileID: 5952903273200183536, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: m_Name
