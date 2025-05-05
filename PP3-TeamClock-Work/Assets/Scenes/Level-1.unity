@@ -228,9 +228,24 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
+--- !u!4 &1652267823 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2815372957338543585, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
+  m_PrefabInstance: {fileID: 6094958522655144190}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1700048236 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5665309020488275277, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
+  m_PrefabInstance: {fileID: 6094958522655144190}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1750462081 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6350929135107241953, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
+  m_PrefabInstance: {fileID: 6094958522655144190}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1750462082 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 964127195910416703, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
   m_PrefabInstance: {fileID: 6094958522655144190}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2672229802961786145
@@ -249,9 +264,37 @@ PrefabInstance:
       propertyPath: crouchHeight
       value: 0.0000125
       objectReference: {fileID: 0}
+    - target: {fileID: 995613301574020825, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
+      propertyPath: teleportDestinations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995613301574020825, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
+      propertyPath: 'teleportDestinations.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1652267823}
+    - target: {fileID: 995613301574020825, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
+      propertyPath: 'teleportDestinations.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1700048236}
+    - target: {fileID: 995613301574020825, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
+      propertyPath: 'teleportDestinations.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1750462082}
+    - target: {fileID: 2852749927351980116, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 7ec3bda5c879e974ea32eb90da4d06b1, type: 3}
+    - target: {fileID: 2852749927351980116, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7ec3bda5c879e974ea32eb90da4d06b1, type: 3}
     - target: {fileID: 6123402111503056536, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6647281703022692297, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
+      propertyPath: m_Height
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8200773461701084614, guid: ea043eb95df26d44b83a6056783d917b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -364,7 +407,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4491484002408150814, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 8747455660392027044, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
 --- !u!1 &8209810469884259257 stripped
 GameObject:

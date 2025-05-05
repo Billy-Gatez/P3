@@ -34,7 +34,7 @@ public class HealthShop : MonoBehaviour
 
     public void increaseHP(int cost)
     {
-        int healthPerCost = 4;
+        int healthPerCost = 1;
 
         
         Debug.Log($"Current Currency: {gamemanager.instance.currency}, Cost: {cost}");
