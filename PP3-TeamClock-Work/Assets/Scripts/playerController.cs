@@ -319,7 +319,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     }
 
     /// <summary>
-    /// EveryThing Below this line was add-on's
+    /// EveryThing Below this line are add-on's
     /// </summary>
     void crouch()
     {
