@@ -1,0 +1,60 @@
+# Unity generated files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Uu]serSettings/
+
+# Visual Studio files
+.vs/
+.vscode/
+*.sln
+*.user
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln.docstates
+
+# Rider files
+.idea/
+*.sln.iml
+
+# Mac files
+.DS_Store
+
+# Windows thumbnail cache
+Thumbs.db
+ehthumbs.db
+
+# Visual Studio Code settings
+.vscode/
+
+# JetBrains Rider settings
+.idea/
+
+# Other files
+*.tmp
+*.bak
+*.swp
+*.swm
+*.swo
+*.pdb
+*.mdb
+*.opendb
+*.opendb-wal
+*.opendb-shm
+*.db-journal
+*.log
+*.log.*
+*.tps
+*.tps.*
+*.tps~ 
+*.tmp
+*.temp
+*.tmp.*
+*.temp.*
+
