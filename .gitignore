@@ -70,3 +70,4 @@ ehthumbs.db
 *.pid
 *.state
 *.digestcache
+*.json
