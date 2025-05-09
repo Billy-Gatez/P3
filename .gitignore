@@ -68,3 +68,5 @@ ehthumbs.db
 *.traceevents
 *.dll
 *.pid
+*.state
+*.digestcache
