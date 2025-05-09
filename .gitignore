@@ -70,4 +70,7 @@ ehthumbs.db
 *.pid
 *.state
 *.digestcache
-*.json
+
+*.log
+/PP3-TeamClock-Work/Library/Bee
+*.map
