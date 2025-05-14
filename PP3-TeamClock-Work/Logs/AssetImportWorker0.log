@@ -296,3 +296,11 @@ Memory consumption went from 165.9 MB to 163.3 MB.
 Total: 6.505500 ms (FindLiveObjects: 0.369800 ms CreateObjectMapping: 0.259200 ms MarkObjects: 4.674300 ms  DeleteObjects: 1.201400 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 2145.647101 seconds.
+  path: Assets/Prefabs/Door.prefab
+  artifactKey: Guid(fa1912b71c667c84ebfe10c22c51e543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Door.prefab using Guid(fa1912b71c667c84ebfe10c22c51e543) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bfcef6316c93880df1861bb368b67955') in 0.2605647 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
