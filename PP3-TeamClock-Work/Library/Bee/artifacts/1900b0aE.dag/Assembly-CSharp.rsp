@@ -411,6 +411,7 @@
 "Assets/Scripts/cameraController.cs"
 "Assets/Scripts/checkpoint.cs"
 "Assets/Scripts/damage.cs"
+"Assets/Scripts/Door.cs"
 "Assets/Scripts/enemyAI.cs"
 "Assets/Scripts/gamemanager.cs"
 "Assets/Scripts/gunStats.cs"

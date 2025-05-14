@@ -59,18 +59,4 @@ ehthumbs.db
 *.temp.*
 
 
-/PP3-TeamClock-Work/Logs
 
-
-/PP3-TeamClock-Work/Logs
-
-*.json
-*.traceevents
-*.dll
-*.pid
-*.state
-*.digestcache
-
-*.log
-/PP3-TeamClock-Work/Library/Bee
-*.map
