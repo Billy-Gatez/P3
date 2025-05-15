@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\users\\george.carter\\documents\\github\\p3\\pp3-teamclock-work\\assets\\scripts\\volumecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\volumecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,8 +23,16 @@
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ipickup.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\VolumeControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\VolumeControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\assets\\scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,48 +56,48 @@
         },
         {
           "DockedWidth": 31,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "gamemanager.cs",
               "DocumentMoniker": "C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\gamemanager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\gamemanager.cs",
               "ToolTip": "C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\gamemanager.cs",
               "RelativeToolTip": "Assets\\Scripts\\gamemanager.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwAAAAAB3AAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwAAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T22:40:45.737Z"
+              "WhenOpened": "2025-05-06T22:40:45.737Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "VolumeControl.cs",
               "DocumentMoniker": "C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\VolumeControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\VolumeControl.cs",
               "ToolTip": "C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\VolumeControl.cs",
               "RelativeToolTip": "Assets\\Scripts\\VolumeControl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T14:33:15.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T14:33:15.948Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "enemyAI.cs",
               "DocumentMoniker": "C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\enemyAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\enemyAI.cs",
               "ToolTip": "C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\enemyAI.cs",
               "RelativeToolTip": "Assets\\Scripts\\enemyAI.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T22:34:00.84Z"
+              "WhenOpened": "2025-05-06T22:34:00.84Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Ipickup.txt",
               "DocumentMoniker": "C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Ipickup.txt",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Ipickup.txt",
@@ -105,11 +105,12 @@
               "RelativeToolTip": "Assets\\Scripts\\Ipickup.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-05-05T17:09:47.976Z"
+              "WhenOpened": "2025-05-05T17:09:47.976Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "buttonFunctions.cs",
               "DocumentMoniker": "C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\buttonFunctions.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\buttonFunctions.cs",
@@ -117,11 +118,12 @@
               "RelativeToolTip": "Assets\\Scripts\\buttonFunctions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:34:53.224Z"
+              "WhenOpened": "2025-05-05T15:34:53.224Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "HealthShop.cs",
               "DocumentMoniker": "C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\HealthShop.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HealthShop.cs",
@@ -129,23 +131,25 @@
               "RelativeToolTip": "Assets\\Scripts\\HealthShop.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAYwDUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T12:35:37.812Z"
+              "WhenOpened": "2025-05-05T12:35:37.812Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "playerController.cs",
               "DocumentMoniker": "C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\playerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\playerController.cs",
               "ToolTip": "C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\playerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\playerController.cs",
-              "ViewState": "AgIAABQBAAAAAAAAAAAywI0AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABUBAAAAAAAAAADwv40AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T12:34:59.073Z"
+              "WhenOpened": "2025-05-05T12:34:59.073Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "MainMenuManager.cs",
               "DocumentMoniker": "C:\\Users\\george.carter\\Documents\\GitHub\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\MainMenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenuManager.cs",
