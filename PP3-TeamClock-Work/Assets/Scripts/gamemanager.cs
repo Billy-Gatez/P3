@@ -1,5 +1,3 @@
-
-
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -14,9 +12,6 @@ public class gamemanager : MonoBehaviour
     [SerializeField] GameObject menuLose;
     [SerializeField] TMP_Text gameGoalCountText;
     [SerializeField] public TMP_Text currencyText;
-
-    [SerializeField] private AudioSource audioSource; // Reference to the AudioSource
-    [SerializeField] private float volume = 1.0f; // Default volume level
 
     [Header("---   ---")]
     public TMP_Text ammoCur, ammoMax;
@@ -140,16 +135,5 @@ public class gamemanager : MonoBehaviour
         statePause();
         menuActive = menuLose;
         menuActive.SetActive(true);
-    }
-
-    public void SetVolume(float newVolume)
-    {
-        volume = newVolume;
-        audioSource.volume = volume; // Set the volume of the AudioSource
-    }
-
-    public float GetVolume()
-    {
-        return volume; // Return the current volume level
     }
 }
