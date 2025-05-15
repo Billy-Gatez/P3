@@ -43,9 +43,6 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     [Range(0, 1)][SerializeField] float audStepsVol;
 
     [SerializeField] Transform[] teleportDestinations;
-    [Range((float) 0.00, 10)][SerializeField] float iceSlideFriction;
-    [Range((float)0.00, 10)][SerializeField] float iceSlideDecay;
-
     int jumpCount;
     public int HPOrig;
     int gunListPos;
@@ -68,8 +65,6 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     float rollTimer;
     float rollCooldownTimer;
 
-    private bool isOnIce = false;
-    private Vector3 iceSlideVelocity = Vector3.zero;
 
     private bool canTeleport = true;
     private Dictionary<string, Vector3> exitDirections = new Dictionary<string, Vector3>
@@ -111,7 +106,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     void Update()
     {
 
-        //Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
+        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
 
         if (!gamemanager.instance.isPaused)
         {
@@ -126,24 +121,8 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
         dodge();
 
         roll();
-        if (isOnIce && controller.isGrounded)
-        {
-
-            iceSlideVelocity += moveDir.normalized * 10f * Time.deltaTime;
-
-            iceSlideVelocity *= 0.99f;
 
 
-            controller.Move(iceSlideVelocity * Time.deltaTime);
-            Debug.DrawRay(transform.position, iceSlideVelocity, Color.cyan);
-        }
-        else
-        {
-
-
-            iceSlideVelocity = Vector3.zero;
-        }
-        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
     }
     void movement()
     {
@@ -405,29 +384,11 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
 
     void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("Entered Teleport Sphere: " + other.gameObject.name);
+        Debug.Log("Entered Teleport Sphere: " + other.gameObject.name);
         if (other.CompareTag("TeleportSphere") && canTeleport)
         {
-            Debug.Log("Entered Teleport Sphere: " + other.gameObject.name);
+            //Debug.Log("Player entered teleport sphere!" + other.gameObject.name);
             StartCoroutine(TeleportPlayer(other.gameObject.name));
-        }
-        if (other.CompareTag("Ice"))
-        {
-            isOnIce = true;
-            iceSlideVelocity = moveDir;
-
-
-            Debug.Log("Player is now on ice: " + other.gameObject.name);
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Ice"))
-        {
-            isOnIce = false;
-            iceSlideVelocity = Vector3.zero;
-            Debug.Log("Player exited ice: " + other.gameObject.name);
         }
     }
     IEnumerator TeleportPlayer(string teleportSphereTag)

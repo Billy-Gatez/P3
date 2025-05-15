@@ -7,7 +7,6 @@ TagManager:
   - Player Spawn Pos
   - TeleportSphere
   - Mini Camera
-  - Ice
   layers:
   - Default
   - TransparentFX
