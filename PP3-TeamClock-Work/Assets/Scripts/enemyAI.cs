@@ -26,6 +26,12 @@ public class enemyAI : MonoBehaviour, IDamage
     [SerializeField] int shootFOV;
     [SerializeField] float shootRate;
 
+    [Header("---Split On Death---")]
+    [SerializeField] GameObject smallerEnemyPrefab;
+    [SerializeField] int numberToSpawnOnDeath;
+    [SerializeField] float spawnRadius;
+    [SerializeField] bool shouldSplitOnDeath;
+
     bool playerInRange;
 
     float shootTimer;
@@ -147,7 +153,15 @@ public class enemyAI : MonoBehaviour, IDamage
 
         if (HP <= 0)
         {
-            gamemanager.instance.updateGameGoal(-1, XP);
+            if (shouldSplitOnDeath)
+            {
+                spawnSmallerEnemies();
+                gamemanager.instance.updateGameGoal(-1, XP);
+            }
+            else
+            {
+                gamemanager.instance.updateGameGoal(-1, XP);
+            }
             Destroy(gameObject);
         }
     }
@@ -170,5 +184,18 @@ public class enemyAI : MonoBehaviour, IDamage
     {
         Quaternion rot = Quaternion.LookRotation(new Vector3(playerDir.x, transform.position.y, playerDir.z));
         transform.rotation = Quaternion.Lerp(transform.rotation, rot, Time.deltaTime * faceTargetSpeed);
+    }
+    void spawnSmallerEnemies()
+    {
+        for (int i = 0; i < numberToSpawnOnDeath; i++)
+        {
+            Vector3 offset = Random.insideUnitSphere * spawnRadius;
+            offset.y = 0;
+
+            Vector3 spawnPos = transform.position + offset;
+
+            Instantiate(smallerEnemyPrefab, spawnPos, Quaternion.identity);
+            gamemanager.instance.updateGameGoal(1, 0);
+        }
     }
 }
