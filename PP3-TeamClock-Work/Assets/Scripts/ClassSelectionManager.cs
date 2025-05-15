@@ -25,38 +25,38 @@ public class ClassSelectionManager : MonoBehaviour
     public void SelectClass(int classIndex)
     {
         string className = "";
-        int health = 0;
-        int speed = 0;
-        string startingItem = "";
+        //int health = 0;
+        //int speed = 0;
+        //string startingItem = "";
 
         switch (classIndex)
         {
             case 0: // Heavy Gunner
-                className = "Heavy Gunner";
-                health = 100; 
-                speed = 3; 
-                startingItem = "LMG";
+                className = "Grenade Launcher";
+               // health = 10; 
+               // speed = 3; 
+               // startingItem = "Grenade Launcher";
                 break;
             case 1: // Assault Infantryman
-                className = "Assault Infantryman";
-                health = 80; 
-                speed = 4;
-                startingItem = "Basic Pistol";
+                className = "Rifle";
+              //  health = 8; 
+              //  speed = 4;
+              //  startingItem = "Rifle";
                 break;
             case 2: // Medic
-                className = "Medic";
-                health = 70; 
-                speed = 2; 
-                startingItem = "Basic Pistol, Med-kit (Large Heal)";
+                className = "Plasma Rifle";
+             //   health = 7; 
+             //   speed = 2; 
+             //   startingItem = "Plasma Rifle";
                 break;
         }
 
         selectedClass = className;
-        selectedClassText.text = $"Selected Class: {selectedClass}";
+        selectedClassText.text = $"Weapon: {selectedClass}";
 
        
-        playerController playerScript = GameObject.FindWithTag("Player").GetComponent<playerController>();
-        playerScript.SetClassStats(className, health, speed, startingItem);
+       //playerController playerScript = GameObject.FindWithTag("Player").GetComponent<playerController>();
+       //playerScript.SetClassStats(className, health, speed, startingItem);
 
        
        

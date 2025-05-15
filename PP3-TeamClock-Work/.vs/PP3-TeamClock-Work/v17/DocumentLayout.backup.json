@@ -1,38 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\",
+  "WorkspaceRootPath": "C:\\11A\\P3\\PP3-TeamClock-Work\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\11a\\p3\\p3\\pp3-teamclock-work\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\VolumeControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\VolumeControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\assets\\scripts\\buttonfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\11a\\p3\\pp3-teamclock-work\\assets\\scripts\\classselectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\classselectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\buttonfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttonfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\assets\\scripts\\healthshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\VolumeControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\VolumeControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\healthshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\assets\\scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\assets\\scripts\\ipickup.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\ipickup.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ipickup.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,7 +56,7 @@
         },
         {
           "DockedWidth": 31,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -60,24 +64,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "gamemanager.cs",
-              "DocumentMoniker": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\gamemanager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\gamemanager.cs",
-              "ToolTip": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\gamemanager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\gamemanager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAB3AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ClassSelectionManager.cs",
+              "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\ClassSelectionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ClassSelectionManager.cs",
+              "ToolTip": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\ClassSelectionManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ClassSelectionManager.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAADoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T22:40:45.737Z",
+              "WhenOpened": "2025-05-15T19:21:07.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "gamemanager.cs",
+              "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\gamemanager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\gamemanager.cs",
+              "ToolTip": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\gamemanager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\gamemanager.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAJoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T22:40:45.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "VolumeControl.cs",
-              "DocumentMoniker": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\VolumeControl.cs",
+              "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\VolumeControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\VolumeControl.cs",
-              "ToolTip": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\VolumeControl.cs",
+              "ToolTip": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\VolumeControl.cs",
               "RelativeToolTip": "Assets\\Scripts\\VolumeControl.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -85,11 +101,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "enemyAI.cs",
-              "DocumentMoniker": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\enemyAI.cs",
+              "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\enemyAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\enemyAI.cs",
-              "ToolTip": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\enemyAI.cs",
+              "ToolTip": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\enemyAI.cs",
               "RelativeToolTip": "Assets\\Scripts\\enemyAI.cs",
               "ViewState": "AgIAAGwAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -97,11 +113,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Ipickup.txt",
-              "DocumentMoniker": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Ipickup.txt",
+              "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Ipickup.txt",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Ipickup.txt",
-              "ToolTip": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Ipickup.txt",
+              "ToolTip": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Ipickup.txt",
               "RelativeToolTip": "Assets\\Scripts\\Ipickup.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
@@ -109,23 +125,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "buttonFunctions.cs",
-              "DocumentMoniker": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\buttonFunctions.cs",
+              "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\buttonFunctions.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\buttonFunctions.cs",
-              "ToolTip": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\buttonFunctions.cs",
+              "ToolTip": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\buttonFunctions.cs",
               "RelativeToolTip": "Assets\\Scripts\\buttonFunctions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T15:34:53.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "HealthShop.cs",
-              "DocumentMoniker": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\HealthShop.cs",
+              "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\HealthShop.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HealthShop.cs",
-              "ToolTip": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\HealthShop.cs",
+              "ToolTip": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\HealthShop.cs",
               "RelativeToolTip": "Assets\\Scripts\\HealthShop.cs",
               "ViewState": "AgIAABYAAAAAAAAAAABEwDUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -133,27 +149,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "playerController.cs",
-              "DocumentMoniker": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\playerController.cs",
+              "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\playerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\playerController.cs",
-              "ToolTip": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\playerController.cs",
+              "ToolTip": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\playerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\playerController.cs",
-              "ViewState": "AgIAABQBAAAAAAAAAAAUwI0AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAkwGUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T12:34:59.073Z"
+              "WhenOpened": "2025-05-05T12:34:59.073Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "MainMenuManager.cs",
-              "DocumentMoniker": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\MainMenuManager.cs",
+              "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\MainMenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenuManager.cs",
-              "ToolTip": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\MainMenuManager.cs",
+              "ToolTip": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\MainMenuManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\MainMenuManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvyAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T10:52:00.017Z"
+              "WhenOpened": "2025-05-05T10:52:00.017Z",
+              "EditorCaption": ""
             }
           ]
         }

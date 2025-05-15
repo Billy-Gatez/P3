@@ -20,7 +20,21 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene("Level-1");
     }
 
-   
+    public void HeavyGunner1()
+    {
+
+        SceneManager.LoadScene("Level-1hg");
+    }
+
+
+    public void Medic1()
+    {
+
+        SceneManager.LoadScene("Level-1med");
+    }
+
+
+
     public void QuitGame()
     {
         Debug.Log("Quit Game.");
