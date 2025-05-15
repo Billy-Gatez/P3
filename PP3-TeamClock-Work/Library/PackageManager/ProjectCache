@@ -5,7 +5,11 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
       ticks: 638821334091706659
+=======
+      ticks: 638829246744906772
+>>>>>>> Stashed changes
     m_Hash: 4225887787
   m_LockFileStatus:
     m_FilePath: C:/Users/george.carter/Documents/GitHub/P3/PP3-TeamClock-Work/Packages/packages-lock.json
@@ -13,7 +17,11 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
       ticks: 638821334091706659
+=======
+      ticks: 638829246744916919
+>>>>>>> Stashed changes
     m_Hash: 125587669
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
