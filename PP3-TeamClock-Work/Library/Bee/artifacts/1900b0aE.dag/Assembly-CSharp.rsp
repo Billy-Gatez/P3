@@ -410,6 +410,7 @@
 "Assets/Scripts/buttonFunctions.cs"
 "Assets/Scripts/cameraController.cs"
 "Assets/Scripts/checkpoint.cs"
+"Assets/Scripts/ClassSelectionManager.cs"
 "Assets/Scripts/damage.cs"
 "Assets/Scripts/Door.cs"
 "Assets/Scripts/enemyAI.cs"

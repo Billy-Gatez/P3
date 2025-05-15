@@ -52,8 +52,12 @@
         },
         {
           "DockedWidth": 31,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -62,7 +66,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\gamemanager.cs",
               "ToolTip": "C:\\11A\\p3\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\gamemanager.cs",
               "RelativeToolTip": "Assets\\Scripts\\gamemanager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAB3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T22:40:45.737Z",
               "EditorCaption": ""
@@ -77,12 +81,7 @@
               "RelativeToolTip": "Assets\\Scripts\\VolumeControl.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T14:33:15.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "WhenOpened": "2025-05-14T14:33:15.948Z"
             },
             {
               "$type": "Document",

@@ -8,16 +8,16 @@ public class MainMenuManager : MonoBehaviour
  
     public void StartGame()
     {
-       
-        SceneManager.LoadScene("Level-1");
-         
+
+        SceneManager.LoadScene("ClassSelection");
+
     }
 
 
     public void MainMenu()
     {
 
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Level-1");
     }
 
    
