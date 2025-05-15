@@ -33,6 +33,20 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene("Level-1med");
     }
 
+    public void MainMenu3()
+    {
+
+        SceneManager.LoadScene("Level-3");
+        gamemanager.instance.stateUnpause();
+    }
+
+     public void Home()
+    {
+
+        SceneManager.LoadScene("MainMenu");
+        gamemanager.instance.stateUnpause();
+    }
+
 
 
     public void QuitGame()
