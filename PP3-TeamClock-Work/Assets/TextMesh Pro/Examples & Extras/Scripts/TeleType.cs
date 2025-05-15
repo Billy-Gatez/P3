@@ -1,5 +1,3 @@
-// George Carter 
-
 using UnityEngine;
 using System.Collections;
 

@@ -26,6 +26,18 @@ public class enemyAI : MonoBehaviour, IDamage
     [SerializeField] int shootFOV;
     [SerializeField] float shootRate;
 
+    [Header("---Explosion Settings---")]
+    [SerializeField] bool explodesOnDeath;
+    [SerializeField] bool throwsExplosives;
+    [SerializeField] Transform throwPoint;
+    [Range(0, 10)][SerializeField] float throwForce;
+    [Range(0, 100)][SerializeField] float explosionRadius;
+    [Range(0, 100)][SerializeField] int explosionDamage;
+    [Range(0, 100)][SerializeField] float explosionDuration;
+    [SerializeField] GameObject explosivePrefab;
+    [SerializeField] GameObject deathExplosionEffect;
+
+
     bool playerInRange;
 
     float shootTimer;
@@ -55,7 +67,7 @@ public class enemyAI : MonoBehaviour, IDamage
         //anim.SetFloat("Speed", agent.velocity.normalized.magnitude);
 
         if (agent.remainingDistance < 0.01f)
-            roamTimer += Time.deltaTime;
+             roamTimer += Time.deltaTime;
         if (playerInRange && !canSeePlayer())
         {
             checkRoam();
@@ -147,6 +159,11 @@ public class enemyAI : MonoBehaviour, IDamage
 
         if (HP <= 0)
         {
+            if (explodesOnDeath)
+            {
+                ExplodeOnDeath();
+            }
+
             gamemanager.instance.updateGameGoal(-1, XP);
             Destroy(gameObject);
         }
@@ -170,5 +187,66 @@ public class enemyAI : MonoBehaviour, IDamage
     {
         Quaternion rot = Quaternion.LookRotation(new Vector3(playerDir.x, transform.position.y, playerDir.z));
         transform.rotation = Quaternion.Lerp(transform.rotation, rot, Time.deltaTime * faceTargetSpeed);
+    }
+    void ExplodeOnDeath()
+    {
+
+        if (deathExplosionEffect)
+
+        {
+            GameObject explosion = Instantiate(deathExplosionEffect, transform.position, Quaternion.identity);
+            //Destroy(explosion, 1.5f);
+            Destroy(explosion, explosionDuration);
+            StartCoroutine(DestroyAfterDelay(explosion, explosionDuration));
+        }
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, explosionRadius);
+        foreach (Collider hit in hitColliders)
+        {
+            if (hit.CompareTag("Player"))
+            {
+                IDamage dmg = hit.GetComponent<IDamage>();
+                if (dmg != null)
+                    dmg.takeDamage(explosionDamage);
+            }
+        }
+    }
+
+    IEnumerator DestroyAfterDelay(GameObject obj, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        if (obj != null)
+        {
+            ParticleSystem ps = obj.GetComponent<ParticleSystem>();
+            if (ps != null)
+            {
+                ps.Stop();
+                yield return new WaitForSeconds(ps.main.duration);
+            }
+            Destroy(obj);
+            obj = null;
+        }
+    }
+    IEnumerator TrackObjectLifetime(GameObject obj)
+    {
+        while (obj != null)
+        {
+            yield return new WaitForSeconds(1);
+        }
+    }
+    void ThrowExplosive()
+    {
+        shootTimer = 0;
+        GameObject explosive = Instantiate(explosivePrefab, throwPoint.position, Quaternion.identity);
+        Rigidbody rb = explosive.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            Vector3 dir = (gamemanager.instance.player.transform.position - throwPoint.position).normalized;
+            rb.AddForce(dir * throwForce, ForceMode.Impulse);
+        }
+    }
+    void OnDestroy()
+    {
+        StopAllCoroutines();
     }
 }

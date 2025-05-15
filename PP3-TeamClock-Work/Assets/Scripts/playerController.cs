@@ -33,6 +33,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     [SerializeField] float rollDuration;
     [SerializeField] float rollCooldown;
 
+    [SerializeField] AudioSource aud;
 
     [SerializeField] AudioClip[] audJump;
     [Range(0, 1)][SerializeField] float audJumpVol;
@@ -47,7 +48,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     [Range((float)0.0, 10)][SerializeField] float iceSlideDecay;
 
     int jumpCount;
-    int HPOrig;
+    public int HPOrig;
     int gunListPos;
     int originalSpeed;
 
