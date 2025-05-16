@@ -13,6 +13,9 @@ public class gamemanager : MonoBehaviour
     [SerializeField] GameObject menuLose;
     [SerializeField] TMP_Text gameGoalCountText;
     [SerializeField] TMP_Text currencyText;
+    [SerializeField] AudioSource uiAudioSource;
+    [SerializeField] AudioClip openMenuSound;
+    [SerializeField] AudioClip closeMenuSound;
 
     [Header("Combat System")]
     public TMP_Text ammoCur, ammoMax;
@@ -64,6 +67,11 @@ public class gamemanager : MonoBehaviour
         Time.timeScale = 0;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+
+        if (uiAudioSource != null)
+        {
+            uiAudioSource.PlayOneShot(openMenuSound);
+        }
     }
     public void stateUnpause()
     {
@@ -73,6 +81,11 @@ public class gamemanager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         menuActive.SetActive(false);
         menuActive = null;
+
+        if (uiAudioSource != null)
+        {
+            uiAudioSource.PlayOneShot(closeMenuSound);
+        }
     }
     public void updateGameGoal(int amount, int cur)
     {
