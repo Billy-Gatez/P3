@@ -921,6 +921,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8209810469884259257}
     - target: {fileID: 90775215842261762, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
+      propertyPath: clickSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6a65a5b3084fded4b8b7ea423c0bd819, type: 3}
+    - target: {fileID: 90775215842261762, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 8209810469884259258}
@@ -928,6 +932,18 @@ PrefabInstance:
       propertyPath: playerScript
       value: 
       objectReference: {fileID: 2937626637556448248}
+    - target: {fileID: 90775215842261762, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
+      propertyPath: openMenuSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5bcad765722cb52449254cb9df0135c6, type: 3}
+    - target: {fileID: 90775215842261762, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
+      propertyPath: uiAudioSource
+      value: 
+      objectReference: {fileID: 8209810469884259258}
+    - target: {fileID: 90775215842261762, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
+      propertyPath: closeMenuSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5bcad765722cb52449254cb9df0135c6, type: 3}
     - target: {fileID: 90775215842261762, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: playerSpawnPos
       value: 

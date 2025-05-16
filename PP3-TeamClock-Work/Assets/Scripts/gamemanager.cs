@@ -13,9 +13,19 @@ public class gamemanager : MonoBehaviour
     [SerializeField] GameObject menuLose;
     [SerializeField] TMP_Text gameGoalCountText;
     [SerializeField] TMP_Text currencyText;
+
+    [Header("UI Audio & Effects")]
     [SerializeField] AudioSource uiAudioSource;
     [SerializeField] AudioClip openMenuSound;
     [SerializeField] AudioClip closeMenuSound;
+    [SerializeField] AudioClip clickSound;
+    [SerializeField] ParticleSystem winParticles;
+
+    [Header("Menu Backgrounds")]
+    [SerializeField] Image backgroundImage;
+    [SerializeField] Sprite pauseBackground;
+    [SerializeField] Sprite winBackground;
+    [SerializeField] Sprite loseBackground;
 
     [Header("Combat System")]
     public TMP_Text ammoCur, ammoMax;
@@ -53,6 +63,7 @@ public class gamemanager : MonoBehaviour
             {
                 statePause();
                 menuActive = menuPause;
+                setMenuBackground("pause");
                 menuActive.SetActive(true);
             }
             else if (menuActive == menuPause)
@@ -86,20 +97,32 @@ public class gamemanager : MonoBehaviour
         {
             uiAudioSource.PlayOneShot(closeMenuSound);
         }
+        if (menuActive != null)
+        {
+            menuActive.SetActive(false);
+            menuActive = null;
+        }
     }
     public void updateGameGoal(int amount, int cur)
     {
         gameGoalCount += amount;
         gameGoalCountText.text = gameGoalCount.ToString("F0");
-        //currencyText.text = currency.ToString("F0");
         currency += cur;
+        currencyText.text = currency.ToString("F0");
 
         if (gameGoalCount <= 0)
         {
             // You won!
             statePause();
             menuActive = menuWin;
+            setMenuBackground("win");
             menuActive.SetActive(true);
+
+            if (winParticles != null)
+            {
+                winParticles.Play();
+            }
+
         }
     }
     public void youlose()
@@ -107,11 +130,36 @@ public class gamemanager : MonoBehaviour
         // You lose!
         statePause();
         menuActive = menuLose;
+        setMenuBackground("lose");
         menuActive.SetActive(true);
     }
 
     internal void updateCurrency(int v)
     {
         throw new NotImplementedException();
+    }
+    public void playCLickSound()
+    {
+        if (uiAudioSource != null)
+        {
+            uiAudioSource.PlayOneShot(clickSound);
+        }
+
+    }
+    public void setMenuBackground(string menuType)
+    {
+        switch (menuType)
+        {
+            case "pause":
+                backgroundImage.sprite = pauseBackground;
+                break;
+            case "win":
+                backgroundImage.sprite = winBackground;
+                break;
+            case "lose":
+                backgroundImage.sprite = loseBackground;
+                break;
+
+        }
     }
 }
