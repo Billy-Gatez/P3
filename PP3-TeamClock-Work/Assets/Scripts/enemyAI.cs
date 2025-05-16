@@ -37,6 +37,10 @@ public class enemyAI : MonoBehaviour, IDamage
     [SerializeField] GameObject explosivePrefab;
     [SerializeField] GameObject deathExplosionEffect;
 
+    [Header("---Proximity Explosion---")]
+    [SerializeField] bool explodesOnProximity;
+    [SerializeField] float proximityExplosionRadius;
+
     [Header("---Audio---")]
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip explosionSound;
@@ -143,6 +147,10 @@ public class enemyAI : MonoBehaviour, IDamage
         {
             playerInRange = true;
             agent.stoppingDistance = 0;
+            if (explodesOnProximity && other.gameObject.layer == LayerMask.NameToLayer("ProximityTrigger"))
+            {
+                explodeOnProximity();
+            }
         }
     }
 
@@ -240,14 +248,41 @@ public class enemyAI : MonoBehaviour, IDamage
             obj = null;
         }
     }
-    IEnumerator TrackObjectLifetime(GameObject obj)
+    void explodeOnProximity()
     {
-        while (obj != null)
+        if (deathExplosionEffect)
         {
-            yield return new WaitForSeconds(1);
+            GameObject explosion = Instantiate(deathExplosionEffect, transform.position, Quaternion.identity);
+            Destroy(explosion, explosionDuration);
+            StartCoroutine(DestroyAfterDelay(explosion, explosionDuration));
         }
+
+        if (audioSource && explosionSound)
+        {
+            audioSource.PlayOneShot(explosionSound);
+            StartCoroutine(DestroyAudioSource(audioSource, explosionSound.length));
+        }
+
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, proximityExplosionRadius);
+        foreach (Collider hit in hitColliders)
+        {
+            if (hit.CompareTag("Player"))
+            {
+                IDamage dmg = hit.GetComponent<IDamage>();
+                if (dmg != null)
+                    dmg.takeDamage(explosionDamage);
+            }
+        }
+        IEnumerator TrackObjectLifetime(GameObject obj)
+        {
+            while (obj != null)
+            {
+                yield return new WaitForSeconds(1);
+            }
+        }
+        Destroy(gameObject);
     }
-    void ThrowExplosive()
+        void ThrowExplosive()
     {
         shootTimer = 0;
         GameObject explosive = Instantiate(explosivePrefab, throwPoint.position, Quaternion.identity);
