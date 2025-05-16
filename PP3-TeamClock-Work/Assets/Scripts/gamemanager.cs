@@ -2,13 +2,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
-//using static UnityEditor.PlayerSettings;
-//using System;
 
 public class gamemanager : MonoBehaviour
 {
     public static gamemanager instance;
-    [Header("---Components---")]
+    [Header("Menu Components")]
     [SerializeField] GameObject menuActive;
     [SerializeField] GameObject menuPause;
     [SerializeField] GameObject menuWin;
@@ -16,21 +14,20 @@ public class gamemanager : MonoBehaviour
     [SerializeField] TMP_Text gameGoalCountText;
     [SerializeField] TMP_Text currencyText;
 
-    [Header("---   ---")]
+    [Header("Combat System")]
     public TMP_Text ammoCur, ammoMax;
     public Image playerHPBar;
     public GameObject playerDamageScreen;
     public GameObject checkpointPopup;
 
-    [Header("---   ---")]
+    [Header("Player Components")]
     public GameObject playerSpawnPos;
     public GameObject player;
     public playerController playerScript;
 
+    [Header("Game States")]
     public bool isPaused;
-
     float timeScaleOrig;
-
     int gameGoalCount;
     public int currency;
 
@@ -41,7 +38,6 @@ public class gamemanager : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         playerScript = player.GetComponent<playerController>();
         playerSpawnPos = GameObject.FindWithTag("Player Spawn Pos");
-
         timeScaleOrig = Time.timeScale;
     }
 

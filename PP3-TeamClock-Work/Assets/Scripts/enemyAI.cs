@@ -37,6 +37,9 @@ public class enemyAI : MonoBehaviour, IDamage
     [SerializeField] GameObject explosivePrefab;
     [SerializeField] GameObject deathExplosionEffect;
 
+    [Header("---Audio---")]
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip explosionSound;
 
     bool playerInRange;
 
@@ -199,6 +202,12 @@ public class enemyAI : MonoBehaviour, IDamage
             Destroy(explosion, explosionDuration);
             StartCoroutine(DestroyAfterDelay(explosion, explosionDuration));
         }
+        if (audioSource && explosionSound)
+        {
+            audioSource.PlayOneShot(explosionSound);
+            StartCoroutine(DestroyAudioSource(audioSource, explosionSound.length));
+        }
+
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, explosionRadius);
         foreach (Collider hit in hitColliders)
         {
@@ -210,7 +219,11 @@ public class enemyAI : MonoBehaviour, IDamage
             }
         }
     }
-
+    IEnumerator DestroyAudioSource(AudioSource source, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Destroy(source.gameObject);
+    }
     IEnumerator DestroyAfterDelay(GameObject obj, float delay)
     {
         yield return new WaitForSeconds(delay);
