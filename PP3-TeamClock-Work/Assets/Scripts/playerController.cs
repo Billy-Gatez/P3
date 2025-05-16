@@ -252,6 +252,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
         {
             // You lose!!
             gamemanager.instance.youlose();
+            gamemanager.instance.updateCurrency(-9999);
         }
     }
 
