@@ -907,7 +907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3411895193326599103, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: m_text
-      value: Continue
+      value: NEXT
       objectReference: {fileID: 0}
     - target: {fileID: 3680671928866683652, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: m_AnchoredPosition.y
