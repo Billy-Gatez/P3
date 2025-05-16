@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using System.Collections;
 
 public class gamemanager : MonoBehaviour
 {
@@ -27,6 +28,22 @@ public class gamemanager : MonoBehaviour
     [SerializeField] Sprite winBackground;
     [SerializeField] Sprite loseBackground;
 
+    [Header("UI Styling")]
+    [SerializeField] TMP_FontAsset finalFont;
+    [SerializeField] Button[] menuButtons;
+    [SerializeField] Sprite normalSprite;
+    [SerializeField] Sprite highlightedSprite;
+    [SerializeField] Sprite pressedSprite;
+    [SerializeField] Sprite disableSprite;
+
+    [Header("Selection Icon")]
+    [SerializeField] Image selectionIcon;
+    [SerializeField] RectTransform[] menuItems;
+    int currentIndex = 0;
+
+    [Header("Screen Transitions")]
+    [SerializeField] CanvasGroup menuCanvasGroup;
+
     [Header("Combat System")]
     public TMP_Text ammoCur, ammoMax;
     public Image playerHPBar;
@@ -44,6 +61,8 @@ public class gamemanager : MonoBehaviour
     int gameGoalCount;
     public int currency;
 
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -52,6 +71,8 @@ public class gamemanager : MonoBehaviour
         playerScript = player.GetComponent<playerController>();
         playerSpawnPos = GameObject.FindWithTag("Player Spawn Pos");
         timeScaleOrig = Time.timeScale;
+
+        applyFinalUiStyles();
     }
 
     // Update is called once per frame
@@ -71,6 +92,7 @@ public class gamemanager : MonoBehaviour
                 stateUnpause();
             }
         }
+        handleMenuNavigation();
     }
     public void statePause()
     {
@@ -117,6 +139,7 @@ public class gamemanager : MonoBehaviour
             menuActive = menuWin;
             setMenuBackground("win");
             menuActive.SetActive(true);
+            fadeInMenu();
 
             if (winParticles != null)
             {
@@ -132,6 +155,8 @@ public class gamemanager : MonoBehaviour
         menuActive = menuLose;
         setMenuBackground("lose");
         menuActive.SetActive(true);
+        fadeInMenu();
+
     }
 
     internal void updateCurrency(int v)
@@ -161,5 +186,54 @@ public class gamemanager : MonoBehaviour
                 break;
 
         }
+    }
+    void applyFinalUiStyles()
+    {
+        foreach (var btn in menuButtons)
+        {
+            btn.image.sprite = normalSprite;
+            SpriteState state = new SpriteState
+            {
+                highlightedSprite = highlightedSprite,
+                pressedSprite = pressedSprite,
+                disabledSprite = disableSprite
+            };
+            btn.spriteState = state;
+        }
+        gameGoalCountText.font = finalFont;
+        currencyText.font = finalFont;
+        }
+        void handleMenuNavigation()
+        {
+            if (menuItems.Length == 0 || selectionIcon == null) return;
+
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                currentIndex = (currentIndex + 1) % menuItems.Length;
+                selectionIcon.rectTransform.position = menuItems[currentIndex].position;
+            }
+        else if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+          
+                currentIndex = (currentIndex - 1 + menuItems.Length) % menuItems.Length;
+                selectionIcon.rectTransform.position = menuItems[currentIndex].position;
+            }
+     
+    }
+    public void fadeInMenu()
+    {
+        StartCoroutine(FadeCanvasGroup(menuCanvasGroup, 0, 1, 0.5f));
+    }
+    IEnumerator FadeCanvasGroup(CanvasGroup cg, float start, float end, float duration)
+    {
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+
+            cg.alpha = Mathf.Lerp(start, end, elapsed / duration);
+            elapsed += Time.unscaledDeltaTime;
+            yield return null;
+        }
+        cg.alpha = end;
     }
 }
