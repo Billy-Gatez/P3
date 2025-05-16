@@ -1,3 +1,5 @@
+// Team Clockwork - Jeremy Cahill - Mark Bennett - George Carter - Ace Morris - Jacob Bragg - [Rod Moye - John O'Leske]
+
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -12,6 +14,9 @@ public class gamemanager : MonoBehaviour
     [SerializeField] GameObject menuLose;
     [SerializeField] TMP_Text gameGoalCountText;
     [SerializeField] public TMP_Text currencyText;
+
+    [SerializeField] private AudioSource audioSource; // Reference to the AudioSource
+    [SerializeField] private float volume = 1.0f; // Default volume level
 
     [Header("---   ---")]
     public TMP_Text ammoCur, ammoMax;
@@ -29,7 +34,7 @@ public class gamemanager : MonoBehaviour
     public bool isPaused;
 
     float timeScaleOrig;
-
+    private bool isUpdatingCurrency = false; // Flag to prevent multiple updates
     int gameGoalCount;
     public int currency;
 
@@ -39,6 +44,7 @@ public class gamemanager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         instance = this;
+
         player = GameObject.FindWithTag("Player");
         playerScript = player.GetComponent<playerController>();
         playerSpawnPos = GameObject.FindWithTag("Player Spawn Pos");
@@ -84,11 +90,21 @@ public class gamemanager : MonoBehaviour
     }
     public void updateGameGoal(int amount, int cur)
     {
+        Debug.Log($"Updating game goal. Amount: {amount}, Currency Change: {cur}");
+
+        // Update game goal count
         gameGoalCount += amount;
-        currency += cur;
+
+        // Only update currency if not already updating
+        if (!isUpdatingCurrency)
+        {
+            isUpdatingCurrency = true; // Set the flag to prevent further updates
+            currency += cur;
+            currencyText.text = currency.ToString("F0");
+            isUpdatingCurrency = false; // Reset the flag after updating
+        }
+
         gameGoalCountText.text = gameGoalCount.ToString("F0");
-        currencyText.text = currency.ToString("F0");
- 
 
         if (gameGoalCount <= 0)
         {
@@ -98,14 +114,24 @@ public class gamemanager : MonoBehaviour
             menuActive.SetActive(true);
         }
     }
+
     public void updateCurrency(int amount)
     {
-        currency += amount;
-        currencyText.text = currency.ToString("F0");
-        if (currency < 0)
+        Debug.Log($"Updating currency. Current: {currency}, Change: {amount}");
+
+        // Only update currency if not already updating
+        if (!isUpdatingCurrency)
         {
-            currency = 0;
-            currencyText.text = "XP: " + currency.ToString("F0");
+            isUpdatingCurrency = true; // Set the flag to prevent further updates
+            currency += amount;
+            currencyText.text = currency.ToString("F0");
+            if (currency < 0)
+            {
+                currency = 0;
+                currencyText.text = " " + currency.ToString("F0");
+            }
+            Debug.Log($"New currency value: {currency}");
+            isUpdatingCurrency = false; // Reset the flag after updating
         }
     }
     public void youlose()
@@ -114,5 +140,16 @@ public class gamemanager : MonoBehaviour
         statePause();
         menuActive = menuLose;
         menuActive.SetActive(true);
+    }
+
+    public void SetVolume(float newVolume)
+    {
+        volume = newVolume;
+        audioSource.volume = volume; // Set the volume of the AudioSource
+    }
+
+    public float GetVolume()
+    {
+        return volume; // Return the current volume level
     }
 }

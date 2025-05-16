@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4917316729776031844}
   - component: {fileID: 1361587148418216288}
   - component: {fileID: 157357897954022885}
-  - component: {fileID: 1358314509800669075}
   m_Layer: 0
   m_Name: Lava_SMALL
   m_TagString: Untagged
@@ -85,7 +84,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6042eaad9823b6f488f160b2bce47ac7, type: 2}
+  - {fileID: 2100000, guid: c9372114fe2e26d4d958533539035ff9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -128,17 +127,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1358314509800669075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8541781275504776433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3d28cb150ad86f4a8100312a4aea7a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uvAnimationRate: {x: 0.06, y: 0}
-  textureName: _LavaTex

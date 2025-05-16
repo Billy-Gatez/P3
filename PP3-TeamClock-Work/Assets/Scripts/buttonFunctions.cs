@@ -27,5 +27,31 @@ public class buttonFunctions : MonoBehaviour
         gamemanager.instance.stateUnpause();
     }
 
+    public void continue2()
+    {
+        SceneManager.LoadScene("Level-2");
+        gamemanager.instance.stateUnpause();
+
+
+    }
+
+    public void continue3()
+    {
+        SceneManager.LoadScene("Level-3");
+        gamemanager.instance.stateUnpause();
+    }
+
+    public void continue4()
+    {
+        SceneManager.LoadScene("Level-4");
+        gamemanager.instance.stateUnpause();
+    }
+
+    public void continue5()
+    {
+        SceneManager.LoadScene("Level-5");
+        gamemanager.instance.stateUnpause();
+    }
+
 
 }

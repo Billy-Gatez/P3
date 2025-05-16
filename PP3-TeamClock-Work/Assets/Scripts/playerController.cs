@@ -18,6 +18,11 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     [SerializeField] int crouchSpeed;
     [SerializeField] float crouchHeight;
 
+    public string playerClass; // To store the selected class name
+    public int classHealth; // To store health based on class
+    public int classSpeed; // To store speed based on class
+    public string startingItem; // To store the starting item
+
     [Header("---Guns---")]
     [SerializeField] List<gunStats> gunList = new List<gunStats>();
     [SerializeField] GameObject gunModel;
@@ -83,6 +88,17 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
         originalHeight = controller.height;
         originalSpeed = speed;
         //updatePlayerUI();
+    }
+
+    public void SetClassStats(string className, int health, int speed, string item)
+    {
+        playerClass = className;
+        classHealth = health;
+        classSpeed = speed;
+        startingItem = item;
+        HP = classHealth; // Set HP to the class's health
+        this.speed = classSpeed; // Set speed to the class's speed
+        updatePlayerUI();
     }
 
     IEnumerator PlayStep()
@@ -236,6 +252,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
         {
             // You lose!!
             gamemanager.instance.youlose();
+            gamemanager.instance.updateCurrency(-9999);
         }
     }
 
@@ -319,7 +336,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     }
 
     /// <summary>
-    /// EveryThing Below this line was add-on's
+    /// EveryThing Below this line are add-on's
     /// </summary>
     void crouch()
     {
