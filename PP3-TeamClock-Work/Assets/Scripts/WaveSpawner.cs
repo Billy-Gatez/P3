@@ -2,15 +2,17 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour
 {
+    [Header("Wave Setup")]
     [Range(30, 120)][SerializeField] float waveTimerLength; // timer minimum of 30 secs, max of 2 mins
-    int spawnDowntime = 0; //similar to spawner timeBetweenSpawn variable
-
-    public Transform[] spawnPos;
     public Wave[] wave;
-
-    public float spawnTimer;
     private int currentWaveIndex = 0;
     private bool waitingForWave;
+
+    [Header("Spawn Setup")]
+    public Transform[] spawnPos;
+    public float spawnTimer;
+    int spawnDowntime = 0; //similar to spawner timeBetweenSpawn variable
+
 
     private void Start()
     {

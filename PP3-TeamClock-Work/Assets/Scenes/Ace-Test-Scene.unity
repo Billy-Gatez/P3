@@ -331,8 +331,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveTimerLength: 30
-  spawnPos:
-  - {fileID: 546460570}
   wave:
   - Enemies:
     - {fileID: 3110359180099958138, guid: f1a9c5cd87c67bf40848ba46a5c819da, type: 3}
@@ -340,6 +338,8 @@ MonoBehaviour:
     - {fileID: 8470380907715819549, guid: 4a24992f8d2a2e54ca04ea40f70ba4a0, type: 3}
   - Enemies:
     - {fileID: 9192095582549565863, guid: 93ffda43b39a23849a217e9e408e6cf7, type: 3}
+  spawnPos:
+  - {fileID: 546460570}
   spawnTimer: 0
 --- !u!1 &396493429
 GameObject:
