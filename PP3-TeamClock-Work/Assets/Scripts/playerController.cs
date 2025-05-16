@@ -119,6 +119,11 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
         {
             movement();
 
+            if (!isPlayingStep && controller.isGrounded && moveDir.magnitude > 0.1f)
+            {
+                StartCoroutine(PlayStep());
+            }
+
         }
 
         sprint();

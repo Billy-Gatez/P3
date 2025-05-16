@@ -44,6 +44,18 @@ public class gamemanager : MonoBehaviour
     [Header("Screen Transitions")]
     [SerializeField] CanvasGroup menuCanvasGroup;
 
+    [Header("Combat Mechanics")]
+    [Range(0, 100)][SerializeField] int playerDamage;
+    [Range(0, 100)][SerializeField] float attackCooldown;
+    [Range(0, 100)][SerializeField] float shootRange;
+    [Range(0, 100)][SerializeField] float meleeRange;
+    [SerializeField] LayerMask shootableLayers;
+    [SerializeField] LayerMask meleeLayers;
+    [SerializeField] Transform shootOrigin;
+    [SerializeField] AudioClip shootSound;
+    [SerializeField] AudioClip meleeSound;
+    [SerializeField] Animator playerAnimator;
+
     [Header("Combat System")]
     public TMP_Text ammoCur, ammoMax;
     public Image playerHPBar;
@@ -61,8 +73,7 @@ public class gamemanager : MonoBehaviour
     int gameGoalCount;
     public int currency;
 
-
-
+    float lastAttackTime;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -93,6 +104,19 @@ public class gamemanager : MonoBehaviour
             }
         }
         handleMenuNavigation();
+
+        if (!isPaused)
+        {
+            if (Input.GetButtonDown("Fire1") && Time.time > lastAttackTime + attackCooldown)
+            {
+                shoot();
+            }
+            else if (Input.GetButtonDown("Fire2") && Time.time > lastAttackTime + attackCooldown)
+            {
+                meleeAttack();
+                lastAttackTime = Time.time;
+            }
+         }
     }
     public void statePause()
     {
@@ -236,4 +260,63 @@ public class gamemanager : MonoBehaviour
         }
         cg.alpha = end;
     }
-}
+    void shoot()
+    {
+
+        if (shootOrigin == null)
+        {
+            Debug.LogError("Shoot Origin is not assigned ");
+            return;
+        }
+
+        lastAttackTime = Time.time;
+       if (playerAnimator != null) playerAnimator.SetTrigger("Shoot");
+       if (uiAudioSource != null && shootSound != null) uiAudioSource.PlayOneShot(shootSound);
+
+            RaycastHit hit;
+            if (Physics.Raycast(shootOrigin.position, shootOrigin.forward, out hit, shootRange, shootableLayers))
+                {
+                Debug.Log("Shot hit " + hit.collider.name);
+                if (hit.collider.CompareTag("Enemy"))
+                {
+
+                enemyAI enemy = hit.collider.GetComponent<enemyAI>();
+                if (enemy != null)
+                {
+                    enemy.takeDamage(playerDamage);
+                }
+
+            }
+        }
+        }
+        void meleeAttack()
+        {
+            lastAttackTime = Time.time;
+            if (playerAnimator != null) playerAnimator.SetTrigger("Melee");
+            if (uiAudioSource != null && meleeSound != null) uiAudioSource.PlayOneShot(meleeSound);
+
+            Collider[] hits = Physics.OverlapSphere(player.transform.position + player.transform.forward * 1.5f, meleeRange, meleeLayers);
+            foreach (var hit in hits)
+            {
+                if (hit.CompareTag("Enemy"))
+                {
+                    Debug.Log("Melee hit " + hit.name);
+
+                enemyAI enemy = hit.GetComponent<enemyAI>();
+                if (enemy != null)
+                {
+                    enemy.takeDamage(playerDamage);
+                }
+
+            }
+        }
+        }
+        void ondrawGizmoSelected()
+        {
+            if (player != null)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawWireSphere(player.transform.position + player.transform.forward * 1.5f, meleeRange);
+            }
+        }
+    }
