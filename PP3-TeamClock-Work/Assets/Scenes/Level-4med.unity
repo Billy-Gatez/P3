@@ -3060,6 +3060,10 @@ PrefabInstance:
       propertyPath: 'teleportDestinations.Array.data[0]'
       value: 
       objectReference: {fileID: 1750462082}
+    - target: {fileID: 4478961100432838748, guid: 33ece0229e882de40990736246973e19, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5717598213069254658, guid: 33ece0229e882de40990736246973e19, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3103,6 +3107,18 @@ PrefabInstance:
     - target: {fileID: 7516009944205719671, guid: 33ece0229e882de40990736246973e19, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917268801125511013, guid: 33ece0229e882de40990736246973e19, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0013097138
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917268801125511013, guid: 33ece0229e882de40990736246973e19, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.12999439
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917268801125511013, guid: 33ece0229e882de40990736246973e19, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.4065179
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
