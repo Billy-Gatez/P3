@@ -1,4 +1,4 @@
-﻿#define TMP_PRESENT
+#define TMP_PRESENT
 
 using System;
 using System.Text;
@@ -8366,6 +8366,11 @@ namespace TMPro
             #endregion
 
             return false;
+        }
+
+        public static implicit operator TMP_Text(Text v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 public class gamemanager : MonoBehaviour
 {
@@ -56,6 +57,16 @@ public class gamemanager : MonoBehaviour
     [SerializeField] AudioClip meleeSound;
     [SerializeField] Animator playerAnimator;
 
+    [Header("Resource Management")]
+    [Range(0, 1000)][SerializeField] int maxResourceAmount;
+    public Dictionary<string, int> resources = new Dictionary<string, int>();
+    public TMP_Text resourceDisplayText;
+
+    [Header("Inventory System")]
+    public List<string> inventory = new List<string>();
+    public TMP_Text inventoryText;
+
+
     [Header("Combat System")]
     public TMP_Text ammoCur, ammoMax;
     public Image playerHPBar;
@@ -77,6 +88,7 @@ public class gamemanager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+
         instance = this;
         player = GameObject.FindWithTag("Player");
         playerScript = player.GetComponent<playerController>();
@@ -84,6 +96,31 @@ public class gamemanager : MonoBehaviour
         timeScaleOrig = Time.timeScale;
 
         applyFinalUiStyles();
+
+        if (resourceDisplayText == null)
+            resourceDisplayText = GameObject.Find("ResourceDisplayText")?.GetComponent<Text>();
+
+        if (resourceDisplayText == null)
+            resourceDisplayText = GameObject.Find("ResourceDisplayText")?.GetComponent<Text>();
+
+
+        resources = new Dictionary<string, int> {
+        { "Scrap Metal", 0 },
+        { "Gears", 0 },
+        { "Blueprints", 0 },
+        { "Data Logs", 0 },
+        { "Energy Cell", 0 },
+        { "Medkit", 0 },
+        { "Adrenaline Shot", 0 },
+        { "Nanobot", 0 },
+        { "Hacking Tool", 0 },
+        { "Moral Choice Tokens", 0 },
+        { "Gear Core Fragments", 0 }
+      };
+
+      updateResourceUI();
+
+
     }
 
     // Update is called once per frame
@@ -183,9 +220,20 @@ public class gamemanager : MonoBehaviour
 
     }
 
-    internal void updateCurrency(int v)
+    public int getResourceCost(string itemType)
     {
-        throw new NotImplementedException();
+        int baseCost = 10;
+        int difficultyMultiplier = Mathf.FloorToInt(Time.timeSinceLevelLoad / 60);
+
+
+        return baseCost + difficultyMultiplier * 5;
+    }
+    internal void updateCurrency(int amount)
+    {
+
+        currency += amount;
+        currencyText.text = currency.ToString("F0");
+
     }
     public void playCLickSound()
     {
@@ -319,4 +367,35 @@ public class gamemanager : MonoBehaviour
                 Gizmos.DrawWireSphere(player.transform.position + player.transform.forward * 1.5f, meleeRange);
             }
         }
+
+    public void collectResource(string type, int amount)
+    {
+        if (!resources.ContainsKey(type)) return;
+
+        resources[type] = Mathf.Min(resources[type] + amount, maxResourceAmount);
+        updateResourceUI();
+        playResourceFeedback(type);
     }
+
+    void updateResourceUI()
+    {
+        resourceDisplayText.text = $"Scrap Metal: {resources["Scrap Metal"]} | Gears: {resources["Gears"]} | Blueprints: {resources["Blueprints"]} | Data Logs: {resources["Data Logs"]} | Energy Cell: {resources["Energy Cell"]} | Medkit: {resources["Medkit"]} | Adrenaline Shot: {resources["Adrenaline Shot"]} | Nanobot: {resources["Nanobot"]} | Hacking Tool: {resources["Hacking Tool"]} | Moral Choice Tokens: {resources["Moral Choice Tokens"]} | Gear Core Fragments: {resources["Gear Core Fragments"]}";
+    }
+
+    void playResourceFeedback(string type)
+    {
+        Debug.Log($"Collected {type}!");
+    }
+
+    public void addItemToInventory(string itemName)
+    {
+        inventory.Add(itemName);
+        updateInventoryUI();
+    }
+
+    void updateInventoryUI()
+    {
+        inventoryText.text = "Inventory:\n" + string.Join("\n", inventory);
+    }
+
+}

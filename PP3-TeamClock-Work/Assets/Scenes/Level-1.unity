@@ -921,6 +921,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8209810469884259257}
     - target: {fileID: 90775215842261762, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
+      propertyPath: isPaused
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 90775215842261762, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: finalFont
       value: 
       objectReference: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -956,6 +960,10 @@ PrefabInstance:
       propertyPath: playerSpawnPos
       value: 
       objectReference: {fileID: 916108817121906463}
+    - target: {fileID: 90775215842261762, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
+      propertyPath: maxResourceAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 90775215842261762, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: meleeLayers.m_Bits
       value: 0

@@ -253,6 +253,7 @@ public class enemyAI : MonoBehaviour, IDamage
         if (deathExplosionEffect)
         {
             GameObject explosion = Instantiate(deathExplosionEffect, transform.position, Quaternion.identity);
+            StartCoroutine(TrackObjectLifetime(explosion));
             Destroy(explosion, explosionDuration);
             StartCoroutine(DestroyAfterDelay(explosion, explosionDuration));
         }
@@ -272,6 +273,7 @@ public class enemyAI : MonoBehaviour, IDamage
                 if (dmg != null)
                     dmg.takeDamage(explosionDamage);
             }
+
         }
         IEnumerator TrackObjectLifetime(GameObject obj)
         {
