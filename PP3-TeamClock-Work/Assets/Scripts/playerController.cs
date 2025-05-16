@@ -55,6 +55,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     Vector3 moveDir;
     Vector3 playerVel;
 
+    bool isInfected;
     bool isSprinting;
     bool isCrouching;
     bool isDodging;
@@ -65,7 +66,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     float rollTimer;
     float rollCooldownTimer;
 
-
+    
     private bool canTeleport = true;
     private Dictionary<string, Vector3> exitDirections = new Dictionary<string, Vector3>
     {

@@ -12,8 +12,10 @@ public class gamemanager : MonoBehaviour
     [SerializeField] GameObject menuPause;
     [SerializeField] GameObject menuWin;
     [SerializeField] GameObject menuLose;
-    [SerializeField] TMP_Text gameGoalCountText;
+    [SerializeField] public TMP_Text gameGoalCountText; // spawner needed access to goal count for wave mechanics, thought it would be safer to give it this than making the actual goal count itself public.
     [SerializeField] public TMP_Text currencyText;
+    [SerializeField] TMP_Text waveCountText; 
+    [SerializeField] public TMP_Text waveTimerPopupTxt; //giving wave manager access to change this.
 
     [SerializeField] private AudioSource audioSource; // Reference to the AudioSource
     [SerializeField] private float volume = 1.0f; // Default volume level
@@ -21,8 +23,10 @@ public class gamemanager : MonoBehaviour
     [Header("---   ---")]
     public TMP_Text ammoCur, ammoMax;
     public Image playerHPBar;
+    public Image playerXPBar;
     public GameObject playerDamageScreen;
     public GameObject checkpointPopup;
+    public GameObject waveTimerPopup;
 
 
     [Header("---   ---")]
@@ -31,11 +35,13 @@ public class gamemanager : MonoBehaviour
     public playerController playerScript;
     public GameObject miniMapIcon;
 
+
     public bool isPaused;
 
     float timeScaleOrig;
     private bool isUpdatingCurrency = false; // Flag to prevent multiple updates
     int gameGoalCount;
+    [Range(0,10)][SerializeField] public int waveCount;
     public int currency;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -50,6 +56,9 @@ public class gamemanager : MonoBehaviour
         playerSpawnPos = GameObject.FindWithTag("Player Spawn Pos");
 
         timeScaleOrig = Time.timeScale;
+        playerXPBar.fillAmount = currency / 500f;
+        waveCountText.text = waveCount.ToString("F0");
+
     }
 
     // Update is called once per frame
@@ -67,6 +76,10 @@ public class gamemanager : MonoBehaviour
             {
                 stateUnpause();
             }
+        }
+        if(waveCountText.text != waveCount.ToString("F0"))
+        {
+            waveCountText.text = waveCount.ToString("F0");
         }
         Vector3 newPosition = player.transform.position;
         newPosition.y = miniMapIcon.transform.position.y;
@@ -101,17 +114,15 @@ public class gamemanager : MonoBehaviour
             isUpdatingCurrency = true; // Set the flag to prevent further updates
             currency += cur;
             currencyText.text = currency.ToString("F0");
+            playerXPBar.fillAmount = currency / 500f;
             isUpdatingCurrency = false; // Reset the flag after updating
         }
 
         gameGoalCountText.text = gameGoalCount.ToString("F0");
 
-        if (gameGoalCount <= 0)
+        if (gameGoalCount <= 0 && waveCount == 0)
         {
-            // You won!
-            statePause();
-            menuActive = menuWin;
-            menuActive.SetActive(true);
+            youwin();
         }
     }
 
@@ -131,6 +142,7 @@ public class gamemanager : MonoBehaviour
                 currencyText.text = " " + currency.ToString("F0");
             }
             Debug.Log($"New currency value: {currency}");
+            playerXPBar.fillAmount = currency / 500f;
             isUpdatingCurrency = false; // Reset the flag after updating
         }
     }
@@ -139,6 +151,14 @@ public class gamemanager : MonoBehaviour
         // You lose!
         statePause();
         menuActive = menuLose;
+        menuActive.SetActive(true);
+    }
+
+    public void youwin()
+    {
+        // You won!
+        statePause();
+        menuActive = menuWin;
         menuActive.SetActive(true);
     }
 

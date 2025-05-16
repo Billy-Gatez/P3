@@ -6,7 +6,6 @@ public class spawner : MonoBehaviour
     [SerializeField] int numToSpawn;
     [SerializeField] int timeBetweenSpawn;
     [SerializeField] Transform[] spawnPos;
-
     float spawnTimer;
     int spawnCount;
     bool startSpawning;
@@ -32,7 +31,7 @@ public class spawner : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             startSpawning = true;
         }
