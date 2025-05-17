@@ -422,6 +422,7 @@
 "Assets/Scripts/MainMenuManager.cs"
 "Assets/Scripts/pickup.cs"
 "Assets/Scripts/playerController.cs"
+"Assets/Scripts/resource.cs"
 "Assets/Scripts/spawner.cs"
 "Assets/Scripts/Weapon.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"

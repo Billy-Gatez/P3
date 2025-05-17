@@ -59,6 +59,13 @@ public class gamemanager : MonoBehaviour
 
     [Header("Resource Management")]
     [Range(0, 1000)][SerializeField] int maxResourceAmount;
+
+
+    [Header("Dialogue System")]
+    [SerializeField] GameObject dialoguePanel;
+    [SerializeField] TMP_Text dialogueText;
+    [SerializeField] Button[] choiceButtons;
+
     public Dictionary<string, int> resources = new Dictionary<string, int>();
     public TMP_Text resourceDisplayText;
 
@@ -85,6 +92,10 @@ public class gamemanager : MonoBehaviour
     public int currency;
 
     float lastAttackTime;
+    public enum Morality { Neutral, Benevolent, Malevolent }
+    public Morality playerMorality = Morality.Neutral;
+    public int moralPoints = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -97,25 +108,23 @@ public class gamemanager : MonoBehaviour
 
         applyFinalUiStyles();
 
-        if (resourceDisplayText == null)
-            resourceDisplayText = GameObject.Find("ResourceDisplayText")?.GetComponent<Text>();
+    //    if (resourceDisplayText == null)
+    //    {
+    //        GameObject obj = GameObject.Find("ResourceDisplayText");
+    //        if (obj != null)
+    //            {
+    //                resourceDisplayText = obj.GetComponent<TMP_Text>();
+    //            }
+    //else
+    //            {
+    //                Debug.LogError("ResourceDisplayText object NOT found in the scene.");
+    //            }
+    //        }
 
-        if (resourceDisplayText == null)
-            resourceDisplayText = GameObject.Find("ResourceDisplayText")?.GetComponent<Text>();
-
-
-        resources = new Dictionary<string, int> {
-        { "Scrap Metal", 0 },
-        { "Gears", 0 },
-        { "Blueprints", 0 },
-        { "Data Logs", 0 },
-        { "Energy Cell", 0 },
-        { "Medkit", 0 },
-        { "Adrenaline Shot", 0 },
-        { "Nanobot", 0 },
-        { "Hacking Tool", 0 },
-        { "Moral Choice Tokens", 0 },
-        { "Gear Core Fragments", 0 }
+            resources = new Dictionary<string, int> {
+        { "Scrap Metal", 0 }, { "Gears", 0 }, { "Blueprints", 0 }, { "Data Logs", 0 },
+        { "Energy Cell", 0 }, { "Medkit", 0 }, { "Adrenaline Shot", 0 }, { "Nanobot", 0 },
+        { "Hacking Tool", 0 }, { "Moral Choice Tokens", 0 }, { "Gear Core Fragments", 0 }
       };
 
       updateResourceUI();
@@ -155,6 +164,35 @@ public class gamemanager : MonoBehaviour
             }
          }
     }
+    public void AdjustMorality(int amount)
+    {
+        moralPoints += amount;
+        playerMorality = moralPoints >= 10 ? Morality.Benevolent : moralPoints <= -10 ? Morality.Malevolent : Morality.Neutral;
+        playMoralChoiceFeedback(playerMorality);
+    }
+    void playMoralChoiceFeedback(Morality state)
+    {
+        Debug.Log(state == Morality.Benevolent ? "Your choices shape a better future." :
+                  state == Morality.Malevolent ? "Your dark presence twists the world." :
+                  "You remain balanced... but will that last?");
+    }
+    public void DisplayDialogue(string message, string[] options, Action<int> choiceCallback)
+    {
+        dialoguePanel.SetActive(true);
+        dialogueText.text = message;
+
+        for (int i = 0; i < choiceButtons.Length; i++)
+        {
+            choiceButtons[i].gameObject.SetActive(i < options.Length);
+            if (i < options.Length)
+            {
+                choiceButtons[i].GetComponentInChildren<TMP_Text>().text = options[i];
+                int choiceIndex = i;
+                choiceButtons[i].onClick.AddListener(() => { dialoguePanel.SetActive(false); choiceCallback.Invoke(choiceIndex); });
+            }
+        }
+    }
+
     public void statePause()
     {
         isPaused = !isPaused;
@@ -379,7 +417,12 @@ public class gamemanager : MonoBehaviour
 
     void updateResourceUI()
     {
-        resourceDisplayText.text = $"Scrap Metal: {resources["Scrap Metal"]} | Gears: {resources["Gears"]} | Blueprints: {resources["Blueprints"]} | Data Logs: {resources["Data Logs"]} | Energy Cell: {resources["Energy Cell"]} | Medkit: {resources["Medkit"]} | Adrenaline Shot: {resources["Adrenaline Shot"]} | Nanobot: {resources["Nanobot"]} | Hacking Tool: {resources["Hacking Tool"]} | Moral Choice Tokens: {resources["Moral Choice Tokens"]} | Gear Core Fragments: {resources["Gear Core Fragments"]}";
+        if (resourceDisplayText == null)
+        { 
+            Debug.LogError("resourceDisplayText is NULL—Ensure it is assigned in Inspector.");
+        return;
+    }
+    resourceDisplayText.text = $"Scrap Metal: {resources["Scrap Metal"]} | Gears: {resources["Gears"]} | Blueprints: {resources["Blueprints"]} | Data Logs: {resources["Data Logs"]} | Energy Cell: {resources["Energy Cell"]} | Medkit: {resources["Medkit"]} | Adrenaline Shot: {resources["Adrenaline Shot"]} | Nanobot: {resources["Nanobot"]} | Hacking Tool: {resources["Hacking Tool"]} | Moral Choice Tokens: {resources["Moral Choice Tokens"]} | Gear Core Fragments: {resources["Gear Core Fragments"]}";
     }
 
     void playResourceFeedback(string type)
