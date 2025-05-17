@@ -15,8 +15,6 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     [Range(5, 20)][SerializeField] int jumpSpeed;
     [Range(1, 3)][SerializeField] int jumpMax;
     [Range(15, 45)][SerializeField] int gravity;
-    [SerializeField] int crouchSpeed;
-    [SerializeField] float crouchHeight;
 
     [Header("---Guns---")]
     [SerializeField] List<gunStats> gunList = new List<gunStats>();
@@ -43,6 +41,16 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     [Range(0, 1)][SerializeField] float audStepsVol;
 
     [SerializeField] Transform[] teleportDestinations;
+
+    [Header("---Couch & Stealth---")]
+    [SerializeField] int crouchSpeed;
+    [SerializeField] float crouchHeight;
+    [Range(0, 10)][SerializeField] float stealthVisilityReduction;
+    [Range(0, 10)][SerializeField] float normalVisibility;
+    [Range(0, 10)][SerializeField] float stealthStepVolume;
+    [Range(0, 10)][SerializeField] float normalStepVolume;
+    [Range(0, 10)][SerializeField] float stealthSpeedMultiplier;
+    [SerializeField] AudioClip stealthHeartbeat;
 
     [Range((float)0.00, 10)][SerializeField] float iceSlideFriction;
     [Range((float)0.0, 10)][SerializeField] float iceSlideDecay;
@@ -81,6 +89,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
          { "TeleportSphere3", Vector3.left },
          { "TeleportSphere4", Vector3.back }
     };
+    private float stealthVisibilityReduction;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -360,17 +369,31 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
             isCrouching = true;
             controller.height = crouchHeight;
             speed = crouchSpeed;
+            adjustStealthMechanics();
         }
         else if (Input.GetButtonUp("Crouch"))
         {
             isCrouching = false;
             controller.height = originalHeight;
             speed = originalSpeed;
+            resetStealthMechanics();
         }
 
     }
-
-    void dodge()
+    void adjustStealthMechanics()
+    {
+        gameObject.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f, stealthVisibilityReduction);
+        audStepsVol = stealthStepVolume;
+        speed = (int)(originalSpeed * stealthSpeedMultiplier);
+        aud.PlayOneShot(stealthHeartbeat, 0.5f);
+    }
+    void resetStealthMechanics()
+    {
+        gameObject.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f, normalVisibility);
+        audStepsVol = normalStepVolume;
+        speed = originalSpeed;
+    }
+        void dodge()
     {
         if (Input.GetButtonDown("Dodge") && dodgeCooldownTimer >= dodgeCooldown)
         {
