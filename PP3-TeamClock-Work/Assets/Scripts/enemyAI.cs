@@ -33,7 +33,6 @@ public class enemyAI : MonoBehaviour, IDamage
     [SerializeField] bool shouldSplitOnDeath;
 
     bool playerInRange;
-
     float shootTimer;
     float roamTimer;
     float angleToPlayer;
