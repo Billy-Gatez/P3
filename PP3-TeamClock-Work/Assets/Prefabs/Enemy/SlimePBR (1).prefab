@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 1294452124593825838}
   - component: {fileID: -3885799330244519631}
   - component: {fileID: 8405892040108800068}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SlimePBR (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ MonoBehaviour:
   agent: {fileID: 1294452124593825838}
   anim: {fileID: 8981927032093761318}
   headPos: {fileID: 6745230589537552938}
-  XP: 700
+  XP: 200
   HP: 5
   faceTargetSpeed: 50
   FOV: 360
@@ -343,7 +343,7 @@ MonoBehaviour:
   shootPos: {fileID: 275910919134562214}
   bullet: {fileID: 1219876387760884909, guid: 9b67e5706635b9f41ad85238f984ea7f, type: 3}
   shootFOV: 360
-  shootRate: 0.5
+  shootRate: 1.25
   smallerEnemyPrefab: {fileID: 6917308744708100684}
   numberToSpawnOnDeath: 0
   spawnRadius: 0
@@ -410,7 +410,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 1
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7750212924253663858
 GameObject:
