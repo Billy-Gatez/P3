@@ -52,8 +52,16 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     [Range(0, 10)][SerializeField] float stealthSpeedMultiplier;
     [SerializeField] AudioClip stealthHeartbeat;
 
+    [Header("---Ice---")]
     [Range((float)0.00, 10)][SerializeField] float iceSlideFriction;
     [Range((float)0.0, 10)][SerializeField] float iceSlideDecay;
+
+    [Header("---Snow---")]
+    [Range((float)0.00, 10)][SerializeField] float snowyTerrainSpeedMultiplier;
+    [Range((float)0.00, 10)][SerializeField] float slipEffectDuration;
+    [Range((float)0.00, 10)][SerializeField] float slipIntensity;
+    [SerializeField] AudioClip slipSound;
+    [SerializeField] ParticleSystem snowEffect;
 
     int jumpCount;
     public int HPOrig;
@@ -79,6 +87,9 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
 
     private bool isOnIce = false;
     private Vector3 iceSlideVelocity = Vector3.zero;
+
+    private bool isOnSnow = false;
+    private float slipTimer = 0f;
 
 
     private bool canTeleport = true;
@@ -163,7 +174,23 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
 
         Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
 
+        if (isOnSnow)
+        {
+            slipTimer += Time.deltaTime;
 
+            // Reduce movement speed
+            speed = (int)(originalSpeed * snowyTerrainSpeedMultiplier);
+
+            // Apply sliding effect
+            moveDir += new Vector3(Random.Range(-slipIntensity, slipIntensity), 0, Random.Range(-slipIntensity, slipIntensity)) * Time.deltaTime;
+
+            if (slipTimer >= slipEffectDuration)
+            {
+                isOnSnow = false;
+                slipTimer = 0f;
+                speed = originalSpeed;
+            }
+        }
     }
     void movement()
     {
@@ -262,7 +289,15 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
             {
                 dmg.takeDamage(shootDamage);
             }
-        }
+            if (isOnIce)
+            {
+                shootTimer += Time.deltaTime * 1.5f;
+            }
+            if (isOnSnow)
+            {
+                shootTimer += Time.deltaTime * 1.5f;
+            }
+         }
     }
 
     public void takeDamage(int amount)
@@ -454,6 +489,14 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
 
             Debug.Log("Player is now on ice: " + other.gameObject.name);
         }
+        if (other.CompareTag("Snow"))
+        {
+            isOnSnow = true;
+            aud.PlayOneShot(slipSound, 0.8f);
+            snowEffect.Play();
+
+            Debug.Log("Player is slipping on snow!");
+        }
     }
 
     void OnTriggerExit(Collider other)
@@ -464,7 +507,12 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
             iceSlideVelocity = Vector3.zero;
             Debug.Log("Player exited ice: " + other.gameObject.name);
         }
-
+        if (other.CompareTag("Snow"))
+        {
+            isOnSnow = false;
+            speed = originalSpeed;
+            Debug.Log("Player recovered from snowy terrain.");
+        }
     }
     IEnumerator TeleportPlayer(string teleportSphereTag)
     {

@@ -8,6 +8,7 @@ TagManager:
   - TeleportSphere
   - Mini Camera
   - Ice
+  - Snow
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - MiniMap
   - Ice
   - ProximityTrigger
-  - 
+  - Snow
   - 
   - 
   - 

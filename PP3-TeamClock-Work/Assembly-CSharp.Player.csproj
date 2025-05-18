@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\IDamage.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Unity Store DL\Hits Effects FREE\Scene Demo\Script\Prefab Manager.cs" />
+    <Compile Include="Assets\Scripts\enemyHealthBar.cs" />
     <Compile Include="Assets\Scripts\pickup.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Scripts\Ipickup.cs" />

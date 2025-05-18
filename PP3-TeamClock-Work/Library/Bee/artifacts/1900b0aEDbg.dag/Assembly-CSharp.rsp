@@ -413,6 +413,7 @@
 "Assets/Scripts/damage.cs"
 "Assets/Scripts/Door.cs"
 "Assets/Scripts/enemyAI.cs"
+"Assets/Scripts/enemyHealthBar.cs"
 "Assets/Scripts/gamemanager.cs"
 "Assets/Scripts/gunStats.cs"
 "Assets/Scripts/healthItem.cs"
