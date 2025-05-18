@@ -22,7 +22,7 @@ public class Grenade : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision other)
-    {
+    { 
         if (stats.explodeOnImpact)
         {
             Explode();

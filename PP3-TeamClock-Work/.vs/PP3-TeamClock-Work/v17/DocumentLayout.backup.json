@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\11A\\P3\\PP3-TeamClock-Work\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\buttonfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\11a\\p3\\pp3-teamclock-work\\assets\\scripts\\buttonfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttonfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\11a\\p3\\pp3-teamclock-work\\assets\\scripts\\damage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\damage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\damage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\11a\\p3\\pp3-teamclock-work\\assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\classselectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\classselectionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\healthshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -60,11 +60,15 @@
         },
         {
           "DockedWidth": 31,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "damage.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\damage.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\damage.cs",
@@ -72,16 +76,11 @@
               "RelativeToolTip": "Assets\\Scripts\\damage.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T17:53:42.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "WhenOpened": "2025-05-16T17:53:42.999Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ClassSelectionManager.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\ClassSelectionManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ClassSelectionManager.cs",
@@ -141,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "buttonFunctions.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\buttonFunctions.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\buttonFunctions.cs",
@@ -166,19 +165,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "playerController.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\playerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\playerController.cs",
               "ToolTip": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\playerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\playerController.cs",
-              "ViewState": "AgIAAOYAAAAAAAAAAAAmwP4AAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAASwJkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T12:34:59.073Z"
+              "WhenOpened": "2025-05-05T12:34:59.073Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainMenuManager.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\MainMenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenuManager.cs",
@@ -186,8 +186,7 @@
               "RelativeToolTip": "Assets\\Scripts\\MainMenuManager.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAADwvzgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T10:52:00.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T10:52:00.017Z"
             }
           ]
         }
