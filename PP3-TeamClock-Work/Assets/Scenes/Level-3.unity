@@ -955,6 +955,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3228216177274311782, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
+      propertyPath: m_text
+      value: Enemies Left
+      objectReference: {fileID: 0}
     - target: {fileID: 3332005593489528221, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2673,6 +2677,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -4.6838255
       objectReference: {fileID: 0}
+    - target: {fileID: 2938341330859871788, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
+      propertyPath: objectToSpawn
+      value: 
+      objectReference: {fileID: 1825204707505020280, guid: 15b7782357a003f4ebdd621f61a41438, type: 3}
     - target: {fileID: 4775582835174840695, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.375612
@@ -2713,9 +2721,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6201668094380471434, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6352154171939440977, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
       propertyPath: cost
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363172817897510113, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.1188602
       objectReference: {fileID: 0}
     - target: {fileID: 6761245271299801515, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
       propertyPath: m_text
@@ -2725,7 +2741,19 @@ PrefabInstance:
     - target: {fileID: 7065006366069799311, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: 4c0d7200782d94f43b7d29e18a5e88b5, type: 2}
+      objectReference: {fileID: 23800000, guid: d3a5f1440d0a43b4d9f761c96c115923, type: 2}
+    - target: {fileID: 8194838387864697447, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
+      propertyPath: m_Radius
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8356934776121051553, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367132908468826618, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
+      propertyPath: m_Radius
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8505166444819487279, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
       propertyPath: m_Name
       value: GameCube

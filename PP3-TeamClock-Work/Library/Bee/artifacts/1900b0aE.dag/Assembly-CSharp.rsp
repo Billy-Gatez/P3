@@ -425,6 +425,7 @@
 "Assets/Scripts/MainMenuManager.cs"
 "Assets/Scripts/pickup.cs"
 "Assets/Scripts/playerController.cs"
+"Assets/Scripts/SlimeAI.cs"
 "Assets/Scripts/spawner.cs"
 "Assets/Scripts/VolumeControl.cs"
 "Assets/Scripts/WaveSpawner.cs"

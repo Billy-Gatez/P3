@@ -915,9 +915,9 @@ MonoBehaviour:
   HP: 5
   faceTargetSpeed: 8
   FOV: 0
-  roamDist: 0
-  roamPauseTime: 0
-  animTranSpeed: 0
+  roamDist: 30
+  roamPauseTime: 2
+  animTranSpeed: 7
   shootPos: {fileID: 5138815387926862822}
   bullet: {fileID: 1219876387760884909, guid: 9b67e5706635b9f41ad85238f984ea7f, type: 3}
   shootFOV: 0
