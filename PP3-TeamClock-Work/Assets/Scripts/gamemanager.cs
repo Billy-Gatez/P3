@@ -12,14 +12,16 @@ public class gamemanager : MonoBehaviour
     [SerializeField] GameObject menuPause;
     [SerializeField] GameObject menuWin;
     [SerializeField] GameObject menuLose;
+  
     [SerializeField] TMP_Text gameGoalCountText;
     [SerializeField] public TMP_Text currencyText;
 
-    [SerializeField] private AudioSource audioSource; // Reference to the AudioSource
-    [SerializeField] private float volume = 1.0f; // Default volume level
+    [SerializeField] private AudioSource audioSource; 
+    [SerializeField] private float volume = 1.0f;
 
     [Header("---   ---")]
     public TMP_Text ammoCur, ammoMax;
+    public TMP_Text grenadeCountText;
     public Image playerHPBar;
     public GameObject playerDamageScreen;
     public GameObject checkpointPopup;
@@ -140,6 +142,11 @@ public class gamemanager : MonoBehaviour
         statePause();
         menuActive = menuLose;
         menuActive.SetActive(true);
+    }
+
+    public void updateGrenadeUI(int count)
+    {
+        grenadeCountText.text = count.ToString();
     }
 
     public void SetVolume(float newVolume)
