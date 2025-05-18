@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Gun - Rifle
   m_EditorClassIdentifier: 
   model: {fileID: 4698201593948852689, guid: 185ce04d44da342739f0bef843698e6c, type: 3}
-  shootDamage: 5
-  shootDist: 1000
-  shootRate: 1
+  shootDamage: 1
+  shootDist: 675
+  shootRate: 1.24
   ammoCur: 0
   ammoMax: 5
   hittEffect: {fileID: 5396372950321188654, guid: fcb74f28d107e284e80af037bfec14ca, type: 3}
   shootSound:
-  - {fileID: 8300000, guid: 1f5e1da94d1dafa4789ee98ffc49e884, type: 3}
+  - {fileID: 8300000, guid: 9dae50045fc46cb438edd222bff5f928, type: 3}
   shootSoundVol: 0.5

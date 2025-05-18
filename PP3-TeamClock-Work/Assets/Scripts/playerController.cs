@@ -18,12 +18,27 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     [SerializeField] int crouchSpeed;
     [SerializeField] float crouchHeight;
 
+    public string playerClass; // To store the selected class name
+    public int classHealth; // To store health based on class
+    public int classSpeed; // To store speed based on class
+    public string startingItem; // To store the starting item
+
     [Header("---Guns---")]
     [SerializeField] List<gunStats> gunList = new List<gunStats>();
     [SerializeField] GameObject gunModel;
     int shootDamage;
     int shootDist;
     float shootRate;
+
+    [Header("---Grenades---")]
+    [SerializeField] GameObject grenadePrefab;
+    [SerializeField] Transform grenadeSpawnPoint;
+    [SerializeField] float grenadeThrowForce = 15f;
+    [SerializeField] float grenadeRefillDelay = 5f;
+    [SerializeField] int maxGrenades = 4;
+
+    int currentGrenades;
+    bool isRefillingGrenades;
 
     [SerializeField] float dodgeSpeed;
     [SerializeField] float dodgeDuration;
@@ -82,26 +97,32 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
         spawnPlayer();
         originalHeight = controller.height;
         originalSpeed = speed;
+        currentGrenades = maxGrenades;
         //updatePlayerUI();
+    }
+
+    public void SetClassStats(string className, int health, int speed, string item)
+    {
+        playerClass = className;
+        classHealth = health;
+        classSpeed = speed;
+        startingItem = item;
+        HP = classHealth; // Set HP to the class's health
+        this.speed = classSpeed; // Set speed to the class's speed
+        updatePlayerUI();
     }
 
     IEnumerator PlayStep()
     {
-
+        if (isPlayingStep) yield break;
         isPlayingStep = true;
         aud.PlayOneShot(audSteps[Random.Range(0, audSteps.Length)], audStepsVol);
-
         if (isSprinting)
-
             yield return new WaitForSeconds(0.3f);
-
         else
-
             yield return new WaitForSeconds(0.5f);
-
         isPlayingStep = false;
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -122,6 +143,11 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
 
         roll();
 
+        if (Input.GetButtonDown("Grenade") && currentGrenades > 0) // or use a custom input like "ThrowGrenade"
+        {
+            ThrowGrenade();
+        }
+
 
     }
     void movement()
@@ -141,6 +167,11 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
 
         float currentSpeed = isCrouching ? crouchSpeed : speed;
 
+        if (moveDir.magnitude > 0.1f)
+        {
+
+            StartCoroutine(PlayStep());
+        }
         if (controller.enabled && controller.gameObject.activeInHierarchy)
         {
             controller.Move(moveDir * speed * Time.deltaTime);
@@ -236,6 +267,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
         {
             // You lose!!
             gamemanager.instance.youlose();
+            gamemanager.instance.updateCurrency(-9999);
         }
     }
 
@@ -258,6 +290,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
 
             gamemanager.instance.ammoCur.text = gunList[gunListPos].ammoCur.ToString("F0");
             gamemanager.instance.ammoMax.text = gunList[gunListPos].ammoMax.ToString("F0");
+            gamemanager.instance.updateGrenadeUI(currentGrenades);
         }
     }
     IEnumerator flashDamageScreen()
@@ -319,7 +352,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     }
 
     /// <summary>
-    /// EveryThing Below this line was add-on's
+    /// EveryThing Below this line are add-on's
     /// </summary>
     void crouch()
     {
@@ -414,4 +447,39 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
         canTeleport = true;
     }
 
+    void ThrowGrenade()
+    {
+        GameObject grenade = Instantiate(grenadePrefab, grenadeSpawnPoint.position, Quaternion.identity);
+        Rigidbody rb = grenade.GetComponent<Rigidbody>();
+
+        if (rb != null)
+        {
+            rb.AddForce(Camera.main.transform.forward * grenadeThrowForce, ForceMode.VelocityChange);
+        }
+
+        currentGrenades--;
+
+        if (!isRefillingGrenades)
+        {
+            StartCoroutine(RefillGrenades());
+        }
+
+        updatePlayerUI();
+    }
+    IEnumerator RefillGrenades()
+    {
+        isRefillingGrenades = true;
+
+        while (currentGrenades < maxGrenades)
+        {
+            yield return new WaitForSeconds(grenadeRefillDelay);
+            currentGrenades++;
+            updatePlayerUI();
+        }
+
+        isRefillingGrenades = false;
+    }
+
 }
+
+
