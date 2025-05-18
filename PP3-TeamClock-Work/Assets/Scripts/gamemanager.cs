@@ -15,7 +15,9 @@ public class gamemanager : MonoBehaviour
   
     [SerializeField] TMP_Text gameGoalCountText;
     [SerializeField] public TMP_Text currencyText;
-
+    //[SerializeField] TMP_Text waveCountText;
+    //[SerializeField] public TMP_Text waveTimerPopupTxt; //giving wave manager access to change
+   
     [SerializeField] private AudioSource audioSource; 
     [SerializeField] private float volume = 1.0f;
 
