@@ -415,6 +415,8 @@
 "Assets/Scripts/Door.cs"
 "Assets/Scripts/enemyAI.cs"
 "Assets/Scripts/gamemanager.cs"
+"Assets/Scripts/Grenade.cs"
+"Assets/Scripts/GrenadeStats.cs"
 "Assets/Scripts/gunStats.cs"
 "Assets/Scripts/healthItem.cs"
 "Assets/Scripts/HealthShop.cs"

@@ -103,21 +103,15 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
 
     IEnumerator PlayStep()
     {
-
+        if (isPlayingStep) yield break; 
         isPlayingStep = true;
         aud.PlayOneShot(audSteps[Random.Range(0, audSteps.Length)], audStepsVol);
-
         if (isSprinting)
-
             yield return new WaitForSeconds(0.3f);
-
         else
-
             yield return new WaitForSeconds(0.5f);
-
         isPlayingStep = false;
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -157,6 +151,11 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
 
         float currentSpeed = isCrouching ? crouchSpeed : speed;
 
+        if (moveDir.magnitude > 0.1f) 
+        {
+            
+            StartCoroutine(PlayStep());
+        }
         if (controller.enabled && controller.gameObject.activeInHierarchy)
         {
             controller.Move(moveDir * speed * Time.deltaTime);
