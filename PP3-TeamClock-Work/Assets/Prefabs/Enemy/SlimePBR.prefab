@@ -206,7 +206,7 @@ MonoBehaviour:
   anim: {fileID: 5814538427518843479}
   headPos: {fileID: 6883396853216159003}
   XP: 700
-  HP: 10
+  HP: 8
   faceTargetSpeed: 50
   FOV: 360
   roamDist: 30
@@ -215,7 +215,7 @@ MonoBehaviour:
   shootPos: {fileID: 5615642066111984403}
   bullet: {fileID: 1219876387760884909, guid: 9b67e5706635b9f41ad85238f984ea7f, type: 3}
   shootFOV: 360
-  shootRate: 0.5
+  shootRate: 1
   smallerEnemyPrefab: {fileID: 6917308744708100684, guid: 3b309b572a9d0a54ba38ab36630acce6, type: 3}
   numberToSpawnOnDeath: 3
   spawnRadius: 20
