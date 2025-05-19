@@ -15,6 +15,13 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     [Range(5, 20)][SerializeField] int jumpSpeed;
     [Range(1, 3)][SerializeField] int jumpMax;
     [Range(15, 45)][SerializeField] int gravity;
+    [SerializeField] int crouchSpeed;
+    [SerializeField] float crouchHeight;
+
+    public string playerClass; // To store the selected class name
+    public int classHealth; // To store health based on class
+    public int classSpeed; // To store speed based on class
+    public string startingItem; // To store the starting item
 
     [Header("---Guns---")]
     [SerializeField] List<gunStats> gunList = new List<gunStats>();
@@ -22,6 +29,16 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     int shootDamage;
     int shootDist;
     float shootRate;
+
+    [Header("---Grenades---")]
+    [SerializeField] GameObject grenadePrefab;
+    [SerializeField] Transform grenadeSpawnPoint;
+    [SerializeField] float grenadeThrowForce = 15f;
+    [SerializeField] float grenadeRefillDelay = 5f;
+    [SerializeField] int maxGrenades = 4;
+
+    int currentGrenades;
+    bool isRefillingGrenades;
 
     [SerializeField] float dodgeSpeed;
     [SerializeField] float dodgeDuration;
@@ -41,28 +58,6 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     [Range(0, 1)][SerializeField] float audStepsVol;
 
     [SerializeField] Transform[] teleportDestinations;
-
-    [Header("---Couch & Stealth---")]
-    [SerializeField] int crouchSpeed;
-    [SerializeField] float crouchHeight;
-    [Range(0, 10)][SerializeField] float stealthVisilityReduction;
-    [Range(0, 10)][SerializeField] float normalVisibility;
-    [Range(0, 10)][SerializeField] float stealthStepVolume;
-    [Range(0, 10)][SerializeField] float normalStepVolume;
-    [Range(0, 10)][SerializeField] float stealthSpeedMultiplier;
-    [SerializeField] AudioClip stealthHeartbeat;
-
-    [Header("---Ice---")]
-    [Range((float)0.00, 10)][SerializeField] float iceSlideFriction;
-    [Range((float)0.0, 10)][SerializeField] float iceSlideDecay;
-
-    [Header("---Snow---")]
-    [Range((float)0.00, 10)][SerializeField] float snowyTerrainSpeedMultiplier;
-    [Range((float)0.00, 10)][SerializeField] float slipEffectDuration;
-    [Range((float)0.00, 10)][SerializeField] float slipIntensity;
-    [SerializeField] AudioClip slipSound;
-    [SerializeField] ParticleSystem snowEffect;
-
     int jumpCount;
     public int HPOrig;
     int gunListPos;
@@ -85,12 +80,6 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     float rollTimer;
     float rollCooldownTimer;
 
-    private bool isOnIce = false;
-    private Vector3 iceSlideVelocity = Vector3.zero;
-
-    private bool isOnSnow = false;
-    private float slipTimer = 0f;
-
 
     private bool canTeleport = true;
     private Dictionary<string, Vector3> exitDirections = new Dictionary<string, Vector3>
@@ -100,7 +89,6 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
          { "TeleportSphere3", Vector3.left },
          { "TeleportSphere4", Vector3.back }
     };
-    private float stealthVisibilityReduction;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -109,40 +97,41 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
         spawnPlayer();
         originalHeight = controller.height;
         originalSpeed = speed;
+        currentGrenades = maxGrenades;
         //updatePlayerUI();
+    }
+
+    public void SetClassStats(string className, int health, int speed, string item)
+    {
+        playerClass = className;
+        classHealth = health;
+        classSpeed = speed;
+        startingItem = item;
+        HP = classHealth; // Set HP to the class's health
+        this.speed = classSpeed; // Set speed to the class's speed
+        updatePlayerUI();
     }
 
     IEnumerator PlayStep()
     {
-
+        if (isPlayingStep) yield break;
         isPlayingStep = true;
         aud.PlayOneShot(audSteps[Random.Range(0, audSteps.Length)], audStepsVol);
-
         if (isSprinting)
-
             yield return new WaitForSeconds(0.3f);
-
         else
-
             yield return new WaitForSeconds(0.5f);
-
         isPlayingStep = false;
     }
-
     // Update is called once per frame
     void Update()
     {
 
-        //Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
+        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
 
         if (!gamemanager.instance.isPaused)
         {
             movement();
-
-            if (!isPlayingStep && controller.isGrounded && moveDir.magnitude > 0.1f)
-            {
-                StartCoroutine(PlayStep());
-            }
 
         }
 
@@ -154,43 +143,12 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
 
         roll();
 
-        if (isOnIce && controller.isGrounded)
+        if (Input.GetButtonDown("Grenade") && currentGrenades > 0) // or use a custom input like "ThrowGrenade"
         {
-
-            iceSlideVelocity += moveDir.normalized * 10f * Time.deltaTime;
-
-            iceSlideVelocity *= 0.99f;
-
-
-            controller.Move(iceSlideVelocity * Time.deltaTime);
-            Debug.DrawRay(transform.position, iceSlideVelocity, Color.cyan);
-        }
-        else
-        {
-
-
-            iceSlideVelocity = Vector3.zero;
+            ThrowGrenade();
         }
 
-        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
 
-        if (isOnSnow)
-        {
-            slipTimer += Time.deltaTime;
-
-            // Reduce movement speed
-            speed = (int)(originalSpeed * snowyTerrainSpeedMultiplier);
-
-            // Apply sliding effect
-            moveDir += new Vector3(Random.Range(-slipIntensity, slipIntensity), 0, Random.Range(-slipIntensity, slipIntensity)) * Time.deltaTime;
-
-            if (slipTimer >= slipEffectDuration)
-            {
-                isOnSnow = false;
-                slipTimer = 0f;
-                speed = originalSpeed;
-            }
-        }
     }
     void movement()
     {
@@ -209,6 +167,11 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
 
         float currentSpeed = isCrouching ? crouchSpeed : speed;
 
+        if (moveDir.magnitude > 0.1f)
+        {
+
+            StartCoroutine(PlayStep());
+        }
         if (controller.enabled && controller.gameObject.activeInHierarchy)
         {
             controller.Move(moveDir * speed * Time.deltaTime);
@@ -289,15 +252,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
             {
                 dmg.takeDamage(shootDamage);
             }
-            if (isOnIce)
-            {
-                shootTimer += Time.deltaTime * 1.5f;
-            }
-            if (isOnSnow)
-            {
-                shootTimer += Time.deltaTime * 1.5f;
-            }
-         }
+        }
     }
 
     public void takeDamage(int amount)
@@ -312,6 +267,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
         {
             // You lose!!
             gamemanager.instance.youlose();
+            gamemanager.instance.updateCurrency(-9999);
         }
     }
 
@@ -334,6 +290,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
 
             gamemanager.instance.ammoCur.text = gunList[gunListPos].ammoCur.ToString("F0");
             gamemanager.instance.ammoMax.text = gunList[gunListPos].ammoMax.ToString("F0");
+            gamemanager.instance.updateGrenadeUI(currentGrenades);
         }
     }
     IEnumerator flashDamageScreen()
@@ -404,31 +361,17 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
             isCrouching = true;
             controller.height = crouchHeight;
             speed = crouchSpeed;
-            adjustStealthMechanics();
         }
         else if (Input.GetButtonUp("Crouch"))
         {
             isCrouching = false;
             controller.height = originalHeight;
             speed = originalSpeed;
-            resetStealthMechanics();
         }
 
     }
-    void adjustStealthMechanics()
-    {
-        gameObject.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f, stealthVisibilityReduction);
-        audStepsVol = stealthStepVolume;
-        speed = (int)(originalSpeed * stealthSpeedMultiplier);
-        aud.PlayOneShot(stealthHeartbeat, 0.5f);
-    }
-    void resetStealthMechanics()
-    {
-        gameObject.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f, normalVisibility);
-        audStepsVol = normalStepVolume;
-        speed = originalSpeed;
-    }
-        void dodge()
+
+    void dodge()
     {
         if (Input.GetButtonDown("Dodge") && dodgeCooldownTimer >= dodgeCooldown)
         {
@@ -474,44 +417,11 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
 
     void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("Entered Teleport Sphere: " + other.gameObject.name);
+        Debug.Log("Entered Teleport Sphere: " + other.gameObject.name);
         if (other.CompareTag("TeleportSphere") && canTeleport)
         {
-            Debug.Log("Entered Teleport Sphere: " + other.gameObject.name);
+            //Debug.Log("Player entered teleport sphere!" + other.gameObject.name);
             StartCoroutine(TeleportPlayer(other.gameObject.name));
-        }
-
-        if (other.CompareTag("Ice"))
-        {
-            isOnIce = true;
-            iceSlideVelocity = moveDir;
-
-
-            Debug.Log("Player is now on ice: " + other.gameObject.name);
-        }
-        if (other.CompareTag("Snow"))
-        {
-            isOnSnow = true;
-            aud.PlayOneShot(slipSound, 0.8f);
-            snowEffect.Play();
-
-            Debug.Log("Player is slipping on snow!");
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Ice"))
-        {
-            isOnIce = false;
-            iceSlideVelocity = Vector3.zero;
-            Debug.Log("Player exited ice: " + other.gameObject.name);
-        }
-        if (other.CompareTag("Snow"))
-        {
-            isOnSnow = false;
-            speed = originalSpeed;
-            Debug.Log("Player recovered from snowy terrain.");
         }
     }
     IEnumerator TeleportPlayer(string teleportSphereTag)
@@ -537,4 +447,39 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
         canTeleport = true;
     }
 
+    void ThrowGrenade()
+    {
+        GameObject grenade = Instantiate(grenadePrefab, grenadeSpawnPoint.position, Quaternion.identity);
+        Rigidbody rb = grenade.GetComponent<Rigidbody>();
+
+        if (rb != null)
+        {
+            rb.AddForce(Camera.main.transform.forward * grenadeThrowForce, ForceMode.VelocityChange);
+        }
+
+        currentGrenades--;
+
+        if (!isRefillingGrenades)
+        {
+            StartCoroutine(RefillGrenades());
+        }
+
+        updatePlayerUI();
+    }
+    IEnumerator RefillGrenades()
+    {
+        isRefillingGrenades = true;
+
+        while (currentGrenades < maxGrenades)
+        {
+            yield return new WaitForSeconds(grenadeRefillDelay);
+            currentGrenades++;
+            updatePlayerUI();
+        }
+
+        isRefillingGrenades = false;
+    }
+
 }
+
+
