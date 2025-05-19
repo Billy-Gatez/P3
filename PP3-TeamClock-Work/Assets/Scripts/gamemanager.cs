@@ -16,7 +16,9 @@ public class gamemanager : MonoBehaviour
     [SerializeField] TMP_Text gameGoalCountText;
     [SerializeField] public TMP_Text currencyText;
 
-    [SerializeField] private AudioSource audioSource; 
+    [Header("--- Audio ---")]
+    [SerializeField] private AudioClip winSong; // Assign this in the Inspector
+    private AudioSource audioSource; 
     [SerializeField] private float volume = 1.0f;
 
     [Header("---   ---")]
@@ -43,6 +45,9 @@ public class gamemanager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        instance = this;
+        audioSource = GetComponent<AudioSource>();
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         instance = this;
@@ -111,9 +116,19 @@ public class gamemanager : MonoBehaviour
         if (gameGoalCount <= 0)
         {
             // You won!
+            PlayWinSong();
             statePause();
             menuActive = menuWin;
             menuActive.SetActive(true);
+        }
+    }
+
+    private void PlayWinSong()
+    {
+        if (winSong != null) // Check if the win song is assigned
+        {
+            audioSource.clip = winSong; // Set the clip to the win song
+            audioSource.Play(); // Play the win song
         }
     }
 
