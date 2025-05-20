@@ -943,6 +943,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1993701392634639980, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 726583873}
+    - target: {fileID: 1993701392634639980, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Home
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993701392634639980, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenuManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2179247576593758793, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1086,6 +1098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 7514768468372166397, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
+      propertyPath: m_text
+      value: Main Menu
+      objectReference: {fileID: 0}
     - target: {fileID: 7549756095604825102, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 110.821045
@@ -1149,6 +1165,17 @@ PrefabInstance:
       addedObject: {fileID: 898629690}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
+--- !u!114 &726583873 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 56751160876586133, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
+  m_PrefabInstance: {fileID: 726583872}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254543847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1028b7c6133ed49ad44aebdae5df46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &758459740 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7917268801125511013, guid: 33ece0229e882de40990736246973e19, type: 3}
