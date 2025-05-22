@@ -1138,6 +1138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 1492070513020363592, guid: c6a3771e0f74ac6499496b02a8213a66, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Medic4
+      objectReference: {fileID: 0}
     - target: {fileID: 1849305207076416865, guid: c6a3771e0f74ac6499496b02a8213a66, type: 3}
       propertyPath: m_text
       value: Enemies Left

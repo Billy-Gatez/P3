@@ -218,7 +218,7 @@ MonoBehaviour:
   shootRate: 1
   smallerEnemyPrefab: {fileID: 6917308744708100684, guid: 3b309b572a9d0a54ba38ab36630acce6, type: 3}
   numberToSpawnOnDeath: 3
-  spawnRadius: 20
+  spawnRadius: 5
   shouldSplitOnDeath: 1
 --- !u!195 &4438146775773708253
 NavMeshAgent:
