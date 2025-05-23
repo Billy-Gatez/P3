@@ -261,7 +261,7 @@ ScriptsOnlyBuild:
     methodName: resume
   - assembly: Assembly-CSharp
     fullTypeName: MainMenuManager
-    methodName: Medic2
+    methodName: Medic3
   - assembly: Assembly-CSharp
     fullTypeName: buttonFunctions
     methodName: quit
@@ -360,7 +360,7 @@ ScriptsOnlyBuild:
     methodName: resume
   - assembly: Assembly-CSharp
     fullTypeName: MainMenuManager
-    methodName: Medic2
+    methodName: Medic4
   - assembly: Assembly-CSharp
     fullTypeName: buttonFunctions
     methodName: quit
@@ -459,7 +459,7 @@ ScriptsOnlyBuild:
     methodName: resume
   - assembly: Assembly-CSharp
     fullTypeName: MainMenuManager
-    methodName: Medic2
+    methodName: Medic5
   - assembly: Assembly-CSharp
     fullTypeName: buttonFunctions
     methodName: quit
@@ -558,7 +558,7 @@ ScriptsOnlyBuild:
     methodName: resume
   - assembly: Assembly-CSharp
     fullTypeName: MainMenuManager
-    methodName: Medic2
+    methodName: Home
   - assembly: Assembly-CSharp
     fullTypeName: buttonFunctions
     methodName: quit
@@ -4380,4 +4380,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level-5.unity
   - Assets/Scenes/Level-5med.unity
   - Assets/Scenes/Level-5hg.unity
-  playerPath: C:/1/Team-Clockwork-Alpha/Clockwork Horrors.exe
+  playerPath: C:/1/Final-Alpha-Update-Clockwork/Clockwork Horrors.exe

@@ -139,6 +139,7 @@
 			<method name="Home"/>
 			<method name="Home"/>
 			<method name="Home"/>
+			<method name="Home"/>
 			<method name="MainMenu"/>
 			<method name="MainMenu"/>
 			<method name="MainMenu"/>
@@ -172,10 +173,9 @@
 			<method name="MainMenu3"/>
 			<method name="Medic1"/>
 			<method name="Medic2"/>
-			<method name="Medic2"/>
-			<method name="Medic2"/>
-			<method name="Medic2"/>
-			<method name="Medic2"/>
+			<method name="Medic3"/>
+			<method name="Medic4"/>
+			<method name="Medic5"/>
 			<method name="QuitGame"/>
 			<method name="StartGame"/>
 		</type>

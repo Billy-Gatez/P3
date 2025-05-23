@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\11A\\P3\\PP3-TeamClock-Work\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\11a\\p3\\pp3-teamclock-work\\assets\\scripts\\slimeai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\11a\\p3\\pp3-teamclock-work\\assets\\scripts\\grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\slimeai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\slimeai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\grenadestats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\grenadestats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -76,7 +76,7 @@
         },
         {
           "DockedWidth": 31,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -84,20 +84,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SlimeAI.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\SlimeAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SlimeAI.cs",
               "ToolTip": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\SlimeAI.cs",
               "RelativeToolTip": "Assets\\Scripts\\SlimeAI.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAAKYAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAADEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T18:51:29.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T18:51:29.291Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "WaveSpawner.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\WaveSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\WaveSpawner.cs",
@@ -109,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "GrenadeStats.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\GrenadeStats.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GrenadeStats.cs",
@@ -121,15 +120,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Grenade.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Grenade.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Grenade.cs",
               "ToolTip": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Grenade.cs",
               "RelativeToolTip": "Assets\\Scripts\\Grenade.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAEQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T00:08:55.233Z"
+              "WhenOpened": "2025-05-18T00:08:55.233Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -157,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "gamemanager.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\gamemanager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\gamemanager.cs",
@@ -181,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "enemyAI.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\enemyAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\enemyAI.cs",
@@ -189,8 +189,7 @@
               "RelativeToolTip": "Assets\\Scripts\\enemyAI.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAAAAJQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T22:34:00.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T22:34:00.84Z"
             },
             {
               "$type": "Document",
