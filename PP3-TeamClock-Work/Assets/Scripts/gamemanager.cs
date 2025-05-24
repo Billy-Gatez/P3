@@ -3,6 +3,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class gamemanager : MonoBehaviour
 {
@@ -160,5 +161,10 @@ public class gamemanager : MonoBehaviour
     public float GetVolume()
     {
         return volume; // Return the current volume level
+    }
+
+    internal void collectResource(string resourceType, int amount)
+    {
+        throw new NotImplementedException();
     }
 }

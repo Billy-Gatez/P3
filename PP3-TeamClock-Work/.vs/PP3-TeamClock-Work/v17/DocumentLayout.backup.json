@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\11A\\P3\\PP3-TeamClock-Work\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\11a\\p3\\pp3-teamclock-work\\assets\\scripts\\grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\11a\\p3\\pp3-teamclock-work\\assets\\scripts\\slimeai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\slimeai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\slimeai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -92,8 +92,7 @@
               "RelativeToolTip": "Assets\\Scripts\\SlimeAI.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAAADEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T18:51:29.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T18:51:29.291Z"
             },
             {
               "$type": "Document",
