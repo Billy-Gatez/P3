@@ -778,3 +778,19 @@ Memory consumption went from 182.5 MB to 178.5 MB.
 Total: 7.751000 ms (FindLiveObjects: 0.497500 ms CreateObjectMapping: 0.414200 ms MarkObjects: 4.874000 ms  DeleteObjects: 1.964500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1774.468722 seconds.
+  path: Assets/Scenes/Level-4med.unity
+  artifactKey: Guid(a59b778c12555414ca36f1d87df36b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level-4med.unity using Guid(a59b778c12555414ca36f1d87df36b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c4ad4bd7f4bdf5afff61c84e94b471c1') in 0.1010863 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.599683 seconds.
+  path: Assets/Scenes/Level-5med.unity
+  artifactKey: Guid(5c0cca134bf395944a2fb0ca5a325bbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level-5med.unity using Guid(5c0cca134bf395944a2fb0ca5a325bbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c6d7251ace9db896b1785e1b68648322') in 0.0005702 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
