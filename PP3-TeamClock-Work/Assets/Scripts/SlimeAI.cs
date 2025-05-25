@@ -37,7 +37,7 @@ public class slimeAI : MonoBehaviour, IDamage
     float roamTimer;
     float angleToPlayer;
     float stoppingDisOrig;
-
+ 
     Color colorOrig;
 
     Vector3 playerDir;
@@ -50,6 +50,8 @@ public class slimeAI : MonoBehaviour, IDamage
         //gamemanager.instance.updateGameGoal(1, 0);
         startingPos = transform.position;
         stoppingDisOrig = agent.stoppingDistance;
+
+      
     }
 
     // Update is called once per frame
@@ -58,7 +60,7 @@ public class slimeAI : MonoBehaviour, IDamage
         setAnimLocomotion();
 
         //anim.SetFloat("Speed", agent.velocity.normalized.magnitude);
-
+        //gamemanager.instance.updateGameGoal(1, 0);
         if (agent.remainingDistance < 0.01f)
             roamTimer += Time.deltaTime;
         if (playerInRange && !canSeePlayer())
