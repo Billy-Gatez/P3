@@ -3,19 +3,23 @@
   "WorkspaceRootPath": "C:\\11A\\P3\\PP3-TeamClock-Work\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\keycardpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\slimeai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\slimeai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\11a\\p3\\pp3-teamclock-work\\assets\\scripts\\keycardpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\keycardpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\11a\\p3\\pp3-teamclock-work\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\11a\\p3\\pp3-teamclock-work\\assets\\scripts\\ipickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\ipickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ipickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\11a\\p3\\pp3-teamclock-work\\assets\\scripts\\pickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\pickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\grenade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\slimeai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\slimeai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\11A\\P3\\PP3-TeamClock-Work\\assets\\scripts\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -96,11 +96,15 @@
         },
         {
           "DockedWidth": 31,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Ipickup.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Ipickup.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Ipickup.cs",
@@ -108,12 +112,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Ipickup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T02:27:40.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T02:27:40.285Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "pickup.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\pickup.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\pickup.cs",
@@ -121,16 +124,11 @@
               "RelativeToolTip": "Assets\\Scripts\\pickup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T02:26:43.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "WhenOpened": "2025-05-25T02:26:43.164Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Doorl.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Doorl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Doorl.cs",
@@ -142,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Door.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Door.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Door.cs",
@@ -154,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "keycardPickup.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\keycardPickup.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\keycardPickup.cs",
@@ -167,15 +165,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "SlimeAI.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\SlimeAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SlimeAI.cs",
               "ToolTip": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\SlimeAI.cs",
               "RelativeToolTip": "Assets\\Scripts\\SlimeAI.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAADEAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAewDAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T18:51:29.291Z"
+              "WhenOpened": "2025-05-18T18:51:29.291Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -203,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Grenade.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Grenade.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Grenade.cs",
@@ -227,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "playerController.cs",
               "DocumentMoniker": "C:\\11A\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\playerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\playerController.cs",
@@ -235,8 +234,7 @@
               "RelativeToolTip": "Assets\\Scripts\\playerController.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAAAGcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T12:34:59.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T12:34:59.073Z"
             },
             {
               "$type": "Document",

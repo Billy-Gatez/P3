@@ -46,7 +46,7 @@ public class slimeAI : MonoBehaviour, IDamage
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        colorOrig = model.material.color;
+        //colorOrig = model.material.color;
         //gamemanager.instance.updateGameGoal(1, 0);
         startingPos = transform.position;
         stoppingDisOrig = agent.stoppingDistance;
@@ -146,7 +146,7 @@ public class slimeAI : MonoBehaviour, IDamage
     public void takeDamage(int amount)
     {
         HP -= amount;
-        StartCoroutine(flashRed());
+       // StartCoroutine(flashRed());
 
         agent.SetDestination(gamemanager.instance.player.transform.position);
 
@@ -164,12 +164,12 @@ public class slimeAI : MonoBehaviour, IDamage
             Destroy(gameObject);
         }
     }
-    IEnumerator flashRed()
-    {
-        model.material.color = Color.red;
-        yield return new WaitForSeconds(0.1f);
-        model.material.color = colorOrig;
-    }
+   // IEnumerator flashRed()
+   // {
+   //     model.material.color = Color.red;
+   //     yield return new WaitForSeconds(0.1f);
+  //      model.material.color = colorOrig;
+  //  }
     void shoot()
     {
         shootTimer = 0;
