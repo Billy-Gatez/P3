@@ -15,7 +15,7 @@ C:/Users/tommy/source/repos/P3/PP3-TeamClock-Work
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50342
+50787
 -job-worker-count
 11
 -background-job-worker-count
@@ -59,12 +59,12 @@ C:/Users/tommy/source/repos/P3/PP3-TeamClock-Work
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [50240]  Target information:
+Player connection [42092]  Target information:
 
-Player connection [50240]  * "[IP] 192.168.8.207 [Port] 0 [Flags] 2 [Guid] 2456943515 [EditorId] 2456943515 [Version] 1048832 [Id] WindowsEditor(7,Carter) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [42092]  * "[IP] 192.168.8.207 [Port] 0 [Flags] 2 [Guid] 1326574441 [EditorId] 1326574441 [Version] 1048832 [Id] WindowsEditor(7,Carter) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [50240] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [50240] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [42092] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [42092] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 11
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -76,7 +76,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 1.75 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.44f1 (101c91f3a8fb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/Resources/UnitySubsystems
@@ -92,43 +92,43 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56460
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56068
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003010 seconds.
-- Loaded All Assemblies, in  0.452 seconds
+Registered in 0.004187 seconds.
+- Loaded All Assemblies, in  0.538 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.413 seconds
-Domain Reload Profiling: 863ms
-	BeginReloadAssembly (154ms)
+- Finished resetting the current domain, in  0.654 seconds
+Domain Reload Profiling: 1189ms
+	BeginReloadAssembly (176ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (189ms)
-		LoadAssemblies (151ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (222ms)
+		LoadAssemblies (173ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (185ms)
-			TypeCache.Refresh (182ms)
-				TypeCache.ScanAssembly (166ms)
+		AnalyzeDomain (218ms)
+			TypeCache.Refresh (216ms)
+				TypeCache.ScanAssembly (197ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (413ms)
+	FinalizeReload (655ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (367ms)
+		SetupLoadedEditorAssemblies (577ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (32ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (80ms)
-			ProcessInitializeOnLoadAttributes (195ms)
-			ProcessInitializeOnLoadMethodAttributes (53ms)
+			InitializePlatformSupportModulesInManaged (42ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (96ms)
+			ProcessInitializeOnLoadAttributes (316ms)
+			ProcessInitializeOnLoadMethodAttributes (113ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -137,432 +137,72 @@ Domain Reload Profiling: 863ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.796 seconds
-Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.529 seconds
+Refreshing native plugins compatible for Editor in 1.79 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.938 seconds
-Domain Reload Profiling: 1731ms
-	BeginReloadAssembly (196ms)
+- Finished resetting the current domain, in  1.469 seconds
+Domain Reload Profiling: 2989ms
+	BeginReloadAssembly (419ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (16ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (510ms)
-		LoadAssemblies (410ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (85ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (95ms)
+	LoadAllAssembliesAndSetupDomain (893ms)
+		LoadAssemblies (794ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (215ms)
-			TypeCache.Refresh (170ms)
-				TypeCache.ScanAssembly (154ms)
-			BuildScriptInfoCaches (36ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (939ms)
+		AnalyzeDomain (351ms)
+			TypeCache.Refresh (282ms)
+				TypeCache.ScanAssembly (257ms)
+			BuildScriptInfoCaches (57ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1470ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (796ms)
+		SetupLoadedEditorAssemblies (1278ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (170ms)
-			ProcessInitializeOnLoadAttributes (571ms)
-			ProcessInitializeOnLoadMethodAttributes (39ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (235ms)
+			ProcessInitializeOnLoadAttributes (971ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 5.72 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 2.29 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 65 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3982 unused Assets / (4.4 MB). Loaded Objects now: 4506.
-Memory consumption went from 180.1 MB to 175.8 MB.
-Total: 17.712000 ms (FindLiveObjects: 1.859700 ms CreateObjectMapping: 0.323900 ms MarkObjects: 10.164100 ms  DeleteObjects: 5.361000 ms)
+Unloading 3984 unused Assets / (3.8 MB). Loaded Objects now: 4508.
+Memory consumption went from 180.1 MB to 176.3 MB.
+Total: 12.120300 ms (FindLiveObjects: 1.224800 ms CreateObjectMapping: 0.377700 ms MarkObjects: 7.646500 ms  DeleteObjects: 2.869300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 478224.468394 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN.prefab
-  artifactKey: Guid(997d90b3864b2ce4698b5e3d8bcdab44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN.prefab using Guid(997d90b3864b2ce4698b5e3d8bcdab44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12ade671a6eae3a23c6d35215aa0d1c7') in 0.1844923 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 211
-
-========================================================================
-Received Import Request.
-  Time since last request: 59.026495 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Demon_apose_clean.fbx
-  artifactKey: Guid(44072a6353b79e74a92264a9bb55c008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Demon_apose_clean.fbx using Guid(44072a6353b79e74a92264a9bb55c008) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fe19b7b292faa6dccbf31390d73ab673') in 0.1297514 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 57.507068 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Model/CLOCKWORK BOMBMAN (BOMB)GC.fbx
-  artifactKey: Guid(4a57ae459175bee478be4b5961225936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Model/CLOCKWORK BOMBMAN (BOMB)GC.fbx using Guid(4a57ae459175bee478be4b5961225936) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '72fc8bda29d82da456075771a662260a') in 0.1551397 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 141
-
-========================================================================
-Received Import Request.
-  Time since last request: 216.263142 seconds.
-  path: Assets/DL/Explosion
-  artifactKey: Guid(cf4b46039365a8948b157fa7d67d5883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DL/Explosion using Guid(cf4b46039365a8948b157fa7d67d5883) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '03b78517b564a0a1953d932278d5e747') in 0.001005 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.218857 seconds.
-  path: Assets/GTC CLOCKWORK ENEMYS
-  artifactKey: Guid(f46fc79c5d808ba4c90de6a3b39c5c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GTC CLOCKWORK ENEMYS using Guid(f46fc79c5d808ba4c90de6a3b39c5c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78fb95cc77ae4c71b205afdd66becd49') in 0.0006866 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 249.480939 seconds.
-  path: Assets/CLOCKWORK ENEMYS/CLOCKWORK RIFLEMAN (SHOOTER)GC
-  artifactKey: Guid(ab0aabac454a3724f8ce0f3f67b09da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CLOCKWORK ENEMYS/CLOCKWORK RIFLEMAN (SHOOTER)GC using Guid(ab0aabac454a3724f8ce0f3f67b09da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '727ecc9622e8b28bb14a49e5e3857732') in 0.0008526 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.109379 seconds.
-  path: Assets/CLOCKWORK ENEMYS/CLOCKWORK BOMBMAN
-  artifactKey: Guid(b151987e16a0eb3448d2739f8561d239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CLOCKWORK ENEMYS/CLOCKWORK BOMBMAN using Guid(b151987e16a0eb3448d2739f8561d239) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b72c84b3a58fd62725745f0487986657') in 0.0009119 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.653517 seconds.
-  path: Assets/CLOCKWORK ENEMYS
-  artifactKey: Guid(f46fc79c5d808ba4c90de6a3b39c5c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CLOCKWORK ENEMYS using Guid(f46fc79c5d808ba4c90de6a3b39c5c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '47716cee3960b250164eeed38306c728') in 0.0006537 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.046385 seconds.
-  path: Assets/CLOCKWORK ENEMYS/T-POSE CLOCKWORK RIFLEMAN GC.prefab
-  artifactKey: Guid(6790a322e329685459df371582d70012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CLOCKWORK ENEMYS/T-POSE CLOCKWORK RIFLEMAN GC.prefab using Guid(6790a322e329685459df371582d70012) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c6eb7f4ce5c3602ca330e2c4c12425d') in 0.0514713 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 173
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.626176 seconds.
-  path: Assets/CLOCKWORK ENEMYS/T-POSE CLOCKWORK RIFLEMAN WITH RIFLE GC.prefab
-  artifactKey: Guid(216851035d677a84cac9b27b9b923c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CLOCKWORK ENEMYS/T-POSE CLOCKWORK RIFLEMAN WITH RIFLE GC.prefab using Guid(216851035d677a84cac9b27b9b923c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0853a65f5db547b9a3bab189bf6b886d') in 0.0300484 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 178
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.090854 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC
-  artifactKey: Guid(37b37500379b43442b23f2fbe9376f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC using Guid(37b37500379b43442b23f2fbe9376f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b94f4d82b8d29dd6df52c769a1ce2eb9') in 0.0012669 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.141263 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC
-  artifactKey: Guid(ab0aabac454a3724f8ce0f3f67b09da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC using Guid(ab0aabac454a3724f8ce0f3f67b09da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b1d79bd1a60b15cf3daa0c1aecc1dcc') in 0.0005719 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.379221 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Prefabs
-  artifactKey: Guid(baab3d3050997ff4fb21e0ea1451ef6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Prefabs using Guid(baab3d3050997ff4fb21e0ea1451ef6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4a9f641d6137f79dd6059cd1a13120f1') in 0.0006259 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.331216 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/T-POSE CLOCKWORK RIFLEMAN SHOOTER GC.fbm
-  artifactKey: Guid(355aa5ac1a76dc9468643fe8b566ddfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/T-POSE CLOCKWORK RIFLEMAN SHOOTER GC.fbm using Guid(355aa5ac1a76dc9468643fe8b566ddfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8c589643b1dbc91b79723349de4bf0c8') in 0.0006344 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.336831 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Textures
-  artifactKey: Guid(f122c40941c2d8d48ba575dd0c6f18b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Textures using Guid(f122c40941c2d8d48ba575dd0c6f18b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec82d42e12612ebd12334043cf7d8fce') in 0.0005628 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.838959 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Demon_apose_clean.fbx
-  artifactKey: Guid(a0bf1c6e7a7cbd347bf53b6176d843b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Demon_apose_clean.fbx using Guid(a0bf1c6e7a7cbd347bf53b6176d843b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ca6f4ae12732e7bb78235405b73036e') in 0.0550239 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.270615 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Animation/mixamo.com.anim
-  artifactKey: Guid(aa749cf358628b54a9fa4cf9f4f8e610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Animation/mixamo.com.anim using Guid(aa749cf358628b54a9fa4cf9f4f8e610) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df6e8ddf9a262b805a7678b568453068') in 0.0052869 seconds
+  Time since last request: 481856.353883 seconds.
+  path: Assets/Weather System/Rainy/Rain.mat
+  artifactKey: Guid(2f25a4b5ff169e64b83e96d18333fe08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Weather System/Rainy/Rain.mat using Guid(2f25a4b5ff169e64b83e96d18333fe08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b5985e9608ffd195185785089dcc906') in 0.336264 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.373711 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Animation/Run2.anim
-  artifactKey: Guid(aa749cf358628b54a9fa4cf9f4f8e610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Animation/Run2.anim using Guid(aa749cf358628b54a9fa4cf9f4f8e610) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc187c0ba90001b4489c455bec8ca4bd') in 0.0057923 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.931619 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Meshes
-  artifactKey: Guid(f15c09c97207dab4b9b8dd94ef4979b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Meshes using Guid(f15c09c97207dab4b9b8dd94ef4979b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '03933dc5551e98ad3aed45ba91eea694') in 0.0008542 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 65.771146 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Model/T-POSE CLOCKWORK RIFLEMAN SHOOTER GC.fbx
-  artifactKey: Guid(544a4ff3221610b4daf60e9046f6b2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Model/T-POSE CLOCKWORK RIFLEMAN SHOOTER GC.fbx using Guid(544a4ff3221610b4daf60e9046f6b2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '39f792fe9c4d2abfd01ed1580839a507') in 0.0706508 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 143
-
-========================================================================
-Received Import Request.
-  Time since last request: 40.593048 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN.prefab
-  artifactKey: Guid(997d90b3864b2ce4698b5e3d8bcdab44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN.prefab using Guid(997d90b3864b2ce4698b5e3d8bcdab44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ebd05436d31e3c397c1df62d398fd40a') in 0.0478551 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 220
-
-========================================================================
-Received Import Request.
-  Time since last request: 96.350835 seconds.
-  path: Assets/Prefabs/Enemy/Cyber Enemy.prefab
-  artifactKey: Guid(9cb4e35b5cecb644989c87ad5f448cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Cyber Enemy.prefab using Guid(9cb4e35b5cecb644989c87ad5f448cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '244d3684593963a7fc9e3cc97f60218d') in 0.0040686 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 376
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.766296 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b6c3009a8851285cdb8786f37abc070b') in 0.0181503 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.257090 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5768721839fd56e8792eefee6afbe4bc') in 0.0118123 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 55.046075 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'adfc7893bc2c00a8b16eadc0b310fd85') in 0.0124565 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.124004 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5952b3821dc2e62d70e552a950deab1d') in 0.0115925 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.992106 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e8d6997a52b5320915e273a8c2d82f6c') in 0.0114998 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.757993 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '69ddfad275ea5b09d32634eafd3c050b') in 0.0148325 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 33.435890 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6aa0f40a0052414380ad97649f183b1b') in 0.0116162 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.297059 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1ca5ae97fffdbf56b721a773ebdb9fe0') in 0.011479 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.429376 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9aa1a4b0606153ad180ab540833b2039') in 0.012433 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.620752 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c3ab00fe2b76579b742ee508856c179') in 0.0138917 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 421.359177 seconds.
-  path: Assets/CLOCKWORK BOMBMAN.prefab
-  artifactKey: Guid(b01a2299852d070438bc13b654cf53b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CLOCKWORK BOMBMAN.prefab using Guid(b01a2299852d070438bc13b654cf53b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '410840a8feb19d979dbce63a141d9509') in 0.0458522 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 221
-
-========================================================================
-Received Import Request.
-  Time since last request: 53.494395 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de3855bd012508a7f8922444a9df0d1c') in 0.014338 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.561326 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4592279fa67ed9d7967a3e336e53bf0b') in 0.0130862 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.120542 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '483f20440aaeab92c13916eb9febb7e6') in 0.0137791 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.514375 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3604ea6815b5be2e9ff589b1a96c90b') in 0.0114765 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 47.010476 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fdcd5cb47ac4de8d04760d7e5d4705c8') in 0.0128559 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 58.791745 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '362009eda89e385f5d4ae33e4f744c1c') in 0.0129719 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.838686 seconds.
-  path: Assets/DL/Explosion/Explosion.mat
-  artifactKey: Guid(5fb27434e7053654d8e851e3b3996b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DL/Explosion/Explosion.mat using Guid(5fb27434e7053654d8e851e3b3996b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '184908fe089c1fbf8878026d4bf7c512') in 0.0263705 seconds
+  Time since last request: 372.340984 seconds.
+  path: Assets/Materials/snow-packed.mat
+  artifactKey: Guid(643e2fec973713d4797a5c3eeea6faac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/snow-packed.mat using Guid(643e2fec973713d4797a5c3eeea6faac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1fa74441c725a9d0ab003e9c2297b98') in 0.0403598 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.125709 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8bb8fd30ee367324fe22ca2e36f8f322') in 0.0168963 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.117623 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Model/Materials/Diffuse_Bake.mat
-  artifactKey: Guid(9e448e14008e9a644abd34dffa8b96a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Model/Materials/Diffuse_Bake.mat using Guid(9e448e14008e9a644abd34dffa8b96a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5b50f8fe9e7f395c2735d82cfd662dd6') in 0.0249769 seconds
+  Time since last request: 11.781384 seconds.
+  path: Assets/Materials/White.mat
+  artifactKey: Guid(e1dbdc2d8cf3aa746b197ba95837b782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/White.mat using Guid(e1dbdc2d8cf3aa746b197ba95837b782) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5944e4f050c7e0c887893cadafc55ac9') in 0.0269195 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.100242 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Demon_apose_clean.fbx
-  artifactKey: Guid(a0bf1c6e7a7cbd347bf53b6176d843b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Demon_apose_clean.fbx using Guid(a0bf1c6e7a7cbd347bf53b6176d843b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e4b8513d113e360b3bf9555bf6432ca') in 0.0608218 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.098947 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Ball_mat.mat
-  artifactKey: Guid(e53bc00d10723ef418552dde33188341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Ball_mat.mat using Guid(e53bc00d10723ef418552dde33188341) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5a14403199e9173b001dff900320828') in 0.0212882 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.855085 seconds.
-  path: Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Model/Materials/CLOCKWORK RIFLEMAN SHOOTER GC.mat
-  artifactKey: Guid(e599217109490de48ae4281d3c4ddb89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Clockwork Bombman/CLOCKWORK BOMBMAN (BOMB)GC/Model/Materials/CLOCKWORK RIFLEMAN SHOOTER GC.mat using Guid(e599217109490de48ae4281d3c4ddb89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '606488d147687c0838015596de27b237') in 0.0331867 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.541061 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00972069d2dd92bf78e619ff7fcff401') in 0.0160172 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.882029 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f580dded57a33fd222cf497358969628') in 0.0165382 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.892183 seconds.
-  path: Assets/Prefabs/Enemy/Bullet Orange 1.prefab
-  artifactKey: Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy/Bullet Orange 1.prefab using Guid(e5ca7c08aec5e9a4592ac82911585de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5e2420768766a9880eba1160c2fea9f4') in 0.0157553 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
 
