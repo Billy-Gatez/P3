@@ -37,7 +37,7 @@ public class slimeAI : MonoBehaviour, IDamage
     float roamTimer;
     float angleToPlayer;
     float stoppingDisOrig;
-
+ 
     Color colorOrig;
 
     Vector3 playerDir;
@@ -46,10 +46,12 @@ public class slimeAI : MonoBehaviour, IDamage
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        colorOrig = model.material.color;
+        //colorOrig = model.material.color;
         //gamemanager.instance.updateGameGoal(1, 0);
         startingPos = transform.position;
         stoppingDisOrig = agent.stoppingDistance;
+
+      
     }
 
     // Update is called once per frame
@@ -58,7 +60,7 @@ public class slimeAI : MonoBehaviour, IDamage
         setAnimLocomotion();
 
         //anim.SetFloat("Speed", agent.velocity.normalized.magnitude);
-
+        //gamemanager.instance.updateGameGoal(1, 0);
         if (agent.remainingDistance < 0.01f)
             roamTimer += Time.deltaTime;
         if (playerInRange && !canSeePlayer())
@@ -146,7 +148,7 @@ public class slimeAI : MonoBehaviour, IDamage
     public void takeDamage(int amount)
     {
         HP -= amount;
-        StartCoroutine(flashRed());
+       // StartCoroutine(flashRed());
 
         agent.SetDestination(gamemanager.instance.player.transform.position);
 
@@ -164,12 +166,12 @@ public class slimeAI : MonoBehaviour, IDamage
             Destroy(gameObject);
         }
     }
-    IEnumerator flashRed()
-    {
-        model.material.color = Color.red;
-        yield return new WaitForSeconds(0.1f);
-        model.material.color = colorOrig;
-    }
+   // IEnumerator flashRed()
+   // {
+   //     model.material.color = Color.red;
+   //     yield return new WaitForSeconds(0.1f);
+  //      model.material.color = colorOrig;
+  //  }
     void shoot()
     {
         shootTimer = 0;

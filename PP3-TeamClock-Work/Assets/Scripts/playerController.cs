@@ -67,6 +67,9 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     float dodgeTimer;
     float dodgeCooldownTimer;
 
+    public static playerController Instance;
+    public bool HasKeyCard { get; set; }
+
     Vector3 moveDir;
     Vector3 playerVel;
 
@@ -98,6 +101,16 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
         originalHeight = controller.height;
         originalSpeed = speed;
         currentGrenades = maxGrenades;
+        HasKeyCard = false; 
+        if (Instance == null)
+        {
+            Instance = this;
+           // DontDestroyOnLoad(gameObject); 
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         //updatePlayerUI();
     }
 

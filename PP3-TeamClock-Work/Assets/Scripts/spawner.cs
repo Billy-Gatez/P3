@@ -14,7 +14,7 @@ public class spawner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        gamemanager.instance.updateGameGoal(numToSpawn, 0);
+        //gamemanager.instance.updateGameGoal(numToSpawn, 0);
     }
 
     // Update is called once per frame
@@ -41,9 +41,14 @@ public class spawner : MonoBehaviour
     {
         int arrayPos = Random.Range(0, spawnPos.Length);
 
+        // Instantiate the enemy at a random spawn position
         Instantiate(objectToSpawn, spawnPos[arrayPos].position, spawnPos[arrayPos].rotation);
+
+        // Update the game goal each time an enemy is spawned
+        gamemanager.instance.updateGameGoal(1, 0); // Update the game goal by 1 for each spawned enemy
+
         spawnCount++;
         spawnTimer = 0;
-
     }
+
 }

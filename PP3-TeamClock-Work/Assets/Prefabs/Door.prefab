@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4483948995103895905}
   - component: {fileID: 3206364963988776112}
-  - component: {fileID: 3883392384891945768}
+  - component: {fileID: 8051340746842961151}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -55,7 +55,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 7
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3883392384891945768
+--- !u!114 &8051340746842961151
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,7 +82,6 @@ GameObject:
   - component: {fileID: 962609450827103654}
   - component: {fileID: 92551486837429422}
   - component: {fileID: 1362680699200978838}
-  - component: {fileID: 995570102514239691}
   - component: {fileID: 2222870247188590580}
   m_Layer: 0
   m_Name: Door
@@ -184,21 +183,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &995570102514239691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6775640485866155211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd9695d81c6c3dc4fa5d492fbb679efd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openAngle: 90
-  openSpeed: 2
-  openKey: 101
 --- !u!54 &2222870247188590580
 Rigidbody:
   m_ObjectHideFlags: 0

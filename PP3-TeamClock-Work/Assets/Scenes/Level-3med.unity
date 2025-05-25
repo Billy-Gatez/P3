@@ -1226,6 +1226,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4232105464443124431, guid: c6a3771e0f74ac6499496b02a8213a66, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232105464443124431, guid: c6a3771e0f74ac6499496b02a8213a66, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1277729343}
+    - target: {fileID: 4232105464443124431, guid: c6a3771e0f74ac6499496b02a8213a66, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Medic3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232105464443124431, guid: c6a3771e0f74ac6499496b02a8213a66, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenuManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4232105464443124431, guid: c6a3771e0f74ac6499496b02a8213a66, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1533,6 +1553,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7851932541478322906, guid: c53a7f0e274a911478626b2e6541d79f, type: 3}
   m_PrefabInstance: {fileID: 1241013032}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1277729343 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7292583555232152866, guid: c6a3771e0f74ac6499496b02a8213a66, type: 3}
+  m_PrefabInstance: {fileID: 1026757592}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1028b7c6133ed49ad44aebdae5df46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1298582239 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1272919549185040830, guid: d90a29b3de2692f4aa89b88bb5454319, type: 3}
