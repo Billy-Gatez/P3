@@ -83,6 +83,12 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     float rollTimer;
     float rollCooldownTimer;
 
+    private bool isOnIce = false;
+    private Vector3 iceSlideVelocity = Vector3.zero;
+
+    private bool isOnSnow = false;
+    private float slipTimer = 0f;
+
 
     private bool canTeleport = true;
     private Dictionary<string, Vector3> exitDirections = new Dictionary<string, Vector3>
@@ -92,6 +98,17 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
          { "TeleportSphere3", Vector3.left },
          { "TeleportSphere4", Vector3.back }
     };
+    private int snowyTerrainSpeedMultiplier;
+    private int slipIntensity;
+    private float slipEffectDuration;
+    private AudioClip slipSound;
+    private object snowEffect;
+    private float stealthVisibilityReduction;
+    private float stealthStepVolume;
+    private int stealthSpeedMultiplier;
+    private AudioClip stealthHeartbeat;
+    private float normalStepVolume;
+    private float normalVisibility;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -145,6 +162,10 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
         if (!gamemanager.instance.isPaused)
         {
             movement();
+            if (!isPlayingStep && controller.isGrounded && moveDir.magnitude > 0.1f)
+            {
+                StartCoroutine(PlayStep());
+            }
 
         }
 
@@ -156,11 +177,50 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
 
         roll();
 
+        handleSnowEffect();
+
         if (Input.GetButtonDown("Grenade") && currentGrenades > 0) // or use a custom input like "ThrowGrenade"
         {
             ThrowGrenade();
         }
+        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
+        if (isOnIce && controller.isGrounded)
+        {
 
+            iceSlideVelocity += moveDir.normalized * 10f * Time.deltaTime;
+
+            iceSlideVelocity *= 0.99f;
+
+
+            controller.Move(iceSlideVelocity * Time.deltaTime);
+            Debug.DrawRay(transform.position, iceSlideVelocity, Color.cyan);
+        }
+        else
+        {
+
+
+            iceSlideVelocity = Vector3.zero;
+        }
+
+        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * shootDist, Color.red);
+
+        if (isOnSnow)
+        {
+            slipTimer += Time.deltaTime;
+
+            // Reduce movement speed
+            speed = (int)(originalSpeed * snowyTerrainSpeedMultiplier);
+
+            // Apply sliding effect
+            moveDir += new Vector3(Random.Range(-slipIntensity, slipIntensity), 0, Random.Range(-slipIntensity, slipIntensity)) * Time.deltaTime;
+
+            if (slipTimer >= slipEffectDuration)
+            {
+                isOnSnow = false;
+                slipTimer = 0f;
+                speed = originalSpeed;
+            }
+        }
 
     }
     void movement()
@@ -383,7 +443,19 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
         }
 
     }
-
+    void adjustStealthMechanics()
+    {
+        gameObject.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f, stealthVisibilityReduction);
+        audStepsVol = stealthStepVolume;
+        speed = (int)(originalSpeed * stealthSpeedMultiplier);
+        aud.PlayOneShot(stealthHeartbeat, 0.5f);
+    }
+    void resetStealthMechanics()
+    {
+        gameObject.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f, normalVisibility);
+        audStepsVol = normalStepVolume;
+        speed = originalSpeed;
+    }
     void dodge()
     {
         if (Input.GetButtonDown("Dodge") && dodgeCooldownTimer >= dodgeCooldown)
@@ -436,6 +508,82 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
             //Debug.Log("Player entered teleport sphere!" + other.gameObject.name);
             StartCoroutine(TeleportPlayer(other.gameObject.name));
         }
+        if (other.CompareTag("Ice"))
+        {
+            isOnIce = true;
+            iceSlideVelocity = moveDir;
+
+
+            Debug.Log("Player is now on ice: " + other.gameObject.name);
+        }
+        if (other.CompareTag("Snow"))
+        {
+            isOnSnow = true;
+
+            // Ensure the snow effect exists before calling Play()
+            if (snowEffect != null)
+            {
+                //object value = snowEffect.Play();
+            }
+            else
+            {
+                Debug.LogWarning("snowEffect is not assigned! Please check the Inspector.");
+            }
+
+            aud.PlayOneShot(slipSound, 0.8f);
+            Debug.Log("Player is slipping on snow!");
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Ice"))
+        {
+            isOnIce = false;
+            iceSlideVelocity = Vector3.zero;
+            Debug.Log("Player exited ice: " + other.gameObject.name);
+        }
+        if (other.CompareTag("Snow"))
+        {
+            isOnSnow = false;
+
+            // Start the recovery process
+            StartCoroutine(RecoverFromSnow());
+
+            Debug.Log("Player gradually recovering from snowy terrain.");
+        }
+    }
+    void handleSnowEffect()
+    {
+        if (isOnSnow)
+        {
+            slipTimer += Time.deltaTime;
+
+            speed = Mathf.Max((int)(originalSpeed * snowyTerrainSpeedMultiplier), 1);
+
+            moveDir += new Vector3(Random.Range(-slipIntensity, slipIntensity), 0, Random.Range(-slipIntensity, slipIntensity)) * Time.deltaTime;
+
+            if (slipTimer >= slipEffectDuration)
+            {
+                isOnSnow = false;
+                slipTimer = 0f;
+                speed = originalSpeed;
+            }
+        }
+    }
+    IEnumerator RecoverFromSnow()
+    {
+        float recoveryDuration = 1f; // Adjust as needed
+        float elapsedTime = 0f;
+        float currentSpeed = speed;
+
+        while (elapsedTime < recoveryDuration)
+        {
+            speed = (int)Mathf.Lerp(currentSpeed, originalSpeed, elapsedTime / recoveryDuration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        speed = originalSpeed;
     }
     IEnumerator TeleportPlayer(string teleportSphereTag)
     {
@@ -451,10 +599,8 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
 
         if (exitDirections.ContainsKey(teleportSphereTag))
         {
-            //transform.position += transform.forward * 3f;
             transform.position += exitDirections[teleportSphereTag] * 3f;
         }
-        //controller.Move(moveDir * Time.deltaTime);
 
         yield return new WaitForSeconds(1f);
         canTeleport = true;

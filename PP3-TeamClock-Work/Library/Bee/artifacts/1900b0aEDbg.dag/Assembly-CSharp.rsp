@@ -413,6 +413,7 @@
 "Assets/Scripts/ClassSelectionManager.cs"
 "Assets/Scripts/damage.cs"
 "Assets/Scripts/Door.cs"
+"Assets/Scripts/Doorl.cs"
 "Assets/Scripts/enemyAI.cs"
 "Assets/Scripts/enemyHealthBar.cs"
 "Assets/Scripts/gamemanager.cs"
@@ -423,6 +424,7 @@
 "Assets/Scripts/HealthShop.cs"
 "Assets/Scripts/IDamage.cs"
 "Assets/Scripts/Ipickup.cs"
+"Assets/Scripts/keycardPickup.cs"
 "Assets/Scripts/MainMenuManager.cs"
 "Assets/Scripts/pickup.cs"
 "Assets/Scripts/playerController.cs"
@@ -468,6 +470,7 @@
 "Assets/Unity Store DL/Hits Effects FREE/Scene Demo/Script/Prefab Manager.cs"
 "Assets/Unity Store DL/Hits Effects FREE/Scene Demo/Script/RotationEffect.cs"
 "Assets/Unity Store DL/Lava_Flowing_Shader/Scripts/ScrollingUVs_Layers.cs"
+"Assets/Weather System/Snowy/Snow.cs"
 -langversion:9.0
 /deterministic
 /optimize-

@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: b454bb19d962f444986ef6bb7e7f4dd3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - snowParticles: {fileID: 4120278811242650281, guid: 6614cbe3a4bee294ab693e6fe4dccc3f, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

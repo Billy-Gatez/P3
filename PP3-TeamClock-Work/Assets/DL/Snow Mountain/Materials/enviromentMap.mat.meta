@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ee56e56bee4d91a46a807516591bec0a
+timeCreated: 1463469652
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63002
+  packageName: Free Snow Mountain
+  packageVersion: 1.0
+  assetPath: Assets/Snow Mountain/Materials/enviromentMap.mat
+  uploadId: 118138
