@@ -1,0 +1,280 @@
+Using pre-set license
+Built from '6000.0/release' branch; Version is '6000.0.44f1 (101c91f3a8fb) revision 1055889'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 16153 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 6000.0.44f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/11A/P3/PP3-TeamClock-Work
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50000
+-job-worker-count
+11
+-background-job-worker-count
+8
+-gc-helper-count
+1
+Successfully changed project path to: C:/11A/P3/PP3-TeamClock-Work
+C:/11A/P3/PP3-TeamClock-Work
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [13148]  Target information:
+
+Player connection [13148]  * "[IP] 192.168.1.241 [Port] 0 [Flags] 2 [Guid] 3863400832 [EditorId] 3863400832 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [13148] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [13148] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 11
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 1.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.44f1 (101c91f3a8fb)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 6000.0.44f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/11A/P3/PP3-TeamClock-Work/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 Laptop GPU (ID=0x2820)
+    Vendor:   NVIDIA
+    VRAM:     7948 MB
+    Driver:   32.0.15.7652
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 6000.0.44f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 6000.0.44f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 6000.0.44f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56776
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 6000.0.44f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002105 seconds.
+- Loaded All Assemblies, in  0.261 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.212 seconds
+Domain Reload Profiling: 472ms
+	BeginReloadAssembly (91ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (101ms)
+		LoadAssemblies (89ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (99ms)
+			TypeCache.Refresh (98ms)
+				TypeCache.ScanAssembly (88ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (212ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (191ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (99ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.464 seconds
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.474 seconds
+Domain Reload Profiling: 936ms
+	BeginReloadAssembly (116ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (285ms)
+		LoadAssemblies (221ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (133ms)
+			TypeCache.Refresh (106ms)
+				TypeCache.ScanAssembly (96ms)
+			BuildScriptInfoCaches (21ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (474ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (401ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (55ms)
+			ProcessInitializeOnLoadAttributes (323ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 65 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3977 unused Assets / (4.1 MB). Loaded Objects now: 4500.
+Memory consumption went from 178.6 MB to 174.5 MB.
+Total: 8.037200 ms (FindLiveObjects: 0.372800 ms CreateObjectMapping: 0.343700 ms MarkObjects: 5.159100 ms  DeleteObjects: 2.160100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 422.089958 seconds.
+  path: Assets/RPG Monster DUO PBR Polyart/Meshes/TurtleShellMesh.fbx
+  artifactKey: Guid(599b2dc9e6c44a8ebc02ddea1f18d215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster DUO PBR Polyart/Meshes/TurtleShellMesh.fbx using Guid(599b2dc9e6c44a8ebc02ddea1f18d215) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e937d19a8fee362eafb6b5d6af7504d9') in 0.2134638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 70
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.061702 seconds.
+  path: Assets/RPG Monster DUO PBR Polyart/Meshes/TurtleShellPolyartMesh.fbx
+  artifactKey: Guid(942e6d5330e147fe84c5ab6ab2193ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster DUO PBR Polyart/Meshes/TurtleShellPolyartMesh.fbx using Guid(942e6d5330e147fe84c5ab6ab2193ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f84df967a0c2ca40f89f0e21315ad0af') in 0.0285205 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 70
+
+========================================================================
+Received Import Request.
+  Time since last request: 988.454991 seconds.
+  path: Assets/Prefabs/TurtleShellPolyart.prefab
+  artifactKey: Guid(b663e3d525051bb4cbfc2f8a3d7ebe41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/TurtleShellPolyart.prefab using Guid(b663e3d525051bb4cbfc2f8a3d7ebe41) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c6357d7fab24ba9cfa39f45aee4a883') in 0.1671708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 324
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.602174 seconds.
+  path: Assets/RPG Monster DUO PBR Polyart/Prefabs/SlimePolyart.prefab
+  artifactKey: Guid(a4ec793513574cd49719c4055b630e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster DUO PBR Polyart/Prefabs/SlimePolyart.prefab using Guid(a4ec793513574cd49719c4055b630e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '248dba29525026121db04ca1f247ad7c') in 0.1851638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 86
+
+========================================================================
+Received Import Request.
+  Time since last request: 105.600834 seconds.
+  path: Assets/Prefabs/Guns/TurtleShell.prefab
+  artifactKey: Guid(d19adf6fd96dbb04fa5ae6a8cf50fd19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Guns/TurtleShell.prefab using Guid(d19adf6fd96dbb04fa5ae6a8cf50fd19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '433334eeee12718d1e81e74cb319d5a9') in 0.0182664 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 764.597967 seconds.
+  path: Assets/RPG Monster DUO PBR Polyart/Prefabs/PolyartDefault/TurtleShellPBR.prefab
+  artifactKey: Guid(e2aafa8770d34a9591b41bedf4e318ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster DUO PBR Polyart/Prefabs/PolyartDefault/TurtleShellPBR.prefab using Guid(e2aafa8770d34a9591b41bedf4e318ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '58d7d718a318df1b3273e715e8a31058') in 0.0261492 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 131
+
+========================================================================
+Received Import Request.
+  Time since last request: 95.554609 seconds.
+  path: Assets/Prefabs/Enemy/Spikes.prefab
+  artifactKey: Guid(923604fd6d2e0c34ea2c31e846722a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Spikes.prefab using Guid(923604fd6d2e0c34ea2c31e846722a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '729aa8a1930846d8272337a7f2b4d604') in 0.0196212 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 198
+
+========================================================================
+Received Import Request.
+  Time since last request: 697.555291 seconds.
+  path: Assets/Prefabs/Enemy/Spikes Boss.prefab
+  artifactKey: Guid(5b3f338a3569a894aab6bbfbf05a8535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Spikes Boss.prefab using Guid(5b3f338a3569a894aab6bbfbf05a8535) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '04bbba7cf403a6dd63901c244cf62a40') in 0.0349039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 269
+
+========================================================================
+Received Import Request.
+  Time since last request: 458.075799 seconds.
+  path: Assets/Unity Store DL/Hits Effects FREE/Materials/Basic Hit/Basic Flash.mat
+  artifactKey: Guid(61d06632ac106114480ff5cbb68e90e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity Store DL/Hits Effects FREE/Materials/Basic Hit/Basic Flash.mat using Guid(61d06632ac106114480ff5cbb68e90e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd673e15e69fd287d6340061d016762cb') in 0.0967077 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Audio/Laser.wav
+  artifactKey: Guid(9dae50045fc46cb438edd222bff5f928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/Laser.wav using Guid(9dae50045fc46cb438edd222bff5f928) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8c5829cae1cf234caa5b4c831978a70c') in 0.0582732 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Unity Store DL/Hits Effects FREE/Materials/Fire Hit/Fire Flash B.mat
+  artifactKey: Guid(68c9648bd3a60e84aa02e78ffc729dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity Store DL/Hits Effects FREE/Materials/Fire Hit/Fire Flash B.mat using Guid(68c9648bd3a60e84aa02e78ffc729dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7daee17ad021a89e797f00299e9d2b6d') in 0.0107362 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Unity Store DL/Hits Effects FREE/Materials/Ice Hit/Ice Flash.mat
+  artifactKey: Guid(1311a9f707b6cdb4ab7acd4ed80ed8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity Store DL/Hits Effects FREE/Materials/Ice Hit/Ice Flash.mat using Guid(1311a9f707b6cdb4ab7acd4ed80ed8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '834ceb2d8e947fb6bd2b7918d7e1fc74') in 0.0043405 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
