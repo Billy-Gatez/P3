@@ -470,6 +470,8 @@
 "Assets/Unity Store DL/Hits Effects FREE/Scene Demo/Script/Prefab Manager.cs"
 "Assets/Unity Store DL/Hits Effects FREE/Scene Demo/Script/RotationEffect.cs"
 "Assets/Unity Store DL/Lava_Flowing_Shader/Scripts/ScrollingUVs_Layers.cs"
+"Assets/Weather System/Blizzard/blizzard.cs"
+"Assets/Weather System/Rainy/rain.cs"
 "Assets/Weather System/Snowy/Snow.cs"
 -langversion:9.0
 /deterministic
