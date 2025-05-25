@@ -1087,7 +1087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3067609348094956271, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: m_Name
-      value: Next Level
+      value: Main Menu
       objectReference: {fileID: 0}
     - target: {fileID: 3067609348094956271, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: m_IsActive
