@@ -109,7 +109,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     private AudioClip stealthHeartbeat;
     private float normalStepVolume;
     private float normalVisibility;
-
+    public int xp = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -637,6 +637,22 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
         }
 
         isRefillingGrenades = false;
+    }
+
+    internal bool SpendCoins(int amount)
+    {
+        if (gamemanager.instance.currency >= amount)
+        {
+            gamemanager.instance.updateCurrency(-amount);
+            return true;
+        }
+        return false;
+    }
+
+    internal void AddXP(int amount)
+    {
+        xp += amount;
+        Debug.Log($"XP increased by {amount}. Total XP: {xp}");
     }
 
 }

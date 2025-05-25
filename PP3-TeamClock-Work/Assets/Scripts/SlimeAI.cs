@@ -62,7 +62,10 @@ public class slimeAI : MonoBehaviour, IDamage
         //anim.SetFloat("Speed", agent.velocity.normalized.magnitude);
         //gamemanager.instance.updateGameGoal(1, 0);
         if (agent.remainingDistance < 0.01f)
+        {
             roamTimer += Time.deltaTime;
+        }
+
         if (playerInRange && !canSeePlayer())
         {
             checkRoam();

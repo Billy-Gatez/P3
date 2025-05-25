@@ -429,6 +429,8 @@
 "Assets/Scripts/pickup.cs"
 "Assets/Scripts/playerController.cs"
 "Assets/Scripts/resource.cs"
+"Assets/Scripts/shopKeeper.cs"
+"Assets/Scripts/shopKeeperAI.cs"
 "Assets/Scripts/SlimeAI.cs"
 "Assets/Scripts/spawner.cs"
 "Assets/Scripts/WaveSpawner.cs"
