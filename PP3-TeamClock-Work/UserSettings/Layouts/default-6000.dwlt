@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 111
+  controlID: 17
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -168,8 +168,8 @@ MonoBehaviour:
     y: 0
     width: 1126
     height: 399
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 226}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -221,8 +221,8 @@ MonoBehaviour:
     y: 0
     width: 295
     height: 965
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 226}
+  m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -273,8 +273,8 @@ MonoBehaviour:
     y: 0
     width: 229
     height: 965
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -1066,9 +1066,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 51.024628, y: 8.897376, z: -45.61626}
+    m_Target: {x: 64.78707, y: 0.91929626, z: -45.61664}
     speed: 2
-    m_Value: {x: 51.024628, y: 8.897376, z: -45.61626}
+    m_Value: {x: 64.78707, y: 0.91929626, z: -45.61664}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1114,13 +1114,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.13580273, y: -0.5507042, z: 0.09134307, w: -0.8185452}
+    m_Target: {x: -0.1863183, y: -0.76838195, z: 0.25745595, w: -0.555581}
     speed: 2
-    m_Value: {x: -0.13456962, y: -0.55081934, z: 0.090513326, w: -0.81871635}
+    m_Value: {x: -0.18592454, y: -0.769184, z: 0.25772494, w: -0.55440587}
   m_Size:
-    m_Target: 11.018729
+    m_Target: 34.641018
     speed: 2
-    m_Value: 10.108926
+    m_Value: 34.641006
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1193,20 +1193,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b2870000
-      m_LastClickedID: 34738
-      m_ExpandedIDs: 5ef6ffff02f7ffffaef7ffffb8f7ffffc2f7ffffc4f7ffff2ef8ffff6ef8ffffa2f8ffffdafafffffafaffff26860000e68600002e870000d4870000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: a6f8ffff1cfaffff5cfaffff90fafffffafaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Text (TMP)
-        m_OriginalName: Text (TMP)
+        m_Name: Spikes Boss(Clone)
+        m_OriginalName: Spikes Boss(Clone)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -4262
+        m_UserData: -34812
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -1266,7 +1266,8 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets/Prefabs/Enemy
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1284,7 +1285,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b0230000
     m_LastClickedID: 9136
-    m_ExpandedIDs: 0000000056900000589000005a9000005c9000005e900000
+    m_ExpandedIDs: 00000000cc8d0000fc900000fe9000000091000002910000049100000691000008910000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1313,7 +1314,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 240}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000056900000589000005c9000003891000040cc000042cc00004acc00001ecd0000
+    m_ExpandedIDs: ffffffff00000000cc8d0000fc900000fe9000000091000002910000049100000691000008910000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
