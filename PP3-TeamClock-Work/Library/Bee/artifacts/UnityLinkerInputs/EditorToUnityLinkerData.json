@@ -2,6 +2,13 @@
     "serializedTypes": [],
     "typesInScenes": [
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "blizzard",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "BuildSettings",
             "fullManagedTypeName": "",
@@ -47,6 +54,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Door",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Doorl",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -153,6 +167,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "HealthShop",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "KeyCardPickup",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -274,6 +295,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "rain",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "ResourceManager",
             "fullManagedTypeName": "",
@@ -297,7 +325,28 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "ShopKeeper",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "shopKeeperAI",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "slimeAI",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Snow",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -1150,6 +1199,29 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "LODGroup",
+            "fullManagedTypeName": "UnityEngine.LODGroup",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/Level-1.unity",
+                "Assets/Scenes/Level-1hg.unity",
+                "Assets/Scenes/Level-1med.unity",
+                "Assets/Scenes/Level-2.unity",
+                "Assets/Scenes/Level-2hg.unity",
+                "Assets/Scenes/Level-2med.unity",
+                "Assets/Scenes/Level-3.unity",
+                "Assets/Scenes/Level-3hg.unity",
+                "Assets/Scenes/Level-3med.unity",
+                "Assets/Scenes/Level-4.unity",
+                "Assets/Scenes/Level-4hg.unity",
+                "Assets/Scenes/Level-4med.unity",
+                "Assets/Scenes/Level-5.unity",
+                "Assets/Scenes/Level-5hg.unity",
+                "Assets/Scenes/Level-5med.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "Material",
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
@@ -1828,13 +1900,6 @@
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.Slider",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "VolumeControl",
             "moduleName": "",
             "usedInScenes": []
         }
@@ -4508,6 +4573,10 @@
     "forceIncludeModules": [],
     "forceExcludeModules": [
         "AMD",
-        "NVIDIA"
+        "AR",
+        "ClusterInput",
+        "ClusterRenderer",
+        "NVIDIA",
+        "VirtualTexturing"
     ]
 }

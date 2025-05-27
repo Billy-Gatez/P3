@@ -1,10 +1,12 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="blizzard" preserve="nothing"/>
 		<type fullname="buttonFunctions" preserve="nothing"/>
 		<type fullname="cameraController" preserve="nothing"/>
 		<type fullname="ClassSelectionManager" preserve="nothing"/>
 		<type fullname="damage" preserve="nothing"/>
 		<type fullname="Door" preserve="nothing"/>
+		<type fullname="Doorl" preserve="nothing"/>
 		<type fullname="enemyAI" preserve="nothing"/>
 		<type fullname="gamemanager" preserve="nothing"/>
 		<type fullname="Grenade" preserve="nothing"/>
@@ -12,12 +14,16 @@
 		<type fullname="gunStats" preserve="nothing"/>
 		<type fullname="healthItem" preserve="nothing"/>
 		<type fullname="HealthShop" preserve="nothing"/>
+		<type fullname="KeyCardPickup" preserve="nothing"/>
 		<type fullname="MainMenuManager" preserve="nothing"/>
 		<type fullname="pickup" preserve="nothing"/>
 		<type fullname="playerController" preserve="nothing"/>
+		<type fullname="rain" preserve="nothing"/>
+		<type fullname="ShopKeeper" preserve="nothing"/>
+		<type fullname="shopKeeperAI" preserve="nothing"/>
 		<type fullname="slimeAI" preserve="nothing"/>
+		<type fullname="Snow" preserve="nothing"/>
 		<type fullname="spawner" preserve="nothing"/>
-		<type fullname="VolumeControl" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.AI.Navigation">
 		<type fullname="Unity.AI.Navigation.NavMeshSurface" preserve="nothing"/>
@@ -75,6 +81,7 @@
 		<type fullname="UnityEngine.GameObject" preserve="nothing"/>
 		<type fullname="UnityEngine.Light" preserve="nothing"/>
 		<type fullname="UnityEngine.LightmapSettings" preserve="nothing"/>
+		<type fullname="UnityEngine.LODGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.Material" preserve="nothing"/>
 		<type fullname="UnityEngine.Mesh" preserve="nothing"/>
 		<type fullname="UnityEngine.MeshCollider" preserve="nothing"/>

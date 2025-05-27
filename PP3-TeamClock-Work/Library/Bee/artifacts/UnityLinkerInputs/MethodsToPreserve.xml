@@ -1,14 +1,21 @@
 <linker>
 	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
 		<type fullname="buttonFunctions">
-			<method name="continue2"/>
-			<method name="continue2"/>
-			<method name="continue2"/>
-			<method name="continue2"/>
-			<method name="continue2"/>
-			<method name="continue2"/>
-			<method name="continue4"/>
-			<method name="continue5"/>
+			<method name="increaseHP"/>
+			<method name="increaseHP"/>
+			<method name="increaseHP"/>
+			<method name="increaseHP"/>
+			<method name="increaseHP"/>
+			<method name="increaseHP"/>
+			<method name="increaseHP"/>
+			<method name="increaseHP"/>
+			<method name="increaseHP"/>
+			<method name="increaseHP"/>
+			<method name="increaseHP"/>
+			<method name="increaseHP"/>
+			<method name="increaseHP"/>
+			<method name="increaseHP"/>
+			<method name="increaseHP"/>
 			<method name="quit"/>
 			<method name="quit"/>
 			<method name="quit"/>
@@ -69,9 +76,6 @@
 			<method name="respawn"/>
 			<method name="respawn"/>
 			<method name="respawn"/>
-			<method name="restart"/>
-			<method name="restart"/>
-			<method name="restart"/>
 			<method name="restart"/>
 			<method name="restart"/>
 			<method name="restart"/>
@@ -174,7 +178,10 @@
 			<method name="Medic1"/>
 			<method name="Medic2"/>
 			<method name="Medic3"/>
+			<method name="Medic3"/>
 			<method name="Medic4"/>
+			<method name="Medic4"/>
+			<method name="Medic5"/>
 			<method name="Medic5"/>
 			<method name="QuitGame"/>
 			<method name="StartGame"/>
