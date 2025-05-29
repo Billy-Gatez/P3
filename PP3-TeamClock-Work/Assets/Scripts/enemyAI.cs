@@ -77,6 +77,7 @@ public class enemyAI : MonoBehaviour, IDamage
         float animSpeedCur = anim.GetFloat("Speed");
         anim.SetFloat("Speed", Mathf.Lerp(animSpeedCur, agentSpeedCur, Time.deltaTime * animTranSpeed));
     }
+
     void checkRoam()
     {
         if (roamTimer >= roamPauseTime && agent.remainingDistance < 0.01f)
@@ -84,6 +85,7 @@ public class enemyAI : MonoBehaviour, IDamage
             roam();
         }
     }
+
     void roam()
     {
         roamTimer = 0;
@@ -96,6 +98,7 @@ public class enemyAI : MonoBehaviour, IDamage
         NavMesh.SamplePosition(ranPos, out hit, roamDist, 1);
         agent.SetDestination(hit.position);
     }
+
     bool canSeePlayer()
     {
         playerDir = (gamemanager.instance.player.transform.position - headPos.position);
@@ -127,6 +130,7 @@ public class enemyAI : MonoBehaviour, IDamage
         agent.stoppingDistance = 0;
         return false;
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -143,6 +147,7 @@ public class enemyAI : MonoBehaviour, IDamage
             playerInRange = false;
         }
     }
+
     public void takeDamage(int amount)
     {
         HP -= amount;
@@ -155,7 +160,10 @@ public class enemyAI : MonoBehaviour, IDamage
             if (shouldSplitOnDeath)
             {
                 spawnSmallerEnemies();
-                gamemanager.instance.updateGameGoal(-1, XP);
+                // Subtract 1 for the original enemy's death
+                gamemanager.instance.updateGameGoal(0, XP);
+                // Add the number of smaller enemies spawned to the game goal
+                gamemanager.instance.updateGameGoal(numberToSpawnOnDeath, 0);
             }
             else
             {
@@ -164,26 +172,31 @@ public class enemyAI : MonoBehaviour, IDamage
             Destroy(gameObject);
         }
     }
+
     IEnumerator flashRed()
     {
         model.material.color = Color.red;
         yield return new WaitForSeconds(0.1f);
         model.material.color = colorOrig;
     }
+
     void shoot()
     {
         shootTimer = 0;
         anim.SetTrigger("Shoot");
     }
+
     public void createBullet()
     {
         Instantiate(bullet, shootPos.position, transform.rotation);
     }
+
     void faceTarget()
     {
         Quaternion rot = Quaternion.LookRotation(new Vector3(playerDir.x, transform.position.y, playerDir.z));
         transform.rotation = Quaternion.Lerp(transform.rotation, rot, Time.deltaTime * faceTargetSpeed);
     }
+
     void spawnSmallerEnemies()
     {
         for (int i = 0; i < numberToSpawnOnDeath; i++)
@@ -194,7 +207,9 @@ public class enemyAI : MonoBehaviour, IDamage
             Vector3 spawnPos = transform.position + offset;
 
             Instantiate(smallerEnemyPrefab, spawnPos, Quaternion.identity);
-            gamemanager.instance.updateGameGoal(1, 0);
         }
     }
 }
+
+
+
