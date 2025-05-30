@@ -2,15 +2,27 @@ using UnityEngine;
 
 public class rain : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public AudioSource rainAudio;
+    [Range(0f, 1f)] public float volume = 1f;
     void Start()
     {
-        
+        if (rainAudio == null)
+        {
+            rainAudio = GetComponent<AudioSource>();
+        }
+
+        if (rainAudio != null)
+        {
+            rainAudio.volume = volume;
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (rainAudio != null)
+        {
+            rainAudio.volume = volume;
+
+        }
     }
 }

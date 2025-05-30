@@ -12,8 +12,6 @@ public class ShopKeeper : MonoBehaviour
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TMP_Text dialogueText;
 
-    public int xpCost = 50;
-    public int xpAmount = 10;
     public int healthCost = 10;
     public int healthGained = 3;
 
@@ -49,7 +47,7 @@ public class ShopKeeper : MonoBehaviour
 
             if (dialogueText != null)
             {
-                dialogueText.text = "Welcome, traveler! Press [E] to buy XP or [H] to buy Health.";
+                dialogueText.text = "Welcome, traveler! Press [H] to buy Health or [N] to leave shop.";
             }
             if (shopUI != null)
             {
@@ -76,11 +74,6 @@ public class ShopKeeper : MonoBehaviour
     {
         if (isPlayerNearby)
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                Debug.Log("E key pressed - Buying XP");
-                BuyXP();
-            }
             if (Input.GetKeyDown(KeyCode.H))
             {
                 Debug.Log("H key pressed - Buying Health");
@@ -110,37 +103,35 @@ public class ShopKeeper : MonoBehaviour
         }
     }
 
-    private void BuyXP()
-    {
-        if (playerStats != null && gamemanager.instance != null && gamemanager.instance.currency >= xpCost)
-        {
-            gamemanager.instance.updateCurrency(-xpCost);
-            playerStats.AddXP(xpAmount);
-            UpdateDialogue("Pleasure doing business with you!");
-        }
-        else
-        {
-            UpdateDialogue("Not enough coins, traveler!");
-        }
-    }
-
     private void BuyHealth()
     {
-        if (gamemanager.instance != null && gamemanager.instance.currency >= healthCost)
+        if (gamemanager.instance != null)
         {
             var playerScript = gamemanager.instance.playerScript;
-            playerScript.HP += healthGained;
-            playerScript.HP = Mathf.Min(playerScript.HP, playerScript.HPOrig);
 
-            gamemanager.instance.updateCurrency(-healthCost);
-            gamemanager.instance.playerHPBar.fillAmount =
-                (float)playerScript.HP / playerScript.HPOrig;
+            // Prevent purchase if health is already at max
+            if (playerScript.HP >= playerScript.HPOrig)
+            {
+                UpdateDialogue("You're already at full health, traveler!");
+                return;
+            }
 
-            UpdateDialogue("Your health has been restored!");
-        }
-        else
-        {
-            UpdateDialogue("Not enough coins for health!");
+            // Ensure enough currency before proceeding
+            if (gamemanager.instance.currency >= healthCost)
+            {
+                playerScript.HP += healthGained;
+                playerScript.HP = Mathf.Min(playerScript.HP, playerScript.HPOrig); // Ensure it doesn't exceed max HP
+
+                gamemanager.instance.updateCurrency(-healthCost);
+                gamemanager.instance.playerHPBar.fillAmount =
+                    (float)playerScript.HP / playerScript.HPOrig;
+
+                UpdateDialogue("Your health has been restored!");
+            }
+            else
+            {
+                UpdateDialogue("Not enough coins for health!");
+            }
         }
     }
 
@@ -173,7 +164,7 @@ public class ShopKeeper : MonoBehaviour
     {
         if (dialogueText != null)
         {
-            dialogueText.text = "You still want to buy Health or XP?\nPress [E] to buy XP or [H] to buy Health.";
+            dialogueText.text = "You still want to buy Health?\nPress [H] to buy Health or [N] to leave.";
         }
     }
 }

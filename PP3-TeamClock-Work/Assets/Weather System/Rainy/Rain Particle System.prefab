@@ -4944,3 +4944,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b375993ef078f8348a0363a41b4c2e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rainAudio: {fileID: 0}
+  volume: 1
