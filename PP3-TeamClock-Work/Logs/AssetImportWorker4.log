@@ -1,0 +1,665 @@
+Using pre-set license
+Built from '6000.0/release' branch; Version is '6000.0.44f1 (101c91f3a8fb) revision 1055889'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 16085 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.44f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/tommy/source/repos/P3/PP3-TeamClock-Work
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+61971
+-job-worker-count
+11
+-background-job-worker-count
+8
+-gc-helper-count
+1
+Successfully changed project path to: C:/Users/tommy/source/repos/P3/PP3-TeamClock-Work
+C:/Users/tommy/source/repos/P3/PP3-TeamClock-Work
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [19132]  Target information:
+
+Player connection [19132]  * "[IP] 192.168.8.207 [Port] 0 [Flags] 2 [Guid] 1951019689 [EditorId] 1951019689 [Version] 1048832 [Id] WindowsEditor(7,Carter) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [19132]  * "[IP] 172.29.144.1 [Port] 0 [Flags] 2 [Guid] 1951019689 [EditorId] 1951019689 [Version] 1048832 [Id] WindowsEditor(7,Carter) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [19132] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [19132] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 11
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 1.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.44f1 (101c91f3a8fb)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/tommy/source/repos/P3/PP3-TeamClock-Work/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 Laptop GPU (ID=0x2820)
+    Vendor:   NVIDIA
+    VRAM:     7948 MB
+    Driver:   31.0.15.5188
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56028
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.44f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.008022 seconds.
+- Loaded All Assemblies, in  0.470 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 1517 ms
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.985 seconds
+Domain Reload Profiling: 2454ms
+	BeginReloadAssembly (185ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (179ms)
+		LoadAssemblies (184ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (173ms)
+			TypeCache.Refresh (172ms)
+				TypeCache.ScanAssembly (158ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1986ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1941ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1650ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (142ms)
+			ProcessInitializeOnLoadMethodAttributes (66ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.849 seconds
+Refreshing native plugins compatible for Editor in 1.25 ms, found 3 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.021 seconds
+Domain Reload Profiling: 2860ms
+	BeginReloadAssembly (185ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (1565ms)
+		LoadAssemblies (1372ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (306ms)
+			TypeCache.Refresh (241ms)
+				TypeCache.ScanAssembly (220ms)
+			BuildScriptInfoCaches (50ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1022ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (823ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (219ms)
+			ProcessInitializeOnLoadAttributes (535ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 2.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 65 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3986 unused Assets / (4.1 MB). Loaded Objects now: 4512.
+Memory consumption went from 180.3 MB to 176.2 MB.
+Total: 15.461700 ms (FindLiveObjects: 1.500400 ms CreateObjectMapping: 0.277700 ms MarkObjects: 10.042400 ms  DeleteObjects: 3.638800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 284313.839786 seconds.
+  path: Assets/DL/Containers/Cargo_container_v1/Cargo_container_v1_LD2close.prefab
+  artifactKey: Guid(4d9609eefdf711e4aaabcf644030a668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DL/Containers/Cargo_container_v1/Cargo_container_v1_LD2close.prefab using Guid(4d9609eefdf711e4aaabcf644030a668) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '08edd65f511cc74c2d9b7820f62116b2') in 0.2670711 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Unity Store DL/Containers/Cargo_container_v1/Cargo_container_v1_LD2open.prefab
+  artifactKey: Guid(c2028b62d7877e04194d5001429cff6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity Store DL/Containers/Cargo_container_v1/Cargo_container_v1_LD2open.prefab using Guid(c2028b62d7877e04194d5001429cff6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '64427c6b84c99bd12fbedc883720db34') in 0.029372 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021731 seconds.
+  path: Assets/Clockwork Shop Keeper/Clockwork Shop Keeper/Meshes/CLOCKWORK BOMBMAN (BOMB)GC.fbx
+  artifactKey: Guid(5875d31bc544a4d4d850f99ccf4f9374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Clockwork Shop Keeper/Clockwork Shop Keeper/Meshes/CLOCKWORK BOMBMAN (BOMB)GC.fbx using Guid(5875d31bc544a4d4d850f99ccf4f9374) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76e581a9671dbbec719d05ace69668e2') in 0.1962706 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.091965 seconds.
+  path: Assets/Clockwork Shop Keeper/Clockwork Shop Keeper 1/Clockwork Shop Keeper/Meshes/CLOCKWORK BOMBMAN (BOMB)GC.fbx
+  artifactKey: Guid(50b9e66066457c54d97089231c0f07d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Clockwork Shop Keeper/Clockwork Shop Keeper 1/Clockwork Shop Keeper/Meshes/CLOCKWORK BOMBMAN (BOMB)GC.fbx using Guid(50b9e66066457c54d97089231c0f07d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6c47c7337dda810b3b9439afbdd3573f') in 0.0442548 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040946 seconds.
+  path: Assets/Clockwork Shop Keeper/CLOCKWORK SHOP KEEPER.prefab
+  artifactKey: Guid(0a4fcba81e87ffc48b05d23c605cc858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Clockwork Shop Keeper/CLOCKWORK SHOP KEEPER.prefab using Guid(0a4fcba81e87ffc48b05d23c605cc858) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a2e1c3dfe873b65334959cfaa3b9ce1') in 0.2502177 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 245
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006104 seconds.
+  path: Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Die_Slime_Anim.fbx
+  artifactKey: Guid(35bb20ecf5de4fdd8dcd8e28e4053f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Die_Slime_Anim.fbx using Guid(35bb20ecf5de4fdd8dcd8e28e4053f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '14bb8a4f32d13df15616d4b0d76de901') in 0.0650877 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/Enemy/Enemy.prefab
+  artifactKey: Guid(a6ba3c1adcf809a4fa450c62ee133db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Enemy.prefab using Guid(a6ba3c1adcf809a4fa450c62ee133db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76aeadd0ed2a05a6b52171cccbc78267') in 0.0579372 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 99
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004239 seconds.
+  path: Assets/Prefabs/Level/Floor 1.prefab
+  artifactKey: Guid(c303c7a662dd28f448a390362a6a91e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Floor 1.prefab using Guid(c303c7a662dd28f448a390362a6a91e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db95f847c16cb161413055fea03fef9b') in 0.0347073 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Ice/Ice.prefab
+  artifactKey: Guid(8e6884c7987b6534e8265c6d25e2a54f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ice/Ice.prefab using Guid(8e6884c7987b6534e8265c6d25e2a54f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf0c1b8ecd2a8fe0e81265a0e1534a5d') in 0.0361793 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/IdleBattle_TurtleShell_Anim.fbx
+  artifactKey: Guid(eee9d7beb7b440a58147d924f277c7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/IdleBattle_TurtleShell_Anim.fbx using Guid(eee9d7beb7b440a58147d924f277c7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bcf86c7efea9c904bc7b0b32b637ef95') in 0.0513672 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 71
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/RPG Monster DUO PBR Polyart/Animations/Slime/IdleNormal_Slime_Anim.fbx
+  artifactKey: Guid(a3010b0fc7044499ad34afdf5326f623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster DUO PBR Polyart/Animations/Slime/IdleNormal_Slime_Anim.fbx using Guid(a3010b0fc7044499ad34afdf5326f623) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a2bea561d15c2a1222e2557d1748fac') in 0.0455249 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/Level/Lava_LARGE.prefab
+  artifactKey: Guid(4042581b7b3c3264e8c972e4386d8fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Lava_LARGE.prefab using Guid(4042581b7b3c3264e8c972e4386d8fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '953b2d3fbd24f5be4bd4330c111c4b64') in 0.0315928 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Prefabs/Level/Lava_MID.prefab
+  artifactKey: Guid(e61771a37caecca4ba35066e3fd85bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Lava_MID.prefab using Guid(e61771a37caecca4ba35066e3fd85bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '46e43ae97a38be146b93eaa5e2f11615') in 0.0297802 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013283 seconds.
+  path: Assets/Prefabs/Level/Lava_simple.prefab
+  artifactKey: Guid(af20d25c89a3e174bba7f197b0ca214a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Lava_simple.prefab using Guid(af20d25c89a3e174bba7f197b0ca214a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eee53051ab89f1419b4abaa97510566a') in 0.0308112 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.119002 seconds.
+  path: Assets/Layout/Layout_5.prefab
+  artifactKey: Guid(d2e7b751fa134fe40ba1788f8d03282e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Layout/Layout_5.prefab using Guid(d2e7b751fa134fe40ba1788f8d03282e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '01b8ec7c78030359be9485032f1c7750') in 0.0676336 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1783
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.174173 seconds.
+  path: Assets/Prefabs/Level/Level - 2.prefab
+  artifactKey: Guid(c5d187c1e1e962240b5aace7398d4b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Level/Level - 2.prefab using Guid(c5d187c1e1e962240b5aace7398d4b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '406f7c2ebf4f4e716d915fa4066a6246') in 0.058744 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1738
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Unity Store DL/Hits Effects FREE/Prefab/Love Hit .prefab
+  artifactKey: Guid(bddb971e34eb14d48be30c7b922eb077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity Store DL/Hits Effects FREE/Prefab/Love Hit .prefab using Guid(bddb971e34eb14d48be30c7b922eb077) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7948f6724ff928fe27e318ef255dbf75') in 0.1589993 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/PlagueDoctorMask/Models/PlagueMask_LODG.fbx
+  artifactKey: Guid(dc9ce8a9e0c6e844d83c00576b1eadcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlagueDoctorMask/Models/PlagueMask_LODG.fbx using Guid(dc9ce8a9e0c6e844d83c00576b1eadcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '95a011d9c0abf8dbde50f7e1dcae3610') in 0.1947673 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 53
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006964 seconds.
+  path: Assets/RPG Monster DUO PBR Polyart/Scenes/PBR/Sub Light.prefab
+  artifactKey: Guid(37f2264ecfa34be2af8d775d18a37aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster DUO PBR Polyart/Scenes/PBR/Sub Light.prefab using Guid(37f2264ecfa34be2af8d775d18a37aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ffe28a5d3d47437338548226cc9824c7') in 0.0028833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009014 seconds.
+  path: Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Taunt_Slime_Anim.fbx
+  artifactKey: Guid(3a16534b4b074acc99be2eec5ca12eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Taunt_Slime_Anim.fbx using Guid(3a16534b4b074acc99be2eec5ca12eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '470645cc490c6cb74179a82bf80dca42') in 0.0391076 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002546 seconds.
+  path: Assets/Prefabs/Teleport/TeleportSphere1.prefab
+  artifactKey: Guid(a7faf5c3b3d59b94fbee4fb743e42cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Teleport/TeleportSphere1.prefab using Guid(a7faf5c3b3d59b94fbee4fb743e42cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cefcd00b007062b9413c1a25e03624b2') in 0.0212505 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016692 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/Text Popup.prefab
+  artifactKey: Guid(b06f0e6c1dfa4356ac918da1bb32c603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/Text Popup.prefab using Guid(b06f0e6c1dfa4356ac918da1bb32c603) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '692f67541bcf5ed9944bf31e7847ca3c') in 0.0254307 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.054985 seconds.
+  path: Assets/RPG Monster DUO PBR Polyart/Prefabs/PolyartDefault/TurtleShellPBR.prefab
+  artifactKey: Guid(e2aafa8770d34a9591b41bedf4e318ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster DUO PBR Polyart/Prefabs/PolyartDefault/TurtleShellPBR.prefab using Guid(e2aafa8770d34a9591b41bedf4e318ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1486ee625dad82e20d70526d744ca0f3') in 0.2796997 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 131
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Unity Store DL/Boxes/Wooden_box_v1/Source/Wooden_box_v1.FBX
+  artifactKey: Guid(dcf39c3c160b51b49af399efea061f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity Store DL/Boxes/Wooden_box_v1/Source/Wooden_box_v1.FBX using Guid(dcf39c3c160b51b49af399efea061f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e5dc63013d0771a8e194d9849dd8bbc') in 0.0824594 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/RPG Monster DUO PBR Polyart/Animations/Slime/WalkBack_Slime_Anim.fbx
+  artifactKey: Guid(1707f5753277428e8aeacdb11004a50b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster DUO PBR Polyart/Animations/Slime/WalkBack_Slime_Anim.fbx using Guid(1707f5753277428e8aeacdb11004a50b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '66c2130d893878c207796b3ba6c4b340') in 0.0378124 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002114 seconds.
+  path: Assets/DL/Boxes/Wooden_box_v1/Wooden_box_v1_LD2square.prefab
+  artifactKey: Guid(edbbf4929b6f9294693d68ee33dca201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DL/Boxes/Wooden_box_v1/Wooden_box_v1_LD2square.prefab using Guid(edbbf4929b6f9294693d68ee33dca201) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0db905f8c22c5f2a4897deabddf80df8') in 0.0265678 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.140492 seconds.
+  path: Assets/Audio/New Scene/XP SHOP.prefab
+  artifactKey: Guid(56942ddb319636e43812bc3cadda5886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/New Scene/XP SHOP.prefab using Guid(56942ddb319636e43812bc3cadda5886) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e72acd41323159f63ebaeb5ca675c535') in 0.0558149 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.994997 seconds.
+  path: Assets/Unity Store DL/ToonSoldiers_WW2_demo/model/ToonSoldier_WW2_demo.FBX
+  artifactKey: Guid(f4209d51d1ad0434299f2d498ee076ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity Store DL/ToonSoldiers_WW2_demo/model/ToonSoldier_WW2_demo.FBX using Guid(f4209d51d1ad0434299f2d498ee076ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b313c29e29873f7dd18a195f0744bf4f') in 0.0415183 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 62
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.201050 seconds.
+  path: Assets/Prefabs/time-bot-ads/ani-tb/Timebot mesh.fbx
+  artifactKey: Guid(26e292b5264683942838144d8747b044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/time-bot-ads/ani-tb/Timebot mesh.fbx using Guid(26e292b5264683942838144d8747b044) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e777c05951d985d83250e2dd08dcf67') in 0.0436643 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 91
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.149336 seconds.
+  path: Assets/Unity Store DL/StylizedGuns - WW2 US/Prefabs/ThompsonM1A1.prefab
+  artifactKey: Guid(944f765b84e4c4012876d61f4dfc7b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity Store DL/StylizedGuns - WW2 US/Prefabs/ThompsonM1A1.prefab using Guid(944f765b84e4c4012876d61f4dfc7b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '517b4115cc82ec9ab02d5eddc7c113d9') in 0.058054 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.683533 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 1.prefab
+  artifactKey: Guid(a6e39ced0ea046bcb636c3f0b2e2a745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 1.prefab using Guid(a6e39ced0ea046bcb636c3f0b2e2a745) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '02bbd3f1b9627c4277e2e85a0e667568') in 0.0151392 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.934559 seconds.
+  path: Assets/RPG Monster DUO PBR Polyart/Meshes/StageMesh.fbx
+  artifactKey: Guid(b81abefeba724bd89c755de785efd017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster DUO PBR Polyart/Meshes/StageMesh.fbx using Guid(b81abefeba724bd89c755de785efd017) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8043aa7f9f2117152dcc60b045d4311d') in 0.0294497 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.090104 seconds.
+  path: Assets/Prefabs/Enemy/Spikes.prefab
+  artifactKey: Guid(923604fd6d2e0c34ea2c31e846722a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Spikes.prefab using Guid(923604fd6d2e0c34ea2c31e846722a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6eeb721443a25cff9e27f4fdf6c953d4') in 0.0447772 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 198
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.110330 seconds.
+  path: Assets/Prefabs/Spawner/Spawner 1.prefab
+  artifactKey: Guid(256583d6581dcf94ba962a9d358a5a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Spawner/Spawner 1.prefab using Guid(256583d6581dcf94ba962a9d358a5a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7bf73bfe2e010e740e6cedab4524ad23') in 0.0098106 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 308
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.565205 seconds.
+  path: Assets/Weather System/Snowy/Snow Particle System.prefab
+  artifactKey: Guid(6614cbe3a4bee294ab693e6fe4dccc3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Weather System/Snowy/Snow Particle System.prefab using Guid(6614cbe3a4bee294ab693e6fe4dccc3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '93d1941de5fb9ed0a65a8190b3a2ca6f') in 0.0326506 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.168475 seconds.
+  path: Assets/RPG Monster DUO PBR Polyart/Prefabs/PBRDefault/SlimePBR.prefab
+  artifactKey: Guid(928a1377c1cd4515b208fef3a396b8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster DUO PBR Polyart/Prefabs/PBRDefault/SlimePBR.prefab using Guid(928a1377c1cd4515b208fef3a396b8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cb514c6ba5562b065493a26a14abe700') in 0.1255212 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 85
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.450736 seconds.
+  path: Assets/DL/Movement/Situp To Idle.fbx
+  artifactKey: Guid(69032311bf1edff489b0c0b25db50373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DL/Movement/Situp To Idle.fbx using Guid(69032311bf1edff489b0c0b25db50373) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '425a853149198904d77768c2ff5526dc') in 0.0113251 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 71
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.148374 seconds.
+  path: Assets/Set/Set-3.prefab
+  artifactKey: Guid(811b3cea8ea9ab947856caa83d037e00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Set/Set-3.prefab using Guid(811b3cea8ea9ab947856caa83d037e00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '491874e49dce320cb04289e5ee60bce9') in 0.1355911 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 481
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.175440 seconds.
+  path: Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/SenseSomethingStart_TurtleShell_Anim.fbx
+  artifactKey: Guid(d005e95bf0134a26ad4ed5c5b36201ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/SenseSomethingStart_TurtleShell_Anim.fbx using Guid(d005e95bf0134a26ad4ed5c5b36201ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e530b45b812234f32c431199e8b095be') in 0.0593169 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 71
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.174033 seconds.
+  path: Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Run_Slime_Anim.fbx
+  artifactKey: Guid(373e018c84074eaca27e94e2b90039bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Run_Slime_Anim.fbx using Guid(373e018c84074eaca27e94e2b90039bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '084bc7e423bedcc14a8668621e96555d') in 0.0428029 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.837109 seconds.
+  path: Assets/Audio/New Scene/Pickup - Gun - Pistol.prefab
+  artifactKey: Guid(2ebdf4b61dbd8c842be368c0805c3e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/New Scene/Pickup - Gun - Pistol.prefab using Guid(2ebdf4b61dbd8c842be368c0805c3e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e39d8d09536bf8e3610b91c00e7c8c15') in 0.0416606 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 39
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.129337 seconds.
+  path: Assets/DL/Snow Mountain/Source/fbx/mountain_Snow_000.fbx
+  artifactKey: Guid(c5f8fc82d59128146a8b20a5919beb3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DL/Snow Mountain/Source/fbx/mountain_Snow_000.fbx using Guid(c5f8fc82d59128146a8b20a5919beb3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '87a222c1c6314e28b56f431e392fc60a') in 0.061531 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.202576 seconds.
+  path: Assets/Prefabs/Mini Map/Mini Map 1.prefab
+  artifactKey: Guid(5d94a3ae17138f944a7770235556c834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Mini Map/Mini Map 1.prefab using Guid(5d94a3ae17138f944a7770235556c834) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf816701071b127b1445ddbf8781a0a5') in 0.023904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.140081 seconds.
+  path: Assets/Prefabs/Mini Map/Mini Camera.prefab
+  artifactKey: Guid(465a0e3ea12e8814d9d220a1b93ccf6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Mini Map/Mini Camera.prefab using Guid(465a0e3ea12e8814d9d220a1b93ccf6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e2c4d139025b3d368ce1b562ac1828d8') in 0.0022919 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004383 seconds.
+  path: Assets/Audio/New Scene/Mini Map.prefab
+  artifactKey: Guid(95952dec06603f0448638ad0529f3642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/New Scene/Mini Map.prefab using Guid(95952dec06603f0448638ad0529f3642) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ac60578aa4a8c62e84c4f8083259bbf') in 0.0199486 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.345610 seconds.
+  path: Assets/Clockwork Shop Keeper/Clockwork Shop Keeper/Model/Clockwork Shop Keeper.fbx
+  artifactKey: Guid(b3cc1a25edcbe5442ba9f72c2211ef91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Clockwork Shop Keeper/Clockwork Shop Keeper/Model/Clockwork Shop Keeper.fbx using Guid(b3cc1a25edcbe5442ba9f72c2211ef91) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f0c7338143775a8afa57418b2a4f62e') in 0.0652753 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 143
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.091056 seconds.
+  path: Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/Defend_TurtleShell_Anim.fbx
+  artifactKey: Guid(65b444fa8fd14c1c9fd5a23ee91ccb72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RPG Monster DUO PBR Polyart/Animations/TurtleShell/Defend_TurtleShell_Anim.fbx using Guid(65b444fa8fd14c1c9fd5a23ee91ccb72) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4752ad0c86496277879d7c98f6cfe35c') in 0.0594266 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 71
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.392639 seconds.
+  path: Assets/Prefabs/Enemy/Demon Enemy.prefab
+  artifactKey: Guid(4802e256c568b934dbf18945fb7a69d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Demon Enemy.prefab using Guid(4802e256c568b934dbf18945fb7a69d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c474afd6493c6ab1ceb13c65f5226b3') in 0.0064511 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 121
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.483750 seconds.
+  path: Assets/Audio/New Scene/Enemy 1.prefab
+  artifactKey: Guid(54637c295b1b6944dab335ce6ade9f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/New Scene/Enemy 1.prefab using Guid(54637c295b1b6944dab335ce6ade9f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '64dd7babe3ebf045c51e78480ad88807') in 0.0615794 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 109
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.960664 seconds.
+  path: Assets/Prefabs/Enemy/Enemy 2.prefab
+  artifactKey: Guid(4a24992f8d2a2e54ca04ea40f70ba4a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Enemy 2.prefab using Guid(4a24992f8d2a2e54ca04ea40f70ba4a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2fc7003808f594c8eb804a429c798c10') in 0.0483899 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 100
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.167588 seconds.
+  path: Assets/Prefabs/Enemy/Enemy A.prefab
+  artifactKey: Guid(8646613f6bc9a0040a533d13d0267f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/Enemy A.prefab using Guid(8646613f6bc9a0040a533d13d0267f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '951f92d3809618d4bb88e1ec1b09dbe4') in 0.044166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 162
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.465045 seconds.
+  path: Assets/Prefabs/Explosion.prefab
+  artifactKey: Guid(c7e7923e5dceaa544b081e6f6d1b3313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Explosion.prefab using Guid(c7e7923e5dceaa544b081e6f6d1b3313) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '33d38ac6f6d86aad656742c7d7d70bbe') in 0.0218124 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.534435 seconds.
+  path: Assets/Unity Store DL/Hits Effects FREE/Prefab/Fire Hit .prefab
+  artifactKey: Guid(39f852c28f9c3fd45a427c24f3564ba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity Store DL/Hits Effects FREE/Prefab/Fire Hit .prefab using Guid(39f852c28f9c3fd45a427c24f3564ba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9ff18746b141ebaa09a4c42bb7df3e59') in 0.0497974 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.449561 seconds.
+  path: Assets/Scenes/First-Aid-Set/Assets/Prefabs/FirstAidKit_Biohazard.prefab
+  artifactKey: Guid(2e664cff58592ef46ae18f05c38f52e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/First-Aid-Set/Assets/Prefabs/FirstAidKit_Biohazard.prefab using Guid(2e664cff58592ef46ae18f05c38f52e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a75a411d7d4df7b0bf8a05385c6de0d') in 0.174394 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.358122 seconds.
+  path: Assets/Scenes/First-Aid-Set/Assets/Prefabs/FirstAidKit_Red.prefab
+  artifactKey: Guid(360690a7c06559a4f927c76899139848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/First-Aid-Set/Assets/Prefabs/FirstAidKit_Red.prefab using Guid(360690a7c06559a4f927c76899139848) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0cb23b98a68120483d65fc65a77ca28b') in 0.1858342 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.404476 seconds.
+  path: Assets/Audio/New Scene/Floor.prefab
+  artifactKey: Guid(ade1d89e907e9bf409917225cb8dd4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/New Scene/Floor.prefab using Guid(ade1d89e907e9bf409917225cb8dd4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b647adf795be1883dfb34a9b870b12b1') in 0.0361855 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 423.484629 seconds.
+  path: Assets/Ice
+  artifactKey: Guid(c4178ab8b3207df45b2227c14fe973b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ice using Guid(c4178ab8b3207df45b2227c14fe973b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '65bd3b99a30710450fd7e97a98df79c0') in 0.0014829 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.886657 seconds.
+  path: Assets/Snow
+  artifactKey: Guid(263c8fd6db5342949966f34eeca5398b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Snow using Guid(263c8fd6db5342949966f34eeca5398b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a8caac357b29d35405aa27f12cdb3dc') in 0.0014763 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.997271 seconds.
+  path: Assets/WorldMaterialsFree/Built-In_RPMaterials
+  artifactKey: Guid(867b3307386c9654eb1df9258da2aa9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WorldMaterialsFree/Built-In_RPMaterials using Guid(867b3307386c9654eb1df9258da2aa9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '47f2419ec0e80efb907ccc090a7123cf') in 0.0009411 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
