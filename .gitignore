@@ -1,0 +1,85 @@
+# This is a comment
+# This .gitignore file should be placed in the root of your Unity project
+&nbsp;
+&nbsp;
+
+# User-specific files
+*.sublime-workspace
+*.sublime-project
+*.userprefs
+&nbsp;
+&nbsp;
+
+# Build results
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Ll]ibrary/
+[Tt]emp/
+[Tt]estResults/
+[Oo]bj/
+[Aa]ssets/AssetStoreTools*
+&nbsp;
+&nbsp;
+
+# Visual Studio / MonoDevelop files
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.pidb
+*.userprefs
+*.booproj
+*.svd
+&nbsp;
+&nbsp;
+
+# Rider files
+.idea/
+*.sln.iml
+&nbsp;
+&nbsp;
+
+# Unity3D generated files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Aa]ssets/AssetStoreTools*
+&nbsp;
+&nbsp;
+
+# Cache files
+*.cache
+*.pdb
+*.mdb
+&nbsp;
+&nbsp;
+
+# Logs
+*.log
+&nbsp;
+&nbsp;
+
+# Other files
+*.tmp
+*.bak
+*.swp
+*.swm
+*.swo
+*.swn
+*.orig
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+*.sln.meta
+*.user.meta
+*.userprefs.meta
+&nbsp;
+&nbsp;
+
+# Ignore all files in the root of the project
+/*
+!.gitignore
+!.gitattributes
