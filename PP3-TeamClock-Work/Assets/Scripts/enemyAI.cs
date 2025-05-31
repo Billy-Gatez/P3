@@ -12,7 +12,7 @@ public class enemyAI : MonoBehaviour, IDamage
     [SerializeField] Transform headPos;
 
     [Header("---Stats---")]
-    [SerializeField] int XP;
+    [SerializeField] public int XP;
     [SerializeField] int HP;
     [SerializeField] int faceTargetSpeed;
     [SerializeField] int FOV;
@@ -26,6 +26,26 @@ public class enemyAI : MonoBehaviour, IDamage
     [SerializeField] int shootFOV;
     [SerializeField] float shootRate;
 
+    [Header("---Explosion Settings---")]
+    [SerializeField] bool explodesOnDeath;
+    [SerializeField] bool throwsExplosives;
+    [SerializeField] Transform throwPoint;
+    [Range(0, 10)][SerializeField] float throwForce;
+    [Range(0, 100)][SerializeField] float explosionRadius;
+    [Range(0, 100)][SerializeField] int explosionDamage;
+    [Range(0, 100)][SerializeField] float explosionDuration;
+    [SerializeField] GameObject explosivePrefab;
+    [SerializeField] GameObject deathExplosionEffect;
+
+    [Header("---Proximity Explosion---")]
+    [SerializeField] bool explodesOnProximity;
+    [SerializeField] float proximityExplosionRadius;
+
+    [Header("---Audio---")]
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip explosionSound;
+
+    bool playerInRange;
     [Header("---Split On Death---")]
     [SerializeField] GameObject smallerEnemyPrefab;
     [SerializeField] int numberToSpawnOnDeath;
@@ -60,7 +80,7 @@ public class enemyAI : MonoBehaviour, IDamage
         //anim.SetFloat("Speed", agent.velocity.normalized.magnitude);
 
         if (agent.remainingDistance < 0.01f)
-            roamTimer += Time.deltaTime;
+             roamTimer += Time.deltaTime;
         if (playerInRange && !canSeePlayer())
         {
             checkRoam();
@@ -137,6 +157,10 @@ public class enemyAI : MonoBehaviour, IDamage
         {
             playerInRange = true;
             agent.stoppingDistance = 0;
+            if (explodesOnProximity && other.gameObject.layer == LayerMask.NameToLayer("ProximityTrigger"))
+            {
+                explodeOnProximity();
+            }
         }
     }
 
@@ -169,6 +193,12 @@ public class enemyAI : MonoBehaviour, IDamage
             {
                 gamemanager.instance.updateGameGoal(-1, XP);
             }
+            if (explodesOnDeath)
+            {
+                ExplodeOnDeath();
+            }
+
+            gamemanager.instance.updateGameGoal(-1, XP);
             Destroy(gameObject);
         }
     }
@@ -213,3 +243,104 @@ public class enemyAI : MonoBehaviour, IDamage
 
 
 
+    void ExplodeOnDeath()
+    {
+
+        if (deathExplosionEffect)
+
+        {
+            GameObject explosion = Instantiate(deathExplosionEffect, transform.position, Quaternion.identity);
+            //Destroy(explosion, 1.5f);
+            Destroy(explosion, explosionDuration);
+            StartCoroutine(DestroyAfterDelay(explosion, explosionDuration));
+        }
+        if (audioSource && explosionSound)
+        {
+            audioSource.PlayOneShot(explosionSound);
+            StartCoroutine(DestroyAudioSource(audioSource, explosionSound.length));
+        }
+
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, explosionRadius);
+        foreach (Collider hit in hitColliders)
+        {
+            if (hit.CompareTag("Player"))
+            {
+                IDamage dmg = hit.GetComponent<IDamage>();
+                if (dmg != null)
+                    dmg.takeDamage(explosionDamage);
+            }
+        }
+    }
+    IEnumerator DestroyAudioSource(AudioSource source, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Destroy(source.gameObject);
+    }
+    IEnumerator DestroyAfterDelay(GameObject obj, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        if (obj != null)
+        {
+            ParticleSystem ps = obj.GetComponent<ParticleSystem>();
+            if (ps != null)
+            {
+                ps.Stop();
+                yield return new WaitForSeconds(ps.main.duration);
+            }
+            Destroy(obj);
+            obj = null;
+        }
+    }
+    void explodeOnProximity()
+    {
+        if (deathExplosionEffect)
+        {
+            GameObject explosion = Instantiate(deathExplosionEffect, transform.position, Quaternion.identity);
+            StartCoroutine(TrackObjectLifetime(explosion));
+            Destroy(explosion, explosionDuration);
+            StartCoroutine(DestroyAfterDelay(explosion, explosionDuration));
+        }
+
+        if (audioSource && explosionSound)
+        {
+            audioSource.PlayOneShot(explosionSound);
+            StartCoroutine(DestroyAudioSource(audioSource, explosionSound.length));
+        }
+
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, proximityExplosionRadius);
+        foreach (Collider hit in hitColliders)
+        {
+            if (hit.CompareTag("Player"))
+            {
+                IDamage dmg = hit.GetComponent<IDamage>();
+                if (dmg != null)
+                    dmg.takeDamage(explosionDamage);
+            }
+
+        }
+        IEnumerator TrackObjectLifetime(GameObject obj)
+        {
+            while (obj != null)
+            {
+                yield return new WaitForSeconds(1);
+            }
+        }
+        Destroy(gameObject);
+    }
+        void ThrowExplosive()
+    {
+        shootTimer = 0;
+        GameObject explosive = Instantiate(explosivePrefab, throwPoint.position, Quaternion.identity);
+        Rigidbody rb = explosive.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            Vector3 dir = (gamemanager.instance.player.transform.position - throwPoint.position).normalized;
+            rb.AddForce(dir * throwForce, ForceMode.Impulse);
+        }
+    }
+    void OnDestroy()
+    {
+        StopAllCoroutines();
+    }
+}

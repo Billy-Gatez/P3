@@ -1,2 +1,20 @@
 fileFormatVersion: 2
 guid: cbe5eba5962f9874490ad55f5e81b316
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - model: {instanceID: 0}
+  - agent: {instanceID: 0}
+  - anim: {instanceID: 0}
+  - headPos: {instanceID: 0}
+  - shootPos: {instanceID: 0}
+  - bullet: {instanceID: 0}
+  - explosivePrefab: {fileID: 5919001014788623868, guid: c7e7923e5dceaa544b081e6f6d1b3313, type: 3}
+  - throwPoint: {instanceID: 0}
+  - deathExplosionEffect: {fileID: 5919001014788623868, guid: c7e7923e5dceaa544b081e6f6d1b3313, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

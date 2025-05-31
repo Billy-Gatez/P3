@@ -14,11 +14,11 @@ public class buttonFunctions : MonoBehaviour
     }
     public void quit()
     {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
+    #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false ;
+    #else
         Application.Quit();
-#endif
+    #endif
     }
 
     public void respawn()
@@ -26,6 +26,13 @@ public class buttonFunctions : MonoBehaviour
         gamemanager.instance.playerScript.spawnPlayer();
         gamemanager.instance.stateUnpause();
     }
+    public void increaseHP(int cost)
+    {
+        if (gamemanager.instance.currency >= cost)
+        {
 
-
+        gamemanager.instance.playerScript.HP += 1;
+        gamemanager.instance.currency -= cost;
+        }
+    }
 }

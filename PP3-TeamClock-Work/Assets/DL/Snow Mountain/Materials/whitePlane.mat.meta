@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 27d30590e2be2d847b86f3effd8ef98b
+timeCreated: 1463404553
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 63002
+  packageName: Free Snow Mountain
+  packageVersion: 1.0
+  assetPath: Assets/Snow Mountain/Materials/whitePlane.mat
+  uploadId: 118138

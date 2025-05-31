@@ -1,6 +1,9 @@
+// Team Clockwork - Jeremy Cahill - Mark Bennett - George Carter - Ace Morris - Jacob Bragg - [Rod Moye - John O'Leske]
+
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class gamemanager : MonoBehaviour
 {
@@ -10,11 +13,18 @@ public class gamemanager : MonoBehaviour
     [SerializeField] GameObject menuPause;
     [SerializeField] GameObject menuWin;
     [SerializeField] GameObject menuLose;
+  
     [SerializeField] TMP_Text gameGoalCountText;
     [SerializeField] public TMP_Text currencyText;
+    //[SerializeField] TMP_Text waveCountText;
+    //[SerializeField] public TMP_Text waveTimerPopupTxt; //giving wave manager access to change
+   
+    [SerializeField] private AudioSource audioSource; 
+    [SerializeField] private float volume = 1.0f;
 
     [Header("---   ---")]
     public TMP_Text ammoCur, ammoMax;
+    public TMP_Text grenadeCountText;
     public Image playerHPBar;
     public GameObject playerDamageScreen;
     public GameObject checkpointPopup;
@@ -135,5 +145,26 @@ public class gamemanager : MonoBehaviour
         statePause();
         menuActive = menuLose;
         menuActive.SetActive(true);
+    }
+
+    public void updateGrenadeUI(int count)
+    {
+        grenadeCountText.text = count.ToString();
+    }
+
+    public void SetVolume(float newVolume)
+    {
+        volume = newVolume;
+        audioSource.volume = volume; // Set the volume of the AudioSource
+    }
+
+    public float GetVolume()
+    {
+        return volume; // Return the current volume level
+    }
+
+    internal void collectResource(string resourceType, int amount)
+    {
+        throw new NotImplementedException();
     }
 }
