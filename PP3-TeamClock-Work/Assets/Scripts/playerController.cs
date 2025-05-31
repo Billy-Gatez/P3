@@ -60,6 +60,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     [SerializeField] Transform[] teleportDestinations;
     int jumpCount;
     public int HPOrig;
+    int speedOrig;
     int gunListPos;
     int originalSpeed;
 
@@ -113,6 +114,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        speedOrig = speed;
         HPOrig = HP;
         spawnPlayer();
         originalHeight = controller.height;
@@ -249,7 +251,6 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
         {
             controller.Move(moveDir * speed * Time.deltaTime);
             jump();
-            playerVel.y -= gravity * Time.deltaTime;
             controller.Move(playerVel * speed * Time.deltaTime);
         }
         shootTimer += Time.deltaTime;
@@ -266,23 +267,36 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
 
     void jump()
     {
-        if (Input.GetButtonDown("Jump") && jumpCount < jumpMax)
+        if (isSprinting == false)
+        {
+            playerVel.y -= gravity * Time.deltaTime;
+        }if (isSprinting == true){
+            playerVel.y -= gravity*Time.deltaTime/(sprintMod);
+        }
+        if (Input.GetButtonDown("Jump") && jumpCount < jumpMax && isSprinting == false)
         {
             aud.PlayOneShot(audJump[Random.Range(0, audJump.Length)], audJumpVol);
             jumpCount++;
             playerVel.y = jumpSpeed;
+        }else if(Input.GetButtonDown("Jump") && jumpCount < jumpMax && isSprinting == true)
+        {
+            aud.PlayOneShot(audJump[Random.Range(0, audJump.Length)], audJumpVol);
+            jumpCount++;
+            playerVel.y = jumpSpeed / (sprintMod);
         }
     }
 
     void sprint()
     {
-        if (Input.GetButtonDown("Sprint"))
+        if (Input.GetButton("Sprint") && controller.isGrounded && isSprinting == false)
         {
             speed *= sprintMod;
+            isSprinting = true;
         }
-        else if (Input.GetButtonUp("Sprint"))
+        else if (Input.GetButtonUp("Sprint") && speed > speedOrig)
         {
             speed /= sprintMod;
+            isSprinting = false;
         }
     }
 
