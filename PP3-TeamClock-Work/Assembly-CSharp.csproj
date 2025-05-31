@@ -1231,9 +1231,9 @@
       <Project>{6BF07E46-8612-9452-E4BF-DCD92BCED93B}</Project>
       <Name>Unity.AI.Navigation.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{3E114024-BEC8-3772-EB05-46E6FB6D77E9}</Project>
-      <Name>UnityEngine.UI</Name>
+    <ProjectReference Include="Unity.Play.Publisher.Editor.csproj">
+      <Project>{7926EC77-FA40-D225-755A-6357F668609D}</Project>
+      <Name>Unity.Play.Publisher.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
       <Project>{88322F45-871B-9B84-895A-E5665B244945}</Project>
@@ -1243,17 +1243,17 @@
       <Project>{5C45D64F-4DFA-4FDB-910C-247F4480CE59}</Project>
       <Name>Unity.TestTools.CodeCoverage.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Multiplayer.Center.Editor.csproj">
-      <Project>{F9E79FD6-7CA1-780D-F913-E57F6491F6F0}</Project>
-      <Name>Unity.Multiplayer.Center.Editor</Name>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{3E114024-BEC8-3772-EB05-46E6FB6D77E9}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
       <Project>{60CA6C80-F961-A677-F94B-63E8CFA308EA}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Play.Publisher.Editor.csproj">
-      <Project>{7926EC77-FA40-D225-755A-6357F668609D}</Project>
-      <Name>Unity.Play.Publisher.Editor</Name>
+    <ProjectReference Include="Unity.Multiplayer.Center.Editor.csproj">
+      <Project>{F9E79FD6-7CA1-780D-F913-E57F6491F6F0}</Project>
+      <Name>Unity.Multiplayer.Center.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
       <Project>{DB537895-0E90-7F94-6F82-9BDCFC9ED35D}</Project>
