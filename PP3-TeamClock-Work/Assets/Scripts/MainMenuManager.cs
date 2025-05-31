@@ -5,27 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
- 
     public void StartGame()
     {
 
         SceneManager.LoadScene("ClassSelection");
 
-    }
-
-
-    public void MainMenu()
-    {
-
-        SceneManager.LoadScene("Level-1");
-        //gamemanager.instance.stateUnpause();
-    }
-
-    public void HeavyGunner1()
-    {
-
-        SceneManager.LoadScene("Level-1hg");
-        //gamemanager.instance.stateUnpause();
     }
 
     public void HeavyGunner2()
@@ -87,15 +71,6 @@ public class MainMenuManager : MonoBehaviour
 
         SceneManager.LoadScene("Level-5");
         gamemanager.instance.stateUnpause();
-    }
-
-
-
-    public void Medic1()
-    {
-
-        SceneManager.LoadScene("Level-1med");
-        //gamemanager.instance.stateUnpause();
     }
 
     public void Medic2()

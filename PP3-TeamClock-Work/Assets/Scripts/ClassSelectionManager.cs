@@ -8,8 +8,7 @@ public class ClassSelectionManager : MonoBehaviour
     [SerializeField] private GameObject classSelectionMenu;
     [SerializeField] private TMP_Text selectedClassText;
 
-    private string selectedClass;
-
+    private int selectedClass;
     private void Start()
     {
         
@@ -51,8 +50,8 @@ public class ClassSelectionManager : MonoBehaviour
                 break;
         }
 
-        selectedClass = className;
-        selectedClassText.text = $"Weapon: {selectedClass}";
+        selectedClass = classIndex + 1;
+        selectedClassText.text = $"Weapon: {className}";
 
        
        //playerController playerScript = GameObject.FindWithTag("Player").GetComponent<playerController>();
@@ -60,5 +59,32 @@ public class ClassSelectionManager : MonoBehaviour
 
        
        
+    }
+
+    public void startGame()
+    {
+        switch (selectedClass)
+        {
+            case 0:
+                {
+                    selectedClassText.text = "PLEASE SELECT CLASS";
+                    break;
+                }
+            case 1:
+                { 
+                SceneManager.LoadScene("Level-1hg");
+                break;
+                }
+            case 2:
+                {
+                    SceneManager.LoadScene("Level-1");
+                    break;
+                }
+            case 3:
+                {
+                    SceneManager.LoadScene("Level-1med");
+                    break;
+                }
+        }
     }
 }
