@@ -2755,6 +2755,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5192205632931287191, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
+      propertyPath: objectToSpawn
+      value: 
+      objectReference: {fileID: 2156982772766362981, guid: 997d90b3864b2ce4698b5e3d8bcdab44, type: 3}
     - target: {fileID: 6352154171939440977, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
       propertyPath: cost
       value: 50
@@ -2819,6 +2823,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1650844740646410540, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4871571803327010110, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.9576845
+      objectReference: {fileID: 0}
+    - target: {fileID: 4871571803327010110, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.826832
+      objectReference: {fileID: 0}
     - target: {fileID: 6856184416707385553, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
       propertyPath: m_Name
       value: Set-4

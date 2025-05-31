@@ -130,6 +130,10 @@
 			<method name="SelectClass"/>
 		</type>
 		<type fullname="MainMenuManager">
+			<method name="continue2"/>
+			<method name="continue3"/>
+			<method name="continue4"/>
+			<method name="continue5"/>
 			<method name="HeavyGunner1"/>
 			<method name="HeavyGunner2"/>
 			<method name="HeavyGunner3"/>
@@ -174,7 +178,6 @@
 			<method name="MainMenu"/>
 			<method name="MainMenu"/>
 			<method name="MainMenu"/>
-			<method name="MainMenu3"/>
 			<method name="Medic1"/>
 			<method name="Medic2"/>
 			<method name="Medic3"/>

@@ -2589,7 +2589,7 @@ PrefabInstance:
     - target: {fileID: 9081350186188397269, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1076382825}
+      objectReference: {fileID: 610149752}
     - target: {fileID: 9081350186188397269, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -2612,7 +2612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9081350186188397269, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: buttonFunctions, Assembly-CSharp
+      value: MainMenuManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9081350186188397269, guid: bbaf67c209d2aae419b61ed607b10308, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -7235,13 +7235,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2782977623054405871, guid: 0a4fcba81e87ffc48b05d23c605cc858, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8101087251829066703, guid: 0a4fcba81e87ffc48b05d23c605cc858, type: 3}
       propertyPath: m_Name
       value: CLOCKWORK SHOP KEEPER
       objectReference: {fileID: 0}
     - target: {fileID: 8353237580037512445, guid: 0a4fcba81e87ffc48b05d23c605cc858, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.100006
+      value: -9.189913
       objectReference: {fileID: 0}
     - target: {fileID: 8353237580037512445, guid: 0a4fcba81e87ffc48b05d23c605cc858, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7249,7 +7253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8353237580037512445, guid: 0a4fcba81e87ffc48b05d23c605cc858, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.174988
+      value: 3.5553572
       objectReference: {fileID: 0}
     - target: {fileID: 8353237580037512445, guid: 0a4fcba81e87ffc48b05d23c605cc858, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7493,6 +7497,10 @@ PrefabInstance:
       propertyPath: m_NavMeshData
       value: 
       objectReference: {fileID: 23800000, guid: 1b4819e1282e3424cb1b94c80a63072a, type: 2}
+    - target: {fileID: 8065909071538938622, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.04159333
+      objectReference: {fileID: 0}
     - target: {fileID: 8194838387864697447, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
       propertyPath: m_Radius
       value: 20

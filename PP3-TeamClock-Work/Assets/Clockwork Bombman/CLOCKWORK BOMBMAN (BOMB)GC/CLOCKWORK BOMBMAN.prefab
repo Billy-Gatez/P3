@@ -6071,19 +6071,19 @@ MonoBehaviour:
   agent: {fileID: 7701911978355731971}
   anim: {fileID: 5198978884360028395}
   headPos: {fileID: 6025878867179309643}
-  XP: 300
-  HP: 3
-  faceTargetSpeed: 8
-  FOV: 90
-  roamDist: 20
-  roamPauseTime: 3
-  animTranSpeed: 6
+  XP: 500
+  HP: 9
+  faceTargetSpeed: 60
+  FOV: 360
+  roamDist: 50
+  roamPauseTime: 2
+  animTranSpeed: 7
   shootPos: {fileID: 1108849931763619799}
   bullet: {fileID: 34281171506478955, guid: 32edf0146d8b3d84986570780e72956f, type: 3}
   shootFOV: 15
-  shootRate: 1.5
+  shootRate: 0.7
   explodesOnDeath: 1
-  throwsExplosives: 0
+  throwsExplosives: 1
   throwPoint: {fileID: 0}
   throwForce: 0
   explosionRadius: 10

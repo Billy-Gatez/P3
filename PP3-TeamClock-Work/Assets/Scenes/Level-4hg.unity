@@ -1037,7 +1037,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27c907d6c9dde7e4bb113ee11d4fbf81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeSlider: {fileID: 898629692}
 --- !u!114 &898629692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1743,6 +1742,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1650844740646410540, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4871571803327010110, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.187604
+      objectReference: {fileID: 0}
+    - target: {fileID: 4871571803327010110, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.820371
+      objectReference: {fileID: 0}
     - target: {fileID: 6856184416707385553, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
       propertyPath: m_Name
       value: Set-4
@@ -1788,7 +1799,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3951828509840096201, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
+    - {fileID: 6582494225353523067, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
+    - {fileID: 7660272994264243750, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
+    - {fileID: 8123362167700181303, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
+    - {fileID: 9130213161135256720, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
+    - {fileID: 2684857115677815253, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
+    - {fileID: 1226405767969340838, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
+    - {fileID: 8973129136095687770, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1602fd01a628a2145b074be8a3aa18c4, type: 3}
@@ -2816,6 +2835,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5192205632931287191, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
+      propertyPath: numToSpawn
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5192205632931287191, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
+      propertyPath: objectToSpawn
+      value: 
+      objectReference: {fileID: 4769127514448462708, guid: 923604fd6d2e0c34ea2c31e846722a3e, type: 3}
     - target: {fileID: 6352154171939440977, guid: 8d95174cd3615a8459867865a205b7df, type: 3}
       propertyPath: cost
       value: 50

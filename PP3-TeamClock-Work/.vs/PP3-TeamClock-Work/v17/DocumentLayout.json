@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\users\\abote\\onedrive\\desktop\\new folder (2)\\cwh2\\p3\\pp3-teamclock-work\\assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\users\\abote\\onedrive\\desktop\\new folder (2)\\cwh2\\p3\\pp3-teamclock-work\\assets\\scripts\\slimeai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\assets\\scripts\\buttonfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttonfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\assets\\scripts\\shopkeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shopkeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\assets\\scripts\\slimeai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\slimeai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\assets\\scripts\\shopkeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shopkeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A5E64C2-372B-DFC4-DB5D-98D47152B071}|Unity.TextMeshPro.csproj|C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\library\\packagecache\\com.unity.ugui@a9eaa85fb1b8\\runtime\\tmp\\tmp_text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,10 +79,6 @@
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\grenadestats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\assets\\scripts\\buttonfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttonfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\assets\\scripts\\damage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\damage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -113,19 +113,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "WaveSpawner.cs",
-              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\WaveSpawner.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\WaveSpawner.cs",
-              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\WaveSpawner.cs",
-              "RelativeToolTip": "Assets\\Scripts\\WaveSpawner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAACAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "TMP_Text.cs",
+              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Library\\PackageCache\\com.unity.ugui@a9eaa85fb1b8\\Runtime\\TMP\\TMP_Text.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@a9eaa85fb1b8\\Runtime\\TMP\\TMP_Text.cs",
+              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Library\\PackageCache\\com.unity.ugui@a9eaa85fb1b8\\Runtime\\TMP\\TMP_Text.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@a9eaa85fb1b8\\Runtime\\TMP\\TMP_Text.cs",
+              "ViewState": "AgIAACgXAAAAAAAAAABRwCsXAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T16:11:47.225Z"
+              "WhenOpened": "2025-05-25T20:29:32.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 2,
+              "Title": "shopKeeper.cs",
+              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\shopKeeper.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\shopKeeper.cs",
+              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\shopKeeper.cs",
+              "RelativeToolTip": "Assets\\Scripts\\shopKeeper.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAlwG4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T20:33:54.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "GrenadeStats.cs",
               "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\GrenadeStats.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GrenadeStats.cs",
@@ -137,15 +149,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Grenade.cs",
-              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Grenade.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Grenade.cs",
-              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Grenade.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Grenade.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "WaveSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\WaveSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\WaveSpawner.cs",
+              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\WaveSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\WaveSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T00:08:55.233Z"
+              "WhenOpened": "2025-05-18T16:11:47.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "buttonFunctions.cs",
+              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\buttonFunctions.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\buttonFunctions.cs",
+              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\buttonFunctions.cs",
+              "RelativeToolTip": "Assets\\Scripts\\buttonFunctions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T15:34:53.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainMenuManager.cs",
+              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\MainMenuManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenuManager.cs",
+              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\MainMenuManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MainMenuManager.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwFcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T10:52:00.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Weapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapon.cs",
+              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Weapon.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Weapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T15:28:49.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "playerController.cs",
+              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\playerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\playerController.cs",
+              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\playerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\playerController.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAG8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T12:34:59.073Z"
             },
             {
               "$type": "Document",
@@ -161,68 +222,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "playerController.cs",
-              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\playerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\playerController.cs",
-              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\playerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\playerController.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAG8AAAAWAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "Grenade.cs",
+              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Grenade.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Grenade.cs",
+              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Grenade.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Grenade.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T12:34:59.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainMenuManager.cs",
-              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\MainMenuManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenuManager.cs",
-              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\MainMenuManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MainMenuManager.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEIAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T10:52:00.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Weapon.cs",
-              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Weapon.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapon.cs",
-              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Weapon.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Weapon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T15:28:49.143Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TMP_Text.cs",
-              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Library\\PackageCache\\com.unity.ugui@a9eaa85fb1b8\\Runtime\\TMP\\TMP_Text.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@a9eaa85fb1b8\\Runtime\\TMP\\TMP_Text.cs",
-              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Library\\PackageCache\\com.unity.ugui@a9eaa85fb1b8\\Runtime\\TMP\\TMP_Text.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@a9eaa85fb1b8\\Runtime\\TMP\\TMP_Text.cs",
-              "ViewState": "AgIAACgXAAAAAAAAAABRwCsXAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T20:29:32.001Z"
+              "WhenOpened": "2025-05-18T00:08:55.233Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "shopKeeper.cs",
-              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\shopKeeper.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\shopKeeper.cs",
-              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\shopKeeper.cs",
-              "RelativeToolTip": "Assets\\Scripts\\shopKeeper.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAlwG4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T20:33:54.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "shopKeeperAI.cs",
               "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\shopKeeperAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\shopKeeperAI.cs",
@@ -234,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SlimeAI.cs",
               "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\SlimeAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SlimeAI.cs",
@@ -242,12 +254,11 @@
               "RelativeToolTip": "Assets\\Scripts\\SlimeAI.cs",
               "ViewState": "AgIAACUAAAAAAAAAAABEwD8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T18:51:29.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T18:51:29.291Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "keycardPickup.cs",
               "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\keycardPickup.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\keycardPickup.cs",
@@ -259,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Door.cs",
               "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Door.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Door.cs",
@@ -271,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Doorl.cs",
               "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Doorl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Doorl.cs",
@@ -283,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "pickup.cs",
               "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\pickup.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\pickup.cs",
@@ -295,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Ipickup.cs",
               "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\Ipickup.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Ipickup.cs",
@@ -307,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "spawner.cs",
               "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\spawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\spawner.cs",
@@ -331,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "gamemanager.cs",
               "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\gamemanager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\gamemanager.cs",
@@ -355,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "enemyAI.cs",
               "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\enemyAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\enemyAI.cs",
@@ -376,18 +387,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-05-05T17:09:47.976Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "buttonFunctions.cs",
-              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\buttonFunctions.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\buttonFunctions.cs",
-              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\buttonFunctions.cs",
-              "RelativeToolTip": "Assets\\Scripts\\buttonFunctions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:34:53.224Z"
             },
             {
               "$type": "Document",
