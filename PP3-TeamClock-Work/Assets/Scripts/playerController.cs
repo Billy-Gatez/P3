@@ -114,6 +114,7 @@ public class playerController : MonoBehaviour, IDamage, Ipickup
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        gamemanager.instance.PauseMenuSlider.value = aud.volume;
         speedOrig = speed;
         HPOrig = HP;
         spawnPlayer();

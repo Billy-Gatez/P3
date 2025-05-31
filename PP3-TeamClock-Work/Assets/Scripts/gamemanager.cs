@@ -13,6 +13,7 @@ public class gamemanager : MonoBehaviour
     [SerializeField] GameObject menuPause;
     [SerializeField] GameObject menuWin;
     [SerializeField] GameObject menuLose;
+    public Slider PauseMenuSlider;
   
     [SerializeField] TMP_Text gameGoalCountText;
     [SerializeField] public TMP_Text currencyText;
@@ -53,6 +54,7 @@ public class gamemanager : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         playerScript = player.GetComponent<playerController>();
         playerSpawnPos = GameObject.FindWithTag("Player Spawn Pos");
+        audioSource = player.GetComponent<AudioSource>();
 
         timeScaleOrig = Time.timeScale;
     }
