@@ -109,6 +109,7 @@
 			<method name="restart"/>
 			<method name="restart"/>
 			<method name="restart"/>
+			<method name="restart"/>
 			<method name="resume"/>
 			<method name="resume"/>
 			<method name="resume"/>
@@ -139,7 +140,6 @@
 			<method name="HeavyGunner3"/>
 			<method name="HeavyGunner4"/>
 			<method name="HeavyGunner5"/>
-			<method name="Home"/>
 			<method name="Home"/>
 			<method name="Home"/>
 			<method name="Home"/>

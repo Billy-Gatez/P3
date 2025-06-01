@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\assets\\scripts\\shopkeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shopkeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\users\\abote\\onedrive\\desktop\\new folder (2)\\cwh2\\p3\\pp3-teamclock-work\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|c:\\users\\abote\\onedrive\\desktop\\new folder (2)\\cwh2\\p3\\pp3-teamclock-work\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\assets\\scripts\\shopkeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shopkeeper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B92BFBD4-2517-94B3-AEB3-AB1D74F77134}|Assembly-CSharp.csproj|C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\assets\\scripts\\slimeai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -104,8 +104,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 31,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 52,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -113,37 +113,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "buttonFunctions.cs",
-              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\buttonFunctions.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\buttonFunctions.cs",
-              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\buttonFunctions.cs",
-              "RelativeToolTip": "Assets\\Scripts\\buttonFunctions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:34:53.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainMenuManager.cs",
-              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\MainMenuManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenuManager.cs",
-              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\MainMenuManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MainMenuManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T10:52:00.017Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "gamemanager.cs",
               "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\gamemanager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\gamemanager.cs",
               "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\gamemanager.cs",
               "RelativeToolTip": "Assets\\Scripts\\gamemanager.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAKkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAABEwKkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T22:40:45.737Z",
               "EditorCaption": ""
@@ -174,7 +150,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "shopKeeper.cs",
+              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\shopKeeper.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\shopKeeper.cs",
+              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\shopKeeper.cs",
+              "RelativeToolTip": "Assets\\Scripts\\shopKeeper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T20:33:54.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainMenuManager.cs",
+              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\MainMenuManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenuManager.cs",
+              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\MainMenuManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MainMenuManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T10:52:00.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "buttonFunctions.cs",
+              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\buttonFunctions.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\buttonFunctions.cs",
+              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\buttonFunctions.cs",
+              "RelativeToolTip": "Assets\\Scripts\\buttonFunctions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T15:34:53.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "playerController.cs",
               "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\playerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\playerController.cs",
@@ -182,20 +195,7 @@
               "RelativeToolTip": "Assets\\Scripts\\playerController.cs",
               "ViewState": "AgIAADQAAAAAAAAAAABEwG8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T12:34:59.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "shopKeeper.cs",
-              "DocumentMoniker": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\shopKeeper.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\shopKeeper.cs",
-              "ToolTip": "C:\\Users\\abote\\OneDrive\\Desktop\\New folder (2)\\cwh2\\P3\\PP3-TeamClock-Work\\Assets\\Scripts\\shopKeeper.cs",
-              "RelativeToolTip": "Assets\\Scripts\\shopKeeper.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAlwG4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T20:33:54.006Z"
+              "WhenOpened": "2025-05-05T12:34:59.073Z"
             },
             {
               "$type": "Document",
@@ -404,7 +404,7 @@
           ]
         },
         {
-          "DockedWidth": 31,
+          "DockedWidth": 10,
           "SelectedChildIndex": -1,
           "Children": [
             {

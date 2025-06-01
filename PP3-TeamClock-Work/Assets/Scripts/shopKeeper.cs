@@ -49,7 +49,7 @@ public class ShopKeeper : MonoBehaviour
 
             if (dialogueText != null)
             {
-                dialogueText.text = "Welcome, traveler! Press [E] to buy XP or [H] to buy Health.";
+                dialogueText.text = "Welcome, traveler! Press [E] to buy  buy Health with XP.";
             }
             if (shopUI != null)
             {
@@ -76,14 +76,14 @@ public class ShopKeeper : MonoBehaviour
     {
         if (isPlayerNearby)
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                Debug.Log("E key pressed - Buying XP");
-                BuyXP();
-            }
             if (Input.GetKeyDown(KeyCode.H))
             {
-                Debug.Log("H key pressed - Buying Health");
+                Debug.Log("H key pressed - Spent XP");
+                BuyXP();
+            }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Debug.Log("E key pressed - Buying Health");
                 BuyHealth();
             }
             if (Input.GetKeyDown(KeyCode.Y))
@@ -173,7 +173,7 @@ public class ShopKeeper : MonoBehaviour
     {
         if (dialogueText != null)
         {
-            dialogueText.text = "You still want to buy Health or XP?\nPress [E] to buy XP or [H] to buy Health.";
+            dialogueText.text = "You still want to buy Health with XP?\nPress [E] to buy Health.";
         }
     }
 }
