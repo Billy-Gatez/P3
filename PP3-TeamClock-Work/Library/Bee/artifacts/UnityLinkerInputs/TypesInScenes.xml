@@ -1,8 +1,8 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
-		<type fullname="blizzard" preserve="nothing"/>
 		<type fullname="buttonFunctions" preserve="nothing"/>
 		<type fullname="cameraController" preserve="nothing"/>
+		<type fullname="checkpoint" preserve="nothing"/>
 		<type fullname="ClassSelectionManager" preserve="nothing"/>
 		<type fullname="damage" preserve="nothing"/>
 		<type fullname="Door" preserve="nothing"/>
@@ -22,7 +22,6 @@
 		<type fullname="ShopKeeper" preserve="nothing"/>
 		<type fullname="shopKeeperAI" preserve="nothing"/>
 		<type fullname="slimeAI" preserve="nothing"/>
-		<type fullname="Snow" preserve="nothing"/>
 		<type fullname="spawner" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.AI.Navigation">

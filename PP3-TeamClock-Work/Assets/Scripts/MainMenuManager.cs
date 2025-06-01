@@ -10,7 +10,7 @@ public class MainMenuManager : MonoBehaviour
     {
 
         SceneManager.LoadScene("ClassSelection");
-
+        //gamemanager.instance.stateUnpause();
     }
 
 
@@ -25,7 +25,7 @@ public class MainMenuManager : MonoBehaviour
     {
 
         SceneManager.LoadScene("Level-1hg");
-        //gamemanager.instance.stateUnpause();
+        gamemanager.instance.stateUnpause();
     }
 
     public void HeavyGunner2()
@@ -95,7 +95,7 @@ public class MainMenuManager : MonoBehaviour
     {
 
         SceneManager.LoadScene("Level-1med");
-        //gamemanager.instance.stateUnpause();
+        gamemanager.instance.stateUnpause();
     }
 
     public void Medic2()
@@ -137,7 +137,7 @@ public class MainMenuManager : MonoBehaviour
     {
 
         SceneManager.LoadScene("MainMenu");
-       
+        //gamemanager.instance.stateUnpause();
 
     }
 

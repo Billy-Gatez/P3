@@ -17040,15 +17040,15 @@ MonoBehaviour:
   headPos: {fileID: 5003719864175696102}
   XP: 300
   HP: 30
-  faceTargetSpeed: 8
-  FOV: 90
-  roamDist: 20
-  roamPauseTime: 3
-  animTranSpeed: 6
+  faceTargetSpeed: 60
+  FOV: 360
+  roamDist: 100
+  roamPauseTime: 1
+  animTranSpeed: 8
   shootPos: {fileID: 2645107177088671329}
   bullet: {fileID: 34281171506478955, guid: 32edf0146d8b3d84986570780e72956f, type: 3}
-  shootFOV: 20
-  shootRate: 1.5
+  shootFOV: 360
+  shootRate: 0.5
   explodesOnDeath: 1
   throwsExplosives: 0
   throwPoint: {fileID: 0}

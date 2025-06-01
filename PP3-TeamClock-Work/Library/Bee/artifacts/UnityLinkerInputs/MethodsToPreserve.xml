@@ -76,6 +76,7 @@
 			<method name="respawn"/>
 			<method name="respawn"/>
 			<method name="respawn"/>
+			<method name="respawn"/>
 			<method name="restart"/>
 			<method name="restart"/>
 			<method name="restart"/>
@@ -134,7 +135,6 @@
 			<method name="continue3"/>
 			<method name="continue4"/>
 			<method name="continue5"/>
-			<method name="HeavyGunner1"/>
 			<method name="HeavyGunner2"/>
 			<method name="HeavyGunner3"/>
 			<method name="HeavyGunner4"/>
@@ -147,7 +147,6 @@
 			<method name="Home"/>
 			<method name="Home"/>
 			<method name="Home"/>
-			<method name="Home"/>
 			<method name="MainMenu"/>
 			<method name="MainMenu"/>
 			<method name="MainMenu"/>
@@ -178,7 +177,8 @@
 			<method name="MainMenu"/>
 			<method name="MainMenu"/>
 			<method name="MainMenu"/>
-			<method name="Medic1"/>
+			<method name="MainMenu"/>
+			<method name="MainMenu"/>
 			<method name="Medic2"/>
 			<method name="Medic3"/>
 			<method name="Medic3"/>
